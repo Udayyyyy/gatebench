@@ -1,0 +1,936 @@
+[
+  {
+    "artifact": "trials/m0-tau2-retail-0-r0.json.gz",
+    "completion_tokens": 1142,
+    "config_sha256": "16f600b5be4f39bd08fe2c190204533b2f717536ce6f1b8afcbcbab318823f88",
+    "decode_seed": 17,
+    "domain": "tau2-retail",
+    "elapsed_seconds": 46.34345,
+    "family": "exchange",
+    "graders": {
+      "hardened": false,
+      "native": false
+    },
+    "model": "qwen3.5:2b-q4_K_M",
+    "model_digest": "1e2d21a4f03ab9e4a9c1976a4b7e88f21de61d65f2c5485d8fde8942be73f1e7",
+    "prompt_tokens": 37370,
+    "reasons": {
+      "hardened": [
+        "termination: run did not complete"
+      ],
+      "native": []
+    },
+    "repeat": 0,
+    "stop_reason": "budget",
+    "task_id": "tau2-retail-0",
+    "tool_calls": 5,
+    "trial_id": "m0-tau2-retail-0-r0"
+  },
+  {
+    "artifact": "trials/m0-tau2-retail-0-r1.json.gz",
+    "completion_tokens": 1024,
+    "config_sha256": "16f600b5be4f39bd08fe2c190204533b2f717536ce6f1b8afcbcbab318823f88",
+    "decode_seed": 29,
+    "domain": "tau2-retail",
+    "elapsed_seconds": 33.427712,
+    "family": "exchange",
+    "graders": {
+      "hardened": false,
+      "native": false
+    },
+    "model": "qwen3.5:2b-q4_K_M",
+    "model_digest": "1e2d21a4f03ab9e4a9c1976a4b7e88f21de61d65f2c5485d8fde8942be73f1e7",
+    "prompt_tokens": 31015,
+    "reasons": {
+      "hardened": [
+        "termination: run did not complete"
+      ],
+      "native": []
+    },
+    "repeat": 1,
+    "stop_reason": "budget",
+    "task_id": "tau2-retail-0",
+    "tool_calls": 4,
+    "trial_id": "m0-tau2-retail-0-r1"
+  },
+  {
+    "artifact": "trials/m0-tau2-retail-0-r2.json.gz",
+    "completion_tokens": 1368,
+    "config_sha256": "16f600b5be4f39bd08fe2c190204533b2f717536ce6f1b8afcbcbab318823f88",
+    "decode_seed": 43,
+    "domain": "tau2-retail",
+    "elapsed_seconds": 52.374655,
+    "family": "exchange",
+    "graders": {
+      "hardened": false,
+      "native": false
+    },
+    "model": "qwen3.5:2b-q4_K_M",
+    "model_digest": "1e2d21a4f03ab9e4a9c1976a4b7e88f21de61d65f2c5485d8fde8942be73f1e7",
+    "prompt_tokens": 53160,
+    "reasons": {
+      "hardened": [
+        "termination: run did not complete"
+      ],
+      "native": []
+    },
+    "repeat": 2,
+    "stop_reason": "budget",
+    "task_id": "tau2-retail-0",
+    "tool_calls": 7,
+    "trial_id": "m0-tau2-retail-0-r2"
+  },
+  {
+    "artifact": "trials/m0-tau2-retail-1-r0.json.gz",
+    "completion_tokens": 1098,
+    "config_sha256": "16f600b5be4f39bd08fe2c190204533b2f717536ce6f1b8afcbcbab318823f88",
+    "decode_seed": 17,
+    "domain": "tau2-retail",
+    "elapsed_seconds": 43.198021,
+    "family": "exchange",
+    "graders": {
+      "hardened": false,
+      "native": false
+    },
+    "model": "qwen3.5:2b-q4_K_M",
+    "model_digest": "1e2d21a4f03ab9e4a9c1976a4b7e88f21de61d65f2c5485d8fde8942be73f1e7",
+    "prompt_tokens": 37270,
+    "reasons": {
+      "hardened": [
+        "termination: run did not complete"
+      ],
+      "native": []
+    },
+    "repeat": 0,
+    "stop_reason": "budget",
+    "task_id": "tau2-retail-1",
+    "tool_calls": 5,
+    "trial_id": "m0-tau2-retail-1-r0"
+  },
+  {
+    "artifact": "trials/m0-tau2-retail-1-r1.json.gz",
+    "completion_tokens": 1343,
+    "config_sha256": "16f600b5be4f39bd08fe2c190204533b2f717536ce6f1b8afcbcbab318823f88",
+    "decode_seed": 29,
+    "domain": "tau2-retail",
+    "elapsed_seconds": 47.392507,
+    "family": "exchange",
+    "graders": {
+      "hardened": false,
+      "native": false
+    },
+    "model": "qwen3.5:2b-q4_K_M",
+    "model_digest": "1e2d21a4f03ab9e4a9c1976a4b7e88f21de61d65f2c5485d8fde8942be73f1e7",
+    "prompt_tokens": 43876,
+    "reasons": {
+      "hardened": [
+        "termination: run did not complete"
+      ],
+      "native": []
+    },
+    "repeat": 1,
+    "stop_reason": "budget",
+    "task_id": "tau2-retail-1",
+    "tool_calls": 6,
+    "trial_id": "m0-tau2-retail-1-r1"
+  },
+  {
+    "artifact": "trials/m0-tau2-retail-1-r2.json.gz",
+    "completion_tokens": 1175,
+    "config_sha256": "16f600b5be4f39bd08fe2c190204533b2f717536ce6f1b8afcbcbab318823f88",
+    "decode_seed": 43,
+    "domain": "tau2-retail",
+    "elapsed_seconds": 40.803504,
+    "family": "exchange",
+    "graders": {
+      "hardened": false,
+      "native": false
+    },
+    "model": "qwen3.5:2b-q4_K_M",
+    "model_digest": "1e2d21a4f03ab9e4a9c1976a4b7e88f21de61d65f2c5485d8fde8942be73f1e7",
+    "prompt_tokens": 31297,
+    "reasons": {
+      "hardened": [
+        "termination: run did not complete"
+      ],
+      "native": []
+    },
+    "repeat": 2,
+    "stop_reason": "budget",
+    "task_id": "tau2-retail-1",
+    "tool_calls": 4,
+    "trial_id": "m0-tau2-retail-1-r2"
+  },
+  {
+    "artifact": "trials/m0-tau2-retail-2-r0.json.gz",
+    "completion_tokens": 491,
+    "config_sha256": "16f600b5be4f39bd08fe2c190204533b2f717536ce6f1b8afcbcbab318823f88",
+    "decode_seed": 17,
+    "domain": "tau2-retail",
+    "elapsed_seconds": 17.638155,
+    "family": "return",
+    "graders": {
+      "hardened": false,
+      "native": false
+    },
+    "model": "qwen3.5:2b-q4_K_M",
+    "model_digest": "1e2d21a4f03ab9e4a9c1976a4b7e88f21de61d65f2c5485d8fde8942be73f1e7",
+    "prompt_tokens": 14964,
+    "reasons": {
+      "hardened": [],
+      "native": []
+    },
+    "repeat": 0,
+    "stop_reason": "completed",
+    "task_id": "tau2-retail-2",
+    "tool_calls": 2,
+    "trial_id": "m0-tau2-retail-2-r0"
+  },
+  {
+    "artifact": "trials/m0-tau2-retail-2-r1.json.gz",
+    "completion_tokens": 1494,
+    "config_sha256": "16f600b5be4f39bd08fe2c190204533b2f717536ce6f1b8afcbcbab318823f88",
+    "decode_seed": 29,
+    "domain": "tau2-retail",
+    "elapsed_seconds": 57.656921,
+    "family": "return",
+    "graders": {
+      "hardened": false,
+      "native": false
+    },
+    "model": "qwen3.5:2b-q4_K_M",
+    "model_digest": "1e2d21a4f03ab9e4a9c1976a4b7e88f21de61d65f2c5485d8fde8942be73f1e7",
+    "prompt_tokens": 72300,
+    "reasons": {
+      "hardened": [
+        "termination: run did not complete"
+      ],
+      "native": []
+    },
+    "repeat": 1,
+    "stop_reason": "budget",
+    "task_id": "tau2-retail-2",
+    "tool_calls": 9,
+    "trial_id": "m0-tau2-retail-2-r1"
+  },
+  {
+    "artifact": "trials/m0-tau2-retail-2-r2.json.gz",
+    "completion_tokens": 1085,
+    "config_sha256": "16f600b5be4f39bd08fe2c190204533b2f717536ce6f1b8afcbcbab318823f88",
+    "decode_seed": 43,
+    "domain": "tau2-retail",
+    "elapsed_seconds": 39.194208,
+    "family": "return",
+    "graders": {
+      "hardened": false,
+      "native": false
+    },
+    "model": "qwen3.5:2b-q4_K_M",
+    "model_digest": "1e2d21a4f03ab9e4a9c1976a4b7e88f21de61d65f2c5485d8fde8942be73f1e7",
+    "prompt_tokens": 48275,
+    "reasons": {
+      "hardened": [],
+      "native": []
+    },
+    "repeat": 2,
+    "stop_reason": "completed",
+    "task_id": "tau2-retail-2",
+    "tool_calls": 7,
+    "trial_id": "m0-tau2-retail-2-r2"
+  },
+  {
+    "artifact": "trials/m0-tau2-retail-19-r0.json.gz",
+    "completion_tokens": 1634,
+    "config_sha256": "16f600b5be4f39bd08fe2c190204533b2f717536ce6f1b8afcbcbab318823f88",
+    "decode_seed": 17,
+    "domain": "tau2-retail",
+    "elapsed_seconds": 74.684766,
+    "family": "return",
+    "graders": {
+      "hardened": false,
+      "native": false
+    },
+    "model": "qwen3.5:2b-q4_K_M",
+    "model_digest": "1e2d21a4f03ab9e4a9c1976a4b7e88f21de61d65f2c5485d8fde8942be73f1e7",
+    "prompt_tokens": 67116,
+    "reasons": {
+      "hardened": [
+        "termination: run did not complete"
+      ],
+      "native": []
+    },
+    "repeat": 0,
+    "stop_reason": "budget",
+    "task_id": "tau2-retail-19",
+    "tool_calls": 9,
+    "trial_id": "m0-tau2-retail-19-r0"
+  },
+  {
+    "artifact": "trials/m0-tau2-retail-19-r1.json.gz",
+    "completion_tokens": 1412,
+    "config_sha256": "16f600b5be4f39bd08fe2c190204533b2f717536ce6f1b8afcbcbab318823f88",
+    "decode_seed": 29,
+    "domain": "tau2-retail",
+    "elapsed_seconds": 66.109252,
+    "family": "return",
+    "graders": {
+      "hardened": false,
+      "native": false
+    },
+    "model": "qwen3.5:2b-q4_K_M",
+    "model_digest": "1e2d21a4f03ab9e4a9c1976a4b7e88f21de61d65f2c5485d8fde8942be73f1e7",
+    "prompt_tokens": 59223,
+    "reasons": {
+      "hardened": [
+        "termination: run did not complete"
+      ],
+      "native": []
+    },
+    "repeat": 1,
+    "stop_reason": "budget",
+    "task_id": "tau2-retail-19",
+    "tool_calls": 8,
+    "trial_id": "m0-tau2-retail-19-r1"
+  },
+  {
+    "artifact": "trials/m0-tau2-retail-19-r2.json.gz",
+    "completion_tokens": 1123,
+    "config_sha256": "16f600b5be4f39bd08fe2c190204533b2f717536ce6f1b8afcbcbab318823f88",
+    "decode_seed": 43,
+    "domain": "tau2-retail",
+    "elapsed_seconds": 45.446508,
+    "family": "return",
+    "graders": {
+      "hardened": false,
+      "native": false
+    },
+    "model": "qwen3.5:2b-q4_K_M",
+    "model_digest": "1e2d21a4f03ab9e4a9c1976a4b7e88f21de61d65f2c5485d8fde8942be73f1e7",
+    "prompt_tokens": 28048,
+    "reasons": {
+      "hardened": [
+        "termination: run did not complete"
+      ],
+      "native": []
+    },
+    "repeat": 2,
+    "stop_reason": "budget",
+    "task_id": "tau2-retail-19",
+    "tool_calls": 4,
+    "trial_id": "m0-tau2-retail-19-r2"
+  },
+  {
+    "artifact": "trials/m0-tau2-retail-38-r0.json.gz",
+    "completion_tokens": 48,
+    "config_sha256": "16f600b5be4f39bd08fe2c190204533b2f717536ce6f1b8afcbcbab318823f88",
+    "decode_seed": 17,
+    "domain": "tau2-retail",
+    "elapsed_seconds": 4.355118,
+    "family": "cancel",
+    "graders": {
+      "hardened": false,
+      "native": false
+    },
+    "model": "qwen3.5:2b-q4_K_M",
+    "model_digest": "1e2d21a4f03ab9e4a9c1976a4b7e88f21de61d65f2c5485d8fde8942be73f1e7",
+    "prompt_tokens": 4868,
+    "reasons": {
+      "hardened": [],
+      "native": []
+    },
+    "repeat": 0,
+    "stop_reason": "completed",
+    "task_id": "tau2-retail-38",
+    "tool_calls": 0,
+    "trial_id": "m0-tau2-retail-38-r0"
+  },
+  {
+    "artifact": "trials/m0-tau2-retail-38-r1.json.gz",
+    "completion_tokens": 41,
+    "config_sha256": "16f600b5be4f39bd08fe2c190204533b2f717536ce6f1b8afcbcbab318823f88",
+    "decode_seed": 29,
+    "domain": "tau2-retail",
+    "elapsed_seconds": 0.993562,
+    "family": "cancel",
+    "graders": {
+      "hardened": false,
+      "native": false
+    },
+    "model": "qwen3.5:2b-q4_K_M",
+    "model_digest": "1e2d21a4f03ab9e4a9c1976a4b7e88f21de61d65f2c5485d8fde8942be73f1e7",
+    "prompt_tokens": 4868,
+    "reasons": {
+      "hardened": [],
+      "native": []
+    },
+    "repeat": 1,
+    "stop_reason": "completed",
+    "task_id": "tau2-retail-38",
+    "tool_calls": 0,
+    "trial_id": "m0-tau2-retail-38-r1"
+  },
+  {
+    "artifact": "trials/m0-tau2-retail-38-r2.json.gz",
+    "completion_tokens": 697,
+    "config_sha256": "16f600b5be4f39bd08fe2c190204533b2f717536ce6f1b8afcbcbab318823f88",
+    "decode_seed": 43,
+    "domain": "tau2-retail",
+    "elapsed_seconds": 25.487268,
+    "family": "cancel",
+    "graders": {
+      "hardened": false,
+      "native": false
+    },
+    "model": "qwen3.5:2b-q4_K_M",
+    "model_digest": "1e2d21a4f03ab9e4a9c1976a4b7e88f21de61d65f2c5485d8fde8942be73f1e7",
+    "prompt_tokens": 26324,
+    "reasons": {
+      "hardened": [],
+      "native": []
+    },
+    "repeat": 2,
+    "stop_reason": "completed",
+    "task_id": "tau2-retail-38",
+    "tool_calls": 4,
+    "trial_id": "m0-tau2-retail-38-r2"
+  },
+  {
+    "artifact": "trials/m0-tau2-retail-66-r0.json.gz",
+    "completion_tokens": 1300,
+    "config_sha256": "16f600b5be4f39bd08fe2c190204533b2f717536ce6f1b8afcbcbab318823f88",
+    "decode_seed": 17,
+    "domain": "tau2-retail",
+    "elapsed_seconds": 58.892727,
+    "family": "cancel",
+    "graders": {
+      "hardened": false,
+      "native": false
+    },
+    "model": "qwen3.5:2b-q4_K_M",
+    "model_digest": "1e2d21a4f03ab9e4a9c1976a4b7e88f21de61d65f2c5485d8fde8942be73f1e7",
+    "prompt_tokens": 41235,
+    "reasons": {
+      "hardened": [],
+      "native": []
+    },
+    "repeat": 0,
+    "stop_reason": "completed",
+    "task_id": "tau2-retail-66",
+    "tool_calls": 6,
+    "trial_id": "m0-tau2-retail-66-r0"
+  },
+  {
+    "artifact": "trials/m0-tau2-retail-66-r1.json.gz",
+    "completion_tokens": 96,
+    "config_sha256": "16f600b5be4f39bd08fe2c190204533b2f717536ce6f1b8afcbcbab318823f88",
+    "decode_seed": 29,
+    "domain": "tau2-retail",
+    "elapsed_seconds": 3.448215,
+    "family": "cancel",
+    "graders": {
+      "hardened": false,
+      "native": false
+    },
+    "model": "qwen3.5:2b-q4_K_M",
+    "model_digest": "1e2d21a4f03ab9e4a9c1976a4b7e88f21de61d65f2c5485d8fde8942be73f1e7",
+    "prompt_tokens": 4796,
+    "reasons": {
+      "hardened": [],
+      "native": []
+    },
+    "repeat": 1,
+    "stop_reason": "completed",
+    "task_id": "tau2-retail-66",
+    "tool_calls": 0,
+    "trial_id": "m0-tau2-retail-66-r1"
+  },
+  {
+    "artifact": "trials/m0-tau2-retail-66-r2.json.gz",
+    "completion_tokens": 154,
+    "config_sha256": "16f600b5be4f39bd08fe2c190204533b2f717536ce6f1b8afcbcbab318823f88",
+    "decode_seed": 43,
+    "domain": "tau2-retail",
+    "elapsed_seconds": 5.474325,
+    "family": "cancel",
+    "graders": {
+      "hardened": false,
+      "native": false
+    },
+    "model": "qwen3.5:2b-q4_K_M",
+    "model_digest": "1e2d21a4f03ab9e4a9c1976a4b7e88f21de61d65f2c5485d8fde8942be73f1e7",
+    "prompt_tokens": 4796,
+    "reasons": {
+      "hardened": [],
+      "native": []
+    },
+    "repeat": 2,
+    "stop_reason": "completed",
+    "task_id": "tau2-retail-66",
+    "tool_calls": 0,
+    "trial_id": "m0-tau2-retail-66-r2"
+  },
+  {
+    "artifact": "trials/m1-tau2-retail-0-r0.json.gz",
+    "completion_tokens": 1198,
+    "config_sha256": "16f600b5be4f39bd08fe2c190204533b2f717536ce6f1b8afcbcbab318823f88",
+    "decode_seed": 17,
+    "domain": "tau2-retail",
+    "elapsed_seconds": 141.739046,
+    "family": "exchange",
+    "graders": {
+      "hardened": false,
+      "native": false
+    },
+    "model": "qwen3.5:4b-q4_K_M",
+    "model_digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "prompt_tokens": 39529,
+    "reasons": {
+      "hardened": [],
+      "native": []
+    },
+    "repeat": 0,
+    "stop_reason": "completed",
+    "task_id": "tau2-retail-0",
+    "tool_calls": 5,
+    "trial_id": "m1-tau2-retail-0-r0"
+  },
+  {
+    "artifact": "trials/m1-tau2-retail-0-r1.json.gz",
+    "completion_tokens": 1067,
+    "config_sha256": "16f600b5be4f39bd08fe2c190204533b2f717536ce6f1b8afcbcbab318823f88",
+    "decode_seed": 29,
+    "domain": "tau2-retail",
+    "elapsed_seconds": 81.192192,
+    "family": "exchange",
+    "graders": {
+      "hardened": false,
+      "native": false
+    },
+    "model": "qwen3.5:4b-q4_K_M",
+    "model_digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "prompt_tokens": 39420,
+    "reasons": {
+      "hardened": [],
+      "native": []
+    },
+    "repeat": 1,
+    "stop_reason": "completed",
+    "task_id": "tau2-retail-0",
+    "tool_calls": 5,
+    "trial_id": "m1-tau2-retail-0-r1"
+  },
+  {
+    "artifact": "trials/m1-tau2-retail-0-r2.json.gz",
+    "completion_tokens": 1166,
+    "config_sha256": "16f600b5be4f39bd08fe2c190204533b2f717536ce6f1b8afcbcbab318823f88",
+    "decode_seed": 43,
+    "domain": "tau2-retail",
+    "elapsed_seconds": 90.926631,
+    "family": "exchange",
+    "graders": {
+      "hardened": false,
+      "native": false
+    },
+    "model": "qwen3.5:4b-q4_K_M",
+    "model_digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "prompt_tokens": 39427,
+    "reasons": {
+      "hardened": [],
+      "native": []
+    },
+    "repeat": 2,
+    "stop_reason": "completed",
+    "task_id": "tau2-retail-0",
+    "tool_calls": 5,
+    "trial_id": "m1-tau2-retail-0-r2"
+  },
+  {
+    "artifact": "trials/m1-tau2-retail-1-r0.json.gz",
+    "completion_tokens": 1229,
+    "config_sha256": "16f600b5be4f39bd08fe2c190204533b2f717536ce6f1b8afcbcbab318823f88",
+    "decode_seed": 17,
+    "domain": "tau2-retail",
+    "elapsed_seconds": 110.592025,
+    "family": "exchange",
+    "graders": {
+      "hardened": false,
+      "native": false
+    },
+    "model": "qwen3.5:4b-q4_K_M",
+    "model_digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "prompt_tokens": 39737,
+    "reasons": {
+      "hardened": [],
+      "native": []
+    },
+    "repeat": 0,
+    "stop_reason": "completed",
+    "task_id": "tau2-retail-1",
+    "tool_calls": 5,
+    "trial_id": "m1-tau2-retail-1-r0"
+  },
+  {
+    "artifact": "trials/m1-tau2-retail-1-r1.json.gz",
+    "completion_tokens": 1331,
+    "config_sha256": "16f600b5be4f39bd08fe2c190204533b2f717536ce6f1b8afcbcbab318823f88",
+    "decode_seed": 29,
+    "domain": "tau2-retail",
+    "elapsed_seconds": 107.507559,
+    "family": "exchange",
+    "graders": {
+      "hardened": false,
+      "native": false
+    },
+    "model": "qwen3.5:4b-q4_K_M",
+    "model_digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "prompt_tokens": 39778,
+    "reasons": {
+      "hardened": [],
+      "native": []
+    },
+    "repeat": 1,
+    "stop_reason": "completed",
+    "task_id": "tau2-retail-1",
+    "tool_calls": 5,
+    "trial_id": "m1-tau2-retail-1-r1"
+  },
+  {
+    "artifact": "trials/m1-tau2-retail-1-r2.json.gz",
+    "completion_tokens": 1214,
+    "config_sha256": "16f600b5be4f39bd08fe2c190204533b2f717536ce6f1b8afcbcbab318823f88",
+    "decode_seed": 43,
+    "domain": "tau2-retail",
+    "elapsed_seconds": 93.169206,
+    "family": "exchange",
+    "graders": {
+      "hardened": false,
+      "native": false
+    },
+    "model": "qwen3.5:4b-q4_K_M",
+    "model_digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "prompt_tokens": 39780,
+    "reasons": {
+      "hardened": [],
+      "native": []
+    },
+    "repeat": 2,
+    "stop_reason": "completed",
+    "task_id": "tau2-retail-1",
+    "tool_calls": 5,
+    "trial_id": "m1-tau2-retail-1-r2"
+  },
+  {
+    "artifact": "trials/m1-tau2-retail-2-r0.json.gz",
+    "completion_tokens": 1330,
+    "config_sha256": "16f600b5be4f39bd08fe2c190204533b2f717536ce6f1b8afcbcbab318823f88",
+    "decode_seed": 17,
+    "domain": "tau2-retail",
+    "elapsed_seconds": 97.580255,
+    "family": "return",
+    "graders": {
+      "hardened": false,
+      "native": false
+    },
+    "model": "qwen3.5:4b-q4_K_M",
+    "model_digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "prompt_tokens": 72482,
+    "reasons": {
+      "hardened": [
+        "termination: run did not complete"
+      ],
+      "native": []
+    },
+    "repeat": 0,
+    "stop_reason": "budget",
+    "task_id": "tau2-retail-2",
+    "tool_calls": 9,
+    "trial_id": "m1-tau2-retail-2-r0"
+  },
+  {
+    "artifact": "trials/m1-tau2-retail-2-r1.json.gz",
+    "completion_tokens": 1189,
+    "config_sha256": "16f600b5be4f39bd08fe2c190204533b2f717536ce6f1b8afcbcbab318823f88",
+    "decode_seed": 29,
+    "domain": "tau2-retail",
+    "elapsed_seconds": 92.700138,
+    "family": "return",
+    "graders": {
+      "hardened": false,
+      "native": false
+    },
+    "model": "qwen3.5:4b-q4_K_M",
+    "model_digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "prompt_tokens": 72580,
+    "reasons": {
+      "hardened": [],
+      "native": []
+    },
+    "repeat": 1,
+    "stop_reason": "completed",
+    "task_id": "tau2-retail-2",
+    "tool_calls": 9,
+    "trial_id": "m1-tau2-retail-2-r1"
+  },
+  {
+    "artifact": "trials/m1-tau2-retail-2-r2.json.gz",
+    "completion_tokens": 1394,
+    "config_sha256": "16f600b5be4f39bd08fe2c190204533b2f717536ce6f1b8afcbcbab318823f88",
+    "decode_seed": 43,
+    "domain": "tau2-retail",
+    "elapsed_seconds": 102.027557,
+    "family": "return",
+    "graders": {
+      "hardened": false,
+      "native": false
+    },
+    "model": "qwen3.5:4b-q4_K_M",
+    "model_digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "prompt_tokens": 71730,
+    "reasons": {
+      "hardened": [
+        "termination: run did not complete"
+      ],
+      "native": []
+    },
+    "repeat": 2,
+    "stop_reason": "budget",
+    "task_id": "tau2-retail-2",
+    "tool_calls": 9,
+    "trial_id": "m1-tau2-retail-2-r2"
+  },
+  {
+    "artifact": "trials/m1-tau2-retail-19-r0.json.gz",
+    "completion_tokens": 1126,
+    "config_sha256": "16f600b5be4f39bd08fe2c190204533b2f717536ce6f1b8afcbcbab318823f88",
+    "decode_seed": 17,
+    "domain": "tau2-retail",
+    "elapsed_seconds": 83.929854,
+    "family": "return",
+    "graders": {
+      "hardened": false,
+      "native": false
+    },
+    "model": "qwen3.5:4b-q4_K_M",
+    "model_digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "prompt_tokens": 36727,
+    "reasons": {
+      "hardened": [
+        "termination: run did not complete"
+      ],
+      "native": []
+    },
+    "repeat": 0,
+    "stop_reason": "budget",
+    "task_id": "tau2-retail-19",
+    "tool_calls": 5,
+    "trial_id": "m1-tau2-retail-19-r0"
+  },
+  {
+    "artifact": "trials/m1-tau2-retail-19-r1.json.gz",
+    "completion_tokens": 1226,
+    "config_sha256": "16f600b5be4f39bd08fe2c190204533b2f717536ce6f1b8afcbcbab318823f88",
+    "decode_seed": 29,
+    "domain": "tau2-retail",
+    "elapsed_seconds": 82.814589,
+    "family": "return",
+    "graders": {
+      "hardened": false,
+      "native": false
+    },
+    "model": "qwen3.5:4b-q4_K_M",
+    "model_digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "prompt_tokens": 36877,
+    "reasons": {
+      "hardened": [
+        "termination: run did not complete"
+      ],
+      "native": []
+    },
+    "repeat": 1,
+    "stop_reason": "budget",
+    "task_id": "tau2-retail-19",
+    "tool_calls": 5,
+    "trial_id": "m1-tau2-retail-19-r1"
+  },
+  {
+    "artifact": "trials/m1-tau2-retail-19-r2.json.gz",
+    "completion_tokens": 69,
+    "config_sha256": "16f600b5be4f39bd08fe2c190204533b2f717536ce6f1b8afcbcbab318823f88",
+    "decode_seed": 43,
+    "domain": "tau2-retail",
+    "elapsed_seconds": 3.353288,
+    "family": "return",
+    "graders": {
+      "hardened": false,
+      "native": false
+    },
+    "model": "qwen3.5:4b-q4_K_M",
+    "model_digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "prompt_tokens": 4812,
+    "reasons": {
+      "hardened": [],
+      "native": []
+    },
+    "repeat": 2,
+    "stop_reason": "completed",
+    "task_id": "tau2-retail-19",
+    "tool_calls": 0,
+    "trial_id": "m1-tau2-retail-19-r2"
+  },
+  {
+    "artifact": "trials/m1-tau2-retail-38-r0.json.gz",
+    "completion_tokens": 1529,
+    "config_sha256": "16f600b5be4f39bd08fe2c190204533b2f717536ce6f1b8afcbcbab318823f88",
+    "decode_seed": 17,
+    "domain": "tau2-retail",
+    "elapsed_seconds": 126.139916,
+    "family": "cancel",
+    "graders": {
+      "hardened": false,
+      "native": false
+    },
+    "model": "qwen3.5:4b-q4_K_M",
+    "model_digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "prompt_tokens": 70576,
+    "reasons": {
+      "hardened": [
+        "termination: run did not complete"
+      ],
+      "native": []
+    },
+    "repeat": 0,
+    "stop_reason": "budget",
+    "task_id": "tau2-retail-38",
+    "tool_calls": 9,
+    "trial_id": "m1-tau2-retail-38-r0"
+  },
+  {
+    "artifact": "trials/m1-tau2-retail-38-r1.json.gz",
+    "completion_tokens": 1293,
+    "config_sha256": "16f600b5be4f39bd08fe2c190204533b2f717536ce6f1b8afcbcbab318823f88",
+    "decode_seed": 29,
+    "domain": "tau2-retail",
+    "elapsed_seconds": 106.843836,
+    "family": "cancel",
+    "graders": {
+      "hardened": false,
+      "native": false
+    },
+    "model": "qwen3.5:4b-q4_K_M",
+    "model_digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "prompt_tokens": 76983,
+    "reasons": {
+      "hardened": [
+        "termination: run did not complete"
+      ],
+      "native": []
+    },
+    "repeat": 1,
+    "stop_reason": "budget",
+    "task_id": "tau2-retail-38",
+    "tool_calls": 10,
+    "trial_id": "m1-tau2-retail-38-r1"
+  },
+  {
+    "artifact": "trials/m1-tau2-retail-38-r2.json.gz",
+    "completion_tokens": 1349,
+    "config_sha256": "16f600b5be4f39bd08fe2c190204533b2f717536ce6f1b8afcbcbab318823f88",
+    "decode_seed": 43,
+    "domain": "tau2-retail",
+    "elapsed_seconds": 109.087902,
+    "family": "cancel",
+    "graders": {
+      "hardened": false,
+      "native": false
+    },
+    "model": "qwen3.5:4b-q4_K_M",
+    "model_digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "prompt_tokens": 69881,
+    "reasons": {
+      "hardened": [
+        "termination: run did not complete"
+      ],
+      "native": []
+    },
+    "repeat": 2,
+    "stop_reason": "budget",
+    "task_id": "tau2-retail-38",
+    "tool_calls": 9,
+    "trial_id": "m1-tau2-retail-38-r2"
+  },
+  {
+    "artifact": "trials/m1-tau2-retail-66-r0.json.gz",
+    "completion_tokens": 286,
+    "config_sha256": "16f600b5be4f39bd08fe2c190204533b2f717536ce6f1b8afcbcbab318823f88",
+    "decode_seed": 17,
+    "domain": "tau2-retail",
+    "elapsed_seconds": 24.636795,
+    "family": "cancel",
+    "graders": {
+      "hardened": false,
+      "native": false
+    },
+    "model": "qwen3.5:4b-q4_K_M",
+    "model_digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "prompt_tokens": 9744,
+    "reasons": {
+      "hardened": [],
+      "native": []
+    },
+    "repeat": 0,
+    "stop_reason": "completed",
+    "task_id": "tau2-retail-66",
+    "tool_calls": 1,
+    "trial_id": "m1-tau2-retail-66-r0"
+  },
+  {
+    "artifact": "trials/m1-tau2-retail-66-r1.json.gz",
+    "completion_tokens": 886,
+    "config_sha256": "16f600b5be4f39bd08fe2c190204533b2f717536ce6f1b8afcbcbab318823f88",
+    "decode_seed": 29,
+    "domain": "tau2-retail",
+    "elapsed_seconds": 56.211955,
+    "family": "cancel",
+    "graders": {
+      "hardened": false,
+      "native": false
+    },
+    "model": "qwen3.5:4b-q4_K_M",
+    "model_digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "prompt_tokens": 27247,
+    "reasons": {
+      "hardened": [],
+      "native": []
+    },
+    "repeat": 1,
+    "stop_reason": "completed",
+    "task_id": "tau2-retail-66",
+    "tool_calls": 4,
+    "trial_id": "m1-tau2-retail-66-r1"
+  },
+  {
+    "artifact": "trials/m1-tau2-retail-66-r2.json.gz",
+    "completion_tokens": 769,
+    "config_sha256": "16f600b5be4f39bd08fe2c190204533b2f717536ce6f1b8afcbcbab318823f88",
+    "decode_seed": 43,
+    "domain": "tau2-retail",
+    "elapsed_seconds": 50.034845,
+    "family": "cancel",
+    "graders": {
+      "hardened": false,
+      "native": false
+    },
+    "model": "qwen3.5:4b-q4_K_M",
+    "model_digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "prompt_tokens": 27225,
+    "reasons": {
+      "hardened": [],
+      "native": []
+    },
+    "repeat": 2,
+    "stop_reason": "completed",
+    "task_id": "tau2-retail-66",
+    "tool_calls": 4,
+    "trial_id": "m1-tau2-retail-66-r2"
+  }
+]

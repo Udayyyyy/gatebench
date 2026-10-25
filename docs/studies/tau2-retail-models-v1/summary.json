@@ -1,0 +1,999 @@
+{
+  "bootstrap": {
+    "confidence": 0.95,
+    "method": "paired case-cluster percentile; all repetitions retained",
+    "samples": 2000,
+    "seed": 17,
+    "unit": "domain+task_id"
+  },
+  "corpus": {
+    "decode_seeds_by_repeat": {
+      "0": 17,
+      "1": 29,
+      "2": 43
+    },
+    "domains": [
+      "tau2-retail"
+    ],
+    "models": [
+      "qwen3.5:2b-q4_K_M",
+      "qwen3.5:4b-q4_K_M"
+    ],
+    "repeats": 3,
+    "task_clusters": 6,
+    "trials": 36
+  },
+  "kind": "real_model_study",
+  "models": {
+    "qwen3.5:2b-q4_K_M": {
+      "consistency": {
+        "hardened": {
+          "pass^1": {
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "estimate": 0.0
+          },
+          "pass^2": {
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "estimate": 0.0
+          },
+          "pass^3": {
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "estimate": 0.0
+          }
+        },
+        "native": {
+          "pass^1": {
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "estimate": 0.0
+          },
+          "pass^2": {
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "estimate": 0.0
+          },
+          "pass^3": {
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "estimate": 0.0
+          }
+        }
+      },
+      "disagreements_vs_hardened": {
+        "hardened": {
+          "both_fail": 18,
+          "both_pass": 0,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "grader_only_pass": 0,
+          "hardened_only_pass": 0,
+          "rate": 0.0,
+          "trials": 18
+        },
+        "native": {
+          "both_fail": 18,
+          "both_pass": 0,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "grader_only_pass": 0,
+          "hardened_only_pass": 0,
+          "rate": 0.0,
+          "trials": 18
+        }
+      },
+      "domain": {
+        "tau2-retail": {
+          "consistency": {
+            "hardened": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 0.0
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 0.0
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 0.0
+              }
+            },
+            "native": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 0.0
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 0.0
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 0.0
+              }
+            }
+          },
+          "disagreements_vs_hardened": {
+            "hardened": {
+              "both_fail": 18,
+              "both_pass": 0,
+              "ci": null,
+              "grader_only_pass": 0,
+              "hardened_only_pass": 0,
+              "rate": 0.0,
+              "trials": 18
+            },
+            "native": {
+              "both_fail": 18,
+              "both_pass": 0,
+              "ci": null,
+              "grader_only_pass": 0,
+              "hardened_only_pass": 0,
+              "rate": 0.0,
+              "trials": 18
+            }
+          },
+          "graders": {
+            "hardened": {
+              "ci": null,
+              "passed": 0,
+              "rate": 0.0,
+              "trials": 18
+            },
+            "native": {
+              "ci": null,
+              "passed": 0,
+              "rate": 0.0,
+              "trials": 18
+            }
+          },
+          "latency_seconds": {
+            "mean": 36.82893744444444,
+            "median": 42.00076249999999,
+            "p95": 67.39557909999999,
+            "total": 662.920874
+          },
+          "stop_reasons": {
+            "budget": 10,
+            "completed": 8
+          },
+          "task_clusters": 6,
+          "tokens": {
+            "completion_tokens": {
+              "reported_trials": 18,
+              "total": 16725
+            },
+            "prompt_tokens": {
+              "reported_trials": 18,
+              "total": 610801
+            }
+          },
+          "trials": 18
+        }
+      },
+      "family": {
+        "cancel": {
+          "consistency": {
+            "hardened": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 0.0
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 0.0
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 0.0
+              }
+            },
+            "native": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 0.0
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 0.0
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 0.0
+              }
+            }
+          },
+          "disagreements_vs_hardened": {
+            "hardened": {
+              "both_fail": 6,
+              "both_pass": 0,
+              "ci": null,
+              "grader_only_pass": 0,
+              "hardened_only_pass": 0,
+              "rate": 0.0,
+              "trials": 6
+            },
+            "native": {
+              "both_fail": 6,
+              "both_pass": 0,
+              "ci": null,
+              "grader_only_pass": 0,
+              "hardened_only_pass": 0,
+              "rate": 0.0,
+              "trials": 6
+            }
+          },
+          "graders": {
+            "hardened": {
+              "ci": null,
+              "passed": 0,
+              "rate": 0.0,
+              "trials": 6
+            },
+            "native": {
+              "ci": null,
+              "passed": 0,
+              "rate": 0.0,
+              "trials": 6
+            }
+          },
+          "latency_seconds": {
+            "mean": 16.441869166666667,
+            "median": 4.914721500000001,
+            "p95": 50.54136225,
+            "total": 98.65121500000001
+          },
+          "stop_reasons": {
+            "completed": 6
+          },
+          "task_clusters": 2,
+          "tokens": {
+            "completion_tokens": {
+              "reported_trials": 6,
+              "total": 2336
+            },
+            "prompt_tokens": {
+              "reported_trials": 6,
+              "total": 86887
+            }
+          },
+          "trials": 6
+        },
+        "exchange": {
+          "consistency": {
+            "hardened": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 0.0
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 0.0
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 0.0
+              }
+            },
+            "native": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 0.0
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 0.0
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 0.0
+              }
+            }
+          },
+          "disagreements_vs_hardened": {
+            "hardened": {
+              "both_fail": 6,
+              "both_pass": 0,
+              "ci": null,
+              "grader_only_pass": 0,
+              "hardened_only_pass": 0,
+              "rate": 0.0,
+              "trials": 6
+            },
+            "native": {
+              "both_fail": 6,
+              "both_pass": 0,
+              "ci": null,
+              "grader_only_pass": 0,
+              "hardened_only_pass": 0,
+              "rate": 0.0,
+              "trials": 6
+            }
+          },
+          "graders": {
+            "hardened": {
+              "ci": null,
+              "passed": 0,
+              "rate": 0.0,
+              "trials": 6
+            },
+            "native": {
+              "ci": null,
+              "passed": 0,
+              "rate": 0.0,
+              "trials": 6
+            }
+          },
+          "latency_seconds": {
+            "mean": 43.923308166666665,
+            "median": 44.7707355,
+            "p95": 51.129118,
+            "total": 263.539849
+          },
+          "stop_reasons": {
+            "budget": 6
+          },
+          "task_clusters": 2,
+          "tokens": {
+            "completion_tokens": {
+              "reported_trials": 6,
+              "total": 7150
+            },
+            "prompt_tokens": {
+              "reported_trials": 6,
+              "total": 233988
+            }
+          },
+          "trials": 6
+        },
+        "return": {
+          "consistency": {
+            "hardened": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 0.0
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 0.0
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 0.0
+              }
+            },
+            "native": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 0.0
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 0.0
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 0.0
+              }
+            }
+          },
+          "disagreements_vs_hardened": {
+            "hardened": {
+              "both_fail": 6,
+              "both_pass": 0,
+              "ci": null,
+              "grader_only_pass": 0,
+              "hardened_only_pass": 0,
+              "rate": 0.0,
+              "trials": 6
+            },
+            "native": {
+              "both_fail": 6,
+              "both_pass": 0,
+              "ci": null,
+              "grader_only_pass": 0,
+              "hardened_only_pass": 0,
+              "rate": 0.0,
+              "trials": 6
+            }
+          },
+          "graders": {
+            "hardened": {
+              "ci": null,
+              "passed": 0,
+              "rate": 0.0,
+              "trials": 6
+            },
+            "native": {
+              "ci": null,
+              "passed": 0,
+              "rate": 0.0,
+              "trials": 6
+            }
+          },
+          "latency_seconds": {
+            "mean": 50.121635,
+            "median": 51.5517145,
+            "p95": 72.5408875,
+            "total": 300.72981
+          },
+          "stop_reasons": {
+            "budget": 4,
+            "completed": 2
+          },
+          "task_clusters": 2,
+          "tokens": {
+            "completion_tokens": {
+              "reported_trials": 6,
+              "total": 7239
+            },
+            "prompt_tokens": {
+              "reported_trials": 6,
+              "total": 289926
+            }
+          },
+          "trials": 6
+        }
+      },
+      "graders": {
+        "hardened": {
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "passed": 0,
+          "rate": 0.0,
+          "trials": 18
+        },
+        "native": {
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "passed": 0,
+          "rate": 0.0,
+          "trials": 18
+        }
+      },
+      "latency_seconds": {
+        "mean": 36.82893744444444,
+        "median": 42.00076249999999,
+        "p95": 67.39557909999999,
+        "total": 662.920874
+      },
+      "stop_reasons": {
+        "budget": 10,
+        "completed": 8
+      },
+      "task_clusters": 6,
+      "tokens": {
+        "completion_tokens": {
+          "reported_trials": 18,
+          "total": 16725
+        },
+        "prompt_tokens": {
+          "reported_trials": 18,
+          "total": 610801
+        }
+      },
+      "trials": 18
+    },
+    "qwen3.5:4b-q4_K_M": {
+      "consistency": {
+        "hardened": {
+          "pass^1": {
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "estimate": 0.0
+          },
+          "pass^2": {
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "estimate": 0.0
+          },
+          "pass^3": {
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "estimate": 0.0
+          }
+        },
+        "native": {
+          "pass^1": {
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "estimate": 0.0
+          },
+          "pass^2": {
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "estimate": 0.0
+          },
+          "pass^3": {
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "estimate": 0.0
+          }
+        }
+      },
+      "disagreements_vs_hardened": {
+        "hardened": {
+          "both_fail": 18,
+          "both_pass": 0,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "grader_only_pass": 0,
+          "hardened_only_pass": 0,
+          "rate": 0.0,
+          "trials": 18
+        },
+        "native": {
+          "both_fail": 18,
+          "both_pass": 0,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "grader_only_pass": 0,
+          "hardened_only_pass": 0,
+          "rate": 0.0,
+          "trials": 18
+        }
+      },
+      "domain": {
+        "tau2-retail": {
+          "consistency": {
+            "hardened": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 0.0
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 0.0
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 0.0
+              }
+            },
+            "native": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 0.0
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 0.0
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 0.0
+              }
+            }
+          },
+          "disagreements_vs_hardened": {
+            "hardened": {
+              "both_fail": 18,
+              "both_pass": 0,
+              "ci": null,
+              "grader_only_pass": 0,
+              "hardened_only_pass": 0,
+              "rate": 0.0,
+              "trials": 18
+            },
+            "native": {
+              "both_fail": 18,
+              "both_pass": 0,
+              "ci": null,
+              "grader_only_pass": 0,
+              "hardened_only_pass": 0,
+              "rate": 0.0,
+              "trials": 18
+            }
+          },
+          "graders": {
+            "hardened": {
+              "ci": null,
+              "passed": 0,
+              "rate": 0.0,
+              "trials": 18
+            },
+            "native": {
+              "ci": null,
+              "passed": 0,
+              "rate": 0.0,
+              "trials": 18
+            }
+          },
+          "latency_seconds": {
+            "mean": 86.69375494444445,
+            "median": 92.934672,
+            "p95": 128.4797855,
+            "total": 1560.487589
+          },
+          "stop_reasons": {
+            "budget": 7,
+            "completed": 11
+          },
+          "task_clusters": 6,
+          "tokens": {
+            "completion_tokens": {
+              "reported_trials": 18,
+              "total": 19651
+            },
+            "prompt_tokens": {
+              "reported_trials": 18,
+              "total": 814535
+            }
+          },
+          "trials": 18
+        }
+      },
+      "family": {
+        "cancel": {
+          "consistency": {
+            "hardened": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 0.0
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 0.0
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 0.0
+              }
+            },
+            "native": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 0.0
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 0.0
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 0.0
+              }
+            }
+          },
+          "disagreements_vs_hardened": {
+            "hardened": {
+              "both_fail": 6,
+              "both_pass": 0,
+              "ci": null,
+              "grader_only_pass": 0,
+              "hardened_only_pass": 0,
+              "rate": 0.0,
+              "trials": 6
+            },
+            "native": {
+              "both_fail": 6,
+              "both_pass": 0,
+              "ci": null,
+              "grader_only_pass": 0,
+              "hardened_only_pass": 0,
+              "rate": 0.0,
+              "trials": 6
+            }
+          },
+          "graders": {
+            "hardened": {
+              "ci": null,
+              "passed": 0,
+              "rate": 0.0,
+              "trials": 6
+            },
+            "native": {
+              "ci": null,
+              "passed": 0,
+              "rate": 0.0,
+              "trials": 6
+            }
+          },
+          "latency_seconds": {
+            "mean": 78.82587483333333,
+            "median": 81.5278955,
+            "p95": 121.8769125,
+            "total": 472.955249
+          },
+          "stop_reasons": {
+            "budget": 3,
+            "completed": 3
+          },
+          "task_clusters": 2,
+          "tokens": {
+            "completion_tokens": {
+              "reported_trials": 6,
+              "total": 6112
+            },
+            "prompt_tokens": {
+              "reported_trials": 6,
+              "total": 281656
+            }
+          },
+          "trials": 6
+        },
+        "exchange": {
+          "consistency": {
+            "hardened": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 0.0
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 0.0
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 0.0
+              }
+            },
+            "native": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 0.0
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 0.0
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 0.0
+              }
+            }
+          },
+          "disagreements_vs_hardened": {
+            "hardened": {
+              "both_fail": 6,
+              "both_pass": 0,
+              "ci": null,
+              "grader_only_pass": 0,
+              "hardened_only_pass": 0,
+              "rate": 0.0,
+              "trials": 6
+            },
+            "native": {
+              "both_fail": 6,
+              "both_pass": 0,
+              "ci": null,
+              "grader_only_pass": 0,
+              "hardened_only_pass": 0,
+              "rate": 0.0,
+              "trials": 6
+            }
+          },
+          "graders": {
+            "hardened": {
+              "ci": null,
+              "passed": 0,
+              "rate": 0.0,
+              "trials": 6
+            },
+            "native": {
+              "ci": null,
+              "passed": 0,
+              "rate": 0.0,
+              "trials": 6
+            }
+          },
+          "latency_seconds": {
+            "mean": 104.1877765,
+            "median": 100.3383825,
+            "p95": 133.95229075,
+            "total": 625.126659
+          },
+          "stop_reasons": {
+            "completed": 6
+          },
+          "task_clusters": 2,
+          "tokens": {
+            "completion_tokens": {
+              "reported_trials": 6,
+              "total": 7205
+            },
+            "prompt_tokens": {
+              "reported_trials": 6,
+              "total": 237671
+            }
+          },
+          "trials": 6
+        },
+        "return": {
+          "consistency": {
+            "hardened": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 0.0
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 0.0
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 0.0
+              }
+            },
+            "native": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 0.0
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 0.0
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 0.0
+              }
+            }
+          },
+          "disagreements_vs_hardened": {
+            "hardened": {
+              "both_fail": 6,
+              "both_pass": 0,
+              "ci": null,
+              "grader_only_pass": 0,
+              "hardened_only_pass": 0,
+              "rate": 0.0,
+              "trials": 6
+            },
+            "native": {
+              "both_fail": 6,
+              "both_pass": 0,
+              "ci": null,
+              "grader_only_pass": 0,
+              "hardened_only_pass": 0,
+              "rate": 0.0,
+              "trials": 6
+            }
+          },
+          "graders": {
+            "hardened": {
+              "ci": null,
+              "passed": 0,
+              "rate": 0.0,
+              "trials": 6
+            },
+            "native": {
+              "ci": null,
+              "passed": 0,
+              "rate": 0.0,
+              "trials": 6
+            }
+          },
+          "latency_seconds": {
+            "mean": 77.0676135,
+            "median": 88.31499600000001,
+            "p95": 100.91573149999999,
+            "total": 462.405681
+          },
+          "stop_reasons": {
+            "budget": 4,
+            "completed": 2
+          },
+          "task_clusters": 2,
+          "tokens": {
+            "completion_tokens": {
+              "reported_trials": 6,
+              "total": 6334
+            },
+            "prompt_tokens": {
+              "reported_trials": 6,
+              "total": 295208
+            }
+          },
+          "trials": 6
+        }
+      },
+      "graders": {
+        "hardened": {
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "passed": 0,
+          "rate": 0.0,
+          "trials": 18
+        },
+        "native": {
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "passed": 0,
+          "rate": 0.0,
+          "trials": 18
+        }
+      },
+      "latency_seconds": {
+        "mean": 86.69375494444445,
+        "median": 92.934672,
+        "p95": 128.4797855,
+        "total": 1560.487589
+      },
+      "stop_reasons": {
+        "budget": 7,
+        "completed": 11
+      },
+      "task_clusters": 6,
+      "tokens": {
+        "completion_tokens": {
+          "reported_trials": 18,
+          "total": 19651
+        },
+        "prompt_tokens": {
+          "reported_trials": 18,
+          "total": 814535
+        }
+      },
+      "trials": 18
+    }
+  },
+  "paired_model_differences": [
+    {
+      "direction": "model_b minus model_a",
+      "graders": {
+        "hardened": {
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "difference": 0.0
+        },
+        "native": {
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "difference": 0.0
+        }
+      },
+      "model_a": "qwen3.5:2b-q4_K_M",
+      "model_b": "qwen3.5:4b-q4_K_M",
+      "task_clusters": 6
+    }
+  ],
+  "schema_version": 1
+}

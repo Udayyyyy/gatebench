@@ -85,6 +85,10 @@ estimates only, to avoid presenting tiny subgroup intervals as strong evidence.
 Public-benchmark trials must retain their own domain, task IDs, upstream revision,
 native evaluator, selection rule, and any departures from the upstream protocol.
 Do not merge a modified fixed-user study into an official benchmark leaderboard.
+For the 36 native retail trials, the separate
+[confirmation-boundary rubric](retail-confirmation-protocol.md) was committed
+before collection in `9d2a6b4`. It defines behavior annotations under the absence
+of a fresh customer reply; native/bounded-layer acceptance remains diagnostic.
 
 ## Annotation record
 
@@ -133,3 +137,19 @@ Model package details were checked against the official
 [2B Q4 tag](https://ollama.com/library/qwen3.5:2b-q4_K_M),
 [4B Q4 tag](https://ollama.com/library/qwen3.5:4b-q4_K_M), and
 [Ollama model metadata API](https://docs.ollama.com/api/tags).
+
+## Offline review and archival use
+
+`gatebench verify-study DIRECTORY` validates captured raw evidence without a
+model service. It replays the full scheduled matrix and recomputes grades. Saved
+rows and summaries are compared when present; publication additionally requires
+both aggregates and both report formats. `scripts/package_study.py` checks those
+requirements, copies the evidence, and writes a manifest covering raw files,
+rendered reports, warm-ups and any supplied review annotations.
+
+`gatebench check-manifest DIRECTORY` checks the listed bytes against that
+publication manifest. Neither command establishes artifact authenticity. Report
+prose and reviewer conclusions are not independently adjudicated by the checker.
+If collector/evaluator source changes in a later release, use the recorded
+collection revision or the matching release source to inspect its historical
+study; the source mismatch is intentionally an error.

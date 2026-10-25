@@ -1,0 +1,8 @@
+{
+  "expected_trials": 36,
+  "problems": [],
+  "trials": 36,
+  "valid": true,
+  "verification_scope": "Checks captured source/configuration/task hashes, the complete scheduled matrix, raw request-response-tool linkage, environment replay, and saved grades. Checks saved rows.json and summary.json when present; derived reports, warm-ups, and annotation bytes are outside this check. It does not authenticate artifact origin, prove which model weights actually ran, or independently measure elapsed time.",
+  "verified_trials": 36
+}

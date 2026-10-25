@@ -71,7 +71,9 @@ a bounded integration demonstration, not a general failure-rate estimate.
 The model receives the original retail policy and the public scenario fields
 `reason_for_call`, `known_info`, and `unknown_info`. It receives all 16 native tool
 schemas. It never receives `evaluation_criteria`, the expected actions, hidden
-item identifiers, target database state, or our verifier's labels.
+target database state, or our verifier's labels. Item identifiers from the hidden
+expected-action list are not injected into its initial prompt; it can discover
+the relevant identifiers through the original tools.
 
 The scenario fields normally instruct a simulated user; providing them together
 changes the interaction protocol and information availability. The prompt states
@@ -79,6 +81,18 @@ that no interactive user simulator is present. If a model asks for confirmation,
 the runner records that final answer and the incomplete outcome. It never
 manufactures a customer saying yes. Such results are fixed-input integration
 results, not comparable with official benchmark model scores.
+
+There is a structural limitation: the original policy requires a fresh explicit
+yes after describing any database update, and these fixed inputs contain no such
+reply. An agent following the complete upstream policy cannot both complete a
+write and satisfy that confirmation requirement here. Low completion therefore
+does not establish tool-use inability, while acceptance by our bounded layer
+does not establish full policy compliance. Treat the model runs as a probe of
+behavior without an interactive customer, not a retail task-success ranking.
+The [precollection behavior rubric](retail-confirmation-protocol.md), committed
+in `9d2a6b4`, separates witnessed unconfirmed writes, concrete confirmation
+requests without mutation, and other incomplete/error outcomes. It leaves all
+original tools, policy, inputs and grader decisions unchanged.
 
 Our policy layer checks only these explicit obligations:
 
@@ -100,6 +114,11 @@ does not establish full retail-policy compliance.
 Each selected task has four positive plans and six negative plans. They run
 through native tools, not a copy of GateBench's synthetic support environment.
 Labels are specified by each constructor's obligation and rationale.
+
+Here positive/negative labels concern the listed identity, scope, status and
+replay obligations. These direct tool plans are not complete user conversations;
+a positive label does not establish fresh confirmation or full upstream-policy
+compliance.
 
 Positive plans include an outcome witness with explicit status reads, repeated
 identification, a failed lookup followed by recovery, and extra status reads.
@@ -129,12 +148,16 @@ uv run python scripts/run_tau_audit.py --output runs/tau-retail
 uv run pytest tests/test_tau_retail.py
 ```
 
-The upstream source/data slice is bundled for offline execution. To verify a
-fresh copy independently against the pinned GitHub source:
+The upstream source/data slice is bundled for offline execution. To fetch a
+fresh copy independently against the pinned GitHub source, use a cache path
+that does not already exist:
 
 ```bash
 uv run python scripts/fetch_tau2.py --cache runs/tau-upstream-check --network
 ```
+
+If that path already exists, the command validates its local hashes and does
+not fetch it again.
 
 The native code is MIT licensed; the original
 [license notice](../data/tau2/LICENSE.upstream) is preserved. The benchmark's

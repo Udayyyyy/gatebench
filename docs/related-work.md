@@ -1,8 +1,9 @@
 # Related work and provenance
 
 Public sources reviewed on 25 October 2026. This repository implements its own
-synthetic tasks, tools, mutation fixtures, replay model, and reports. No task
-data or implementation code was copied from these projects.
+synthetic tasks, tools, mutation fixtures, replay model, and reports. The separate
+retail integration vendors 29 unchanged upstream code/data/license files from
+the pinned Sierra Research release; its provenance is described below.
 
 - [Anthropic, Demystifying evals for AI agents (2026)](https://www.anthropic.com/research/demystifying-evals-for-ai-agents).
   Motivates inspecting actual environment outcomes, accepting valid alternatives,
@@ -10,11 +11,15 @@ data or implementation code was copied from these projects.
 - [Yao et al., τ-bench (2024)](https://arxiv.org/abs/2406.12045) and
   [Sierra Research's current implementation](https://github.com/sierra-research/tau2-bench).
   Establish stateful tool-use evaluation in realistic support domains. GateBench
-  uses a smaller deterministic environment to study grading designs themselves;
-  it does not claim to replace τ-bench or reproduce its leaderboard.
+  uses its own smaller deterministic environment to study grading designs, and
+  separately runs the original retail tools and ENV/DB evaluator from v1.0.1,
+  commit `fc0055dc4e0a316c3f83133267fbd6faaa770992`. The fixed-input adaptation
+  and preserved MIT notice are documented in [the integration](public-benchmark.md).
+  It does not reproduce the complete interactive benchmark or its leaderboard.
 - [Zhong et al., Hardening Agent Benchmarks with Adversarial Hacker-Fixer Loops (2026)](https://arxiv.org/abs/2606.08960).
   Studies exploiting and patching benchmark verifiers. GateBench uses explicit
-  scripted mutation operators, not an LLM hacker-fixer optimization loop.
+  scripted mutation operators and separately developed model-assisted controls;
+  it does not implement an iterative verifier-guided hacker-fixer optimization loop.
 - [Zheng et al., BenchShield (2026)](https://arxiv.org/abs/2609.11028).
   Motivates treating evaluation boundaries and infrastructure-side evidence as
   part of the measurement problem. GateBench's replay is a bounded consistency
