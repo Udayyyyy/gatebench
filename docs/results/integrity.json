@@ -1,0 +1,253 @@
+{
+  "controls": 21,
+  "kind": "serialized_evidence_integrity",
+  "limitation": "Corrupted artifacts are not executable agent trajectories. Consistent wholesale forgery is outside offline authentication guarantees.",
+  "no_replay_accepted": 6,
+  "rejected": 21,
+  "rows": [
+    {
+      "corruption": "wrong_task",
+      "episode_digest": "67c21685872f235f2394086f96272bd19da5c28db101997067477f9ba7b6c4fb",
+      "expected": false,
+      "family": "refund",
+      "hardened": false,
+      "no_replay": false,
+      "reasons": [
+        "evidence.task_id: does not match task"
+      ]
+    },
+    {
+      "corruption": "sequence_gap",
+      "episode_digest": "2393f31dacd27de965c2679be795c4576a97b9e2bde1fead67f819449d51b19b",
+      "expected": false,
+      "family": "refund",
+      "hardened": false,
+      "no_replay": false,
+      "reasons": [
+        "evidence.event[0]: invalid sequence"
+      ]
+    },
+    {
+      "corruption": "forged_read_result",
+      "episode_digest": "39db4ef5475bf15979297dce94bfbcf73e43cbc657a7b4996141ac43946e5113",
+      "expected": false,
+      "family": "refund",
+      "hardened": false,
+      "no_replay": true,
+      "reasons": [
+        "replay.event[0]: result mismatch"
+      ]
+    },
+    {
+      "corruption": "broken_state_hash",
+      "episode_digest": "0a537466f0162f3eebaed2bec8b688c313e62467ad62ad031020c310cb8848a5",
+      "expected": false,
+      "family": "refund",
+      "hardened": false,
+      "no_replay": true,
+      "reasons": [
+        "replay.event[0]: after hash mismatch"
+      ]
+    },
+    {
+      "corruption": "missing_read",
+      "episode_digest": "47c13aad041d8e7511a618be33760b55546f47fe6a203cd9b5a58cab6361b91c",
+      "expected": false,
+      "family": "refund",
+      "hardened": false,
+      "no_replay": false,
+      "reasons": [
+        "evidence.event[0]: invalid sequence",
+        "evidence.event[1]: invalid sequence",
+        "evidence.event[2]: invalid sequence",
+        "evidence.event[3]: invalid sequence"
+      ]
+    },
+    {
+      "corruption": "forged_final_state",
+      "episode_digest": "5ee49147f31a35b02c158cca34554dbc8fc8c7ca49b6f05268cc1a06853e5530",
+      "expected": false,
+      "family": "refund",
+      "hardened": false,
+      "no_replay": false,
+      "reasons": [
+        "frame.collateral: non-target order or case changed",
+        "replay.final_state: reconstructed snapshot differs"
+      ]
+    },
+    {
+      "corruption": "budget_termination",
+      "episode_digest": "20aebecf591e1900320d09c500a2052e8dd19e3ac1cd7a5e9b4530a373e8f6bb",
+      "expected": false,
+      "family": "refund",
+      "hardened": false,
+      "no_replay": false,
+      "reasons": [
+        "evidence.stop_reason: episode did not complete"
+      ]
+    },
+    {
+      "corruption": "wrong_task",
+      "episode_digest": "efae6fe30a668b1079170f59837a59f08fda84598dbc09aa780a61a2f6a9c6c3",
+      "expected": false,
+      "family": "cancel",
+      "hardened": false,
+      "no_replay": false,
+      "reasons": [
+        "evidence.task_id: does not match task"
+      ]
+    },
+    {
+      "corruption": "sequence_gap",
+      "episode_digest": "269400c4fce4d9955750eb792ea071773d43cd8206af3c513eea13600b68e355",
+      "expected": false,
+      "family": "cancel",
+      "hardened": false,
+      "no_replay": false,
+      "reasons": [
+        "evidence.event[0]: invalid sequence"
+      ]
+    },
+    {
+      "corruption": "forged_read_result",
+      "episode_digest": "cfcd12d3cae79799f5dbd8fec2aae25f15d403e78175b07473db7739ff9851a0",
+      "expected": false,
+      "family": "cancel",
+      "hardened": false,
+      "no_replay": true,
+      "reasons": [
+        "replay.event[0]: result mismatch"
+      ]
+    },
+    {
+      "corruption": "broken_state_hash",
+      "episode_digest": "c5ae313265ec8a9e5985b767c06dd609c410b367a776a90905f9068702dfbd3a",
+      "expected": false,
+      "family": "cancel",
+      "hardened": false,
+      "no_replay": true,
+      "reasons": [
+        "replay.event[0]: after hash mismatch"
+      ]
+    },
+    {
+      "corruption": "missing_read",
+      "episode_digest": "9dc200c2870ef9ee4219af217d9e1e702648b8e044dcf33d9079d42916354106",
+      "expected": false,
+      "family": "cancel",
+      "hardened": false,
+      "no_replay": false,
+      "reasons": [
+        "evidence.event[0]: invalid sequence",
+        "evidence.event[1]: invalid sequence",
+        "evidence.event[2]: invalid sequence",
+        "evidence.event[3]: invalid sequence"
+      ]
+    },
+    {
+      "corruption": "forged_final_state",
+      "episode_digest": "45264205ffe3a8db987ee64dbd800f2c1042c6f1cb646a8532d546dcfff9632b",
+      "expected": false,
+      "family": "cancel",
+      "hardened": false,
+      "no_replay": false,
+      "reasons": [
+        "frame.collateral: non-target order or case changed",
+        "replay.final_state: reconstructed snapshot differs"
+      ]
+    },
+    {
+      "corruption": "budget_termination",
+      "episode_digest": "f5ba74589b4eff3607c98d2d829edc890caa0bd99e2a79d2003ff047cc47b442",
+      "expected": false,
+      "family": "cancel",
+      "hardened": false,
+      "no_replay": false,
+      "reasons": [
+        "evidence.stop_reason: episode did not complete"
+      ]
+    },
+    {
+      "corruption": "wrong_task",
+      "episode_digest": "6f4754d5ee67607fceae9eb43588fb7122068e79f5df6372d197491a73642c1d",
+      "expected": false,
+      "family": "exchange",
+      "hardened": false,
+      "no_replay": false,
+      "reasons": [
+        "evidence.task_id: does not match task"
+      ]
+    },
+    {
+      "corruption": "sequence_gap",
+      "episode_digest": "956bcceccbd91bdcf9c2bb86bdfab7364fdd916327bf52048c4f8951a3b69550",
+      "expected": false,
+      "family": "exchange",
+      "hardened": false,
+      "no_replay": false,
+      "reasons": [
+        "evidence.event[0]: invalid sequence"
+      ]
+    },
+    {
+      "corruption": "forged_read_result",
+      "episode_digest": "061d7ce005df37f00c6f59f84e1dae11ba61af2f866b697a704a4ee4014b1df0",
+      "expected": false,
+      "family": "exchange",
+      "hardened": false,
+      "no_replay": true,
+      "reasons": [
+        "replay.event[0]: result mismatch"
+      ]
+    },
+    {
+      "corruption": "broken_state_hash",
+      "episode_digest": "afa2b44706604fd10cb1b0023e8f0de5803dfbef38abb901b005ee562e86a3ba",
+      "expected": false,
+      "family": "exchange",
+      "hardened": false,
+      "no_replay": true,
+      "reasons": [
+        "replay.event[0]: after hash mismatch"
+      ]
+    },
+    {
+      "corruption": "missing_read",
+      "episode_digest": "b45ae9164f78bb2ecc8ec33fc927bc7d7cb4b9c66cfed982793de8e5055fb4e2",
+      "expected": false,
+      "family": "exchange",
+      "hardened": false,
+      "no_replay": false,
+      "reasons": [
+        "evidence.event[0]: invalid sequence",
+        "evidence.event[1]: invalid sequence",
+        "evidence.event[2]: invalid sequence",
+        "evidence.event[3]: invalid sequence",
+        "evidence.event[4]: invalid sequence"
+      ]
+    },
+    {
+      "corruption": "forged_final_state",
+      "episode_digest": "d011d611857d302ae55d5e0428e9ee410797b9c38113c3362f4dbe07fd5d672a",
+      "expected": false,
+      "family": "exchange",
+      "hardened": false,
+      "no_replay": false,
+      "reasons": [
+        "frame.collateral: non-target order or case changed",
+        "replay.final_state: reconstructed snapshot differs"
+      ]
+    },
+    {
+      "corruption": "budget_termination",
+      "episode_digest": "8e9b8e53c973efb5820b23b6e8291be7142aaf3777b7138e44d91f5a73c3c1f9",
+      "expected": false,
+      "family": "exchange",
+      "hardened": false,
+      "no_replay": false,
+      "reasons": [
+        "evidence.stop_reason: episode did not complete"
+      ]
+    }
+  ]
+}

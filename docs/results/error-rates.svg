@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 462" role="img" aria-labelledby="chart-title chart-description">
+<title id="chart-title">Verifier errors on independently labeled scripted controls</title>
+<desc id="chart-description">Dots are episode-weighted error rates. Bars are 95 percent case-cluster bootstrap intervals. Exact counts are given in the results table.</desc>
+<style>text{font-family:system-ui,sans-serif;fill:#273342;font-size:13px}.heading{font-size:16px;font-weight:650}.axis{fill:#687380;font-size:11px}</style>
+<text class="heading" x="190" y="28">Invalid controls accepted</text>
+<line x1="190.0" y1="54" x2="190.0" y2="420" stroke="#e3e5e8"/><text class="axis" x="190.0" y="442" text-anchor="middle">0%</text>
+<line x1="275.0" y1="54" x2="275.0" y2="420" stroke="#e3e5e8"/><text class="axis" x="275.0" y="442" text-anchor="middle">25%</text>
+<line x1="360.0" y1="54" x2="360.0" y2="420" stroke="#e3e5e8"/><text class="axis" x="360.0" y="442" text-anchor="middle">50%</text>
+<line x1="445.0" y1="54" x2="445.0" y2="420" stroke="#e3e5e8"/><text class="axis" x="445.0" y="442" text-anchor="middle">75%</text>
+<line x1="530.0" y1="54" x2="530.0" y2="420" stroke="#e3e5e8"/><text class="axis" x="530.0" y="442" text-anchor="middle">100%</text>
+<text x="12" y="80">transcript</text>
+<path d="M 530.0 71 V 81 M 530.0 76 H 530.0 M 530.0 71 V 81" stroke="#ac432f" stroke-width="1.5"/>
+<circle cx="530.0" cy="76" r="4" fill="#ac432f"/><text x="548" y="80">100.0%</text>
+<text x="12" y="120">goal</text>
+<path d="M 410.5640598923479 111 V 121 M 410.5640598923479 116 H 417.99279927992797 M 417.99279927992797 111 V 121" stroke="#ac432f" stroke-width="1.5"/>
+<circle cx="414.25531914893617" cy="116" r="4" fill="#ac432f"/><text x="548" y="120">66.0%</text>
+<text x="12" y="160">final_state</text>
+<path d="M 322.0837090378826 151 V 161 M 322.0837090378826 156 H 325.5286470288287 M 325.5286470288287 151 V 161" stroke="#ac432f" stroke-width="1.5"/>
+<circle cx="323.82978723404256" cy="156" r="4" fill="#ac432f"/><text x="548" y="160">39.4%</text>
+<text x="12" y="200">exact_trace</text>
+<path d="M 190.0 191 V 201 M 190.0 196 H 190.0 M 190.0 191 V 201" stroke="#ac432f" stroke-width="1.5"/>
+<circle cx="190.0" cy="196" r="4" fill="#ac432f"/><text x="548" y="200">0.0%</text>
+<text x="12" y="240">hardened</text>
+<path d="M 190.0 231 V 241 M 190.0 236 H 190.0 M 190.0 231 V 241" stroke="#ac432f" stroke-width="1.5"/>
+<circle cx="190.0" cy="236" r="4" fill="#ac432f"/><text x="548" y="240">0.0%</text>
+<text x="12" y="280">no_history</text>
+<path d="M 322.0837090378826 271 V 281 M 322.0837090378826 276 H 325.5286470288287 M 325.5286470288287 271 V 281" stroke="#ac432f" stroke-width="1.5"/>
+<circle cx="323.82978723404256" cy="276" r="4" fill="#ac432f"/><text x="548" y="280">39.4%</text>
+<text x="12" y="320">no_frame</text>
+<path d="M 211.10344827586206 311 V 321 M 211.10344827586206 316 H 212.35616438356163 M 212.35616438356163 311 V 321" stroke="#ac432f" stroke-width="1.5"/>
+<circle cx="211.70212765957447" cy="316" r="4" fill="#ac432f"/><text x="548" y="320">6.4%</text>
+<text x="12" y="360">no_replay</text>
+<path d="M 190.0 351 V 361 M 190.0 356 H 190.0 M 190.0 351 V 361" stroke="#ac432f" stroke-width="1.5"/>
+<circle cx="190.0" cy="356" r="4" fill="#ac432f"/><text x="548" y="360">0.0%</text>
+<text class="heading" x="735" y="28">Valid controls rejected</text>
+<line x1="735.0" y1="54" x2="735.0" y2="420" stroke="#e3e5e8"/><text class="axis" x="735.0" y="442" text-anchor="middle">0%</text>
+<line x1="820.0" y1="54" x2="820.0" y2="420" stroke="#e3e5e8"/><text class="axis" x="820.0" y="442" text-anchor="middle">25%</text>
+<line x1="905.0" y1="54" x2="905.0" y2="420" stroke="#e3e5e8"/><text class="axis" x="905.0" y="442" text-anchor="middle">50%</text>
+<line x1="990.0" y1="54" x2="990.0" y2="420" stroke="#e3e5e8"/><text class="axis" x="990.0" y="442" text-anchor="middle">75%</text>
+<line x1="1075.0" y1="54" x2="1075.0" y2="420" stroke="#e3e5e8"/><text class="axis" x="1075.0" y="442" text-anchor="middle">100%</text>
+<path d="M 735.0 71 V 81 M 735.0 76 H 735.0 M 735.0 71 V 81" stroke="#285d98" stroke-width="1.5"/>
+<circle cx="735.0" cy="76" r="4" fill="#285d98"/><text x="1093" y="80">0.0%</text>
+<path d="M 735.0 111 V 121 M 735.0 116 H 735.0 M 735.0 111 V 121" stroke="#285d98" stroke-width="1.5"/>
+<circle cx="735.0" cy="116" r="4" fill="#285d98"/><text x="1093" y="120">0.0%</text>
+<path d="M 735.0 151 V 161 M 735.0 156 H 735.0 M 735.0 151 V 161" stroke="#285d98" stroke-width="1.5"/>
+<circle cx="735.0" cy="156" r="4" fill="#285d98"/><text x="1093" y="160">0.0%</text>
+<path d="M 1018.3333333333334 191 V 201 M 1018.3333333333334 196 H 1018.3333333333334 M 1018.3333333333334 191 V 201" stroke="#285d98" stroke-width="1.5"/>
+<circle cx="1018.3333333333334" cy="196" r="4" fill="#285d98"/><text x="1093" y="200">83.3%</text>
+<path d="M 735.0 231 V 241 M 735.0 236 H 735.0 M 735.0 231 V 241" stroke="#285d98" stroke-width="1.5"/>
+<circle cx="735.0" cy="236" r="4" fill="#285d98"/><text x="1093" y="240">0.0%</text>
+<path d="M 735.0 271 V 281 M 735.0 276 H 735.0 M 735.0 271 V 281" stroke="#285d98" stroke-width="1.5"/>
+<circle cx="735.0" cy="276" r="4" fill="#285d98"/><text x="1093" y="280">0.0%</text>
+<path d="M 735.0 311 V 321 M 735.0 316 H 735.0 M 735.0 311 V 321" stroke="#285d98" stroke-width="1.5"/>
+<circle cx="735.0" cy="316" r="4" fill="#285d98"/><text x="1093" y="320">0.0%</text>
+<path d="M 735.0 351 V 361 M 735.0 356 H 735.0 M 735.0 351 V 361" stroke="#285d98" stroke-width="1.5"/>
+<circle cx="735.0" cy="356" r="4" fill="#285d98"/><text x="1093" y="360">0.0%</text>
+</svg>
