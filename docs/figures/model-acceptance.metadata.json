@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "kind": "model_study_figure",
+  "source_summary": "docs/studies/real-models-v1/summary.json",
+  "source_summary_sha256": "ce15b62e50823b980c8579361f02977a94ca2319a18cd81d308d740fbf10282b",
+  "script_sha256": "bbe3ff323bc349f8b0946e301e6735f23d9e2605c1d56e8547aad958294c1262",
+  "python_version": "3.12.12",
+  "matplotlib_version": "3.11.2",
+  "plotting_environment": "optional; outside the frozen model-collection source closure",
+  "corpus": {
+    "decode_seeds_by_repeat": {
+      "0": 17,
+      "1": 29,
+      "2": 43
+    },
+    "domains": [
+      "gatebench"
+    ],
+    "models": [
+      "qwen3.5:2b-q4_K_M",
+      "qwen3.5:4b-q4_K_M"
+    ],
+    "repeats": 3,
+    "task_clusters": 12,
+    "trials": 72
+  },
+  "bootstrap": {
+    "confidence": 0.95,
+    "method": "paired case-cluster percentile; all repetitions retained",
+    "samples": 2000,
+    "seed": 17,
+    "unit": "domain+task_id"
+  },
+  "grader_order": [
+    "transcript",
+    "goal",
+    "final_state",
+    "exact_trace",
+    "hardened"
+  ],
+  "outputs": {
+    ".svg": "920a17db280038779eb7009d04df9752a176a47766f16430fa1273c5b14267bf",
+    ".png": "df45a820f46fa1696e7145d9ad4fb93d138da2544c88160499955acaa767ccb6"
+  }
+}
