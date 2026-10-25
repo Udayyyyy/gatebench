@@ -1,4 +1,8 @@
 docs/results/** linguist-generated=true
+docs/studies/** linguist-generated=true
+data/redteam/** linguist-generated=true
+data/tau2/*.json linguist-generated=true
+data/tau2/*.gz binary
 uv.lock linguist-generated=true
 *.py text eol=lf
 *.md text eol=lf

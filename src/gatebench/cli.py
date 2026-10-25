@@ -50,6 +50,10 @@ def _parser() -> argparse.ArgumentParser:
         "study-summary", help="validate and summarize captured model trials offline"
     )
     summary.add_argument("directory", type=Path)
+    evidence = sub.add_parser(
+        "verify-study", help="replay captured study evidence offline (not proof of origin)"
+    )
+    evidence.add_argument("directory", type=Path)
     redteam = sub.add_parser("redteam", help="assess committed independent controls")
     redteam.add_argument("--output", type=Path, default=Path("runs/redteam"))
     redteam.add_argument("--freeze", type=Path, default=Path("data/redteam/v1"))
@@ -123,6 +127,12 @@ def main(argv: list[str] | None = None) -> int:
 
             print(json.dumps(summarize_study(args.directory)["corpus"], indent=2))
             return 0
+        if args.command == "verify-study":
+            from gatebench.experiments.verification import verify_study
+
+            result = verify_study(args.directory)
+            print(json.dumps(result, indent=2))
+            return 0 if result["valid"] else 1
         if args.command == "redteam":
             from gatebench.redteam_audit import audit_redteam
 
