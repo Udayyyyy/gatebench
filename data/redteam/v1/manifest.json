@@ -1,0 +1,106 @@
+{
+  "adjudication": "separately developed model-assisted labels; no external human adjudication",
+  "before_freeze": "public-surface design plus backend execution and independent label witnesses only; no grading",
+  "cases_sha256": "df3feb4bf3aefe41a818c540db278e18a67b01121ec80068f794dede5aba5315",
+  "counts": {
+    "invalid": 180,
+    "valid": 152
+  },
+  "development_seeds": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "development_split": "dev",
+  "excluded_ambiguities": [
+    "failed different-payload key reuse",
+    "released wrong-quantity intended-SKU reservation"
+  ],
+  "families": [
+    "refund",
+    "cancel",
+    "exchange"
+  ],
+  "format": "gatebench-redteam-freeze-v1",
+  "generator_sha256": "968d77eeca1d15d77e822d89b672b0ba93827a3b6fe2e4938ca280004096f2e0",
+  "holdout_kind": "parameter holdout; templates also used on development seeds",
+  "policy_sha256": "2c67ab295110d0eb3220657c07ee3e4c807cd5a0f9372890315371114dac1204",
+  "public_files_read": [
+    "src/gatebench/tasks.py",
+    "src/gatebench/tooling.py",
+    "src/gatebench/models.py",
+    "src/gatebench/environment.py",
+    "src/gatebench/baselines.py",
+    "README.md",
+    "docs/policy.md"
+  ],
+  "public_surface_sha256": {
+    "README.md": "0cd270a8c347f54ee5f045aa95b9d943c74d88b08e1d64234107e6a5ed59b463",
+    "docs/policy.md": "755fdffcd3a7e45abd930562184f419126e997c211749c8a67aaeff01d18ba95",
+    "src/gatebench/baselines.py": "0ad5b10203534f47f0f2a2eaa3e170faa08fcb92aa390a696451988679c3cd24",
+    "src/gatebench/environment.py": "3e418effbaf10b15e9a622c04285abc6e3ab3e96c0fa24230d7a7fb94c026d3a",
+    "src/gatebench/models.py": "80d5a8236b6500fd90548135628b51631be1a009f7f115cf8a38d6e7159fadd8",
+    "src/gatebench/tasks.py": "323565711ac5f4cd6ee07c5c17cbdf5ab9e072a66b6cbf33b5affe3c97f8576e",
+    "src/gatebench/tooling.py": "b2030a4d4c7fcc89abfd568638b0a25e50a6df1feb2ec1d5917a6c18ba51de76"
+  },
+  "records": 332,
+  "seeds": [
+    10040,
+    10041,
+    10042,
+    10043
+  ],
+  "split": "eval",
+  "tasks": 12,
+  "template_counts": {
+    "invalid": 23,
+    "valid": 16
+  },
+  "template_names": {
+    "invalid": [
+      "cancel_delivered_return",
+      "closed_before_work_then_reclosed",
+      "closed_between_split_payments",
+      "fresh_key_pseudo_retry",
+      "inspection_before_identity",
+      "last_decoy_cancel",
+      "last_decoy_case_close",
+      "last_decoy_note_roundtrip",
+      "last_decoy_payment",
+      "live_stock_after_close",
+      "one_extra_replacement_unit",
+      "persistent_target_annotation",
+      "refund_after_exchange_complete",
+      "refund_before_cancel_then_cancel",
+      "refund_before_return_inspection",
+      "replacement_before_inspection",
+      "restored_note_before_identity",
+      "split_first_payment_before_inspection",
+      "successful_overpayment",
+      "successful_underpayment",
+      "unrelated_stock_roundtrip",
+      "wrong_resolution_then_repaired",
+      "wrong_sku_consumed"
+    ],
+    "valid": [
+      "boundary_read_scatter",
+      "failed_preflight",
+      "failed_release_consumed_hold",
+      "failed_tool_after_complete",
+      "identical_retry_after_close",
+      "late_note_roundtrip",
+      "minimal_auth_first",
+      "overbudget_calls_rejected",
+      "reads_after_complete",
+      "repeat_verification_evidence",
+      "repeated_complete_closure",
+      "reserve_before_inspect",
+      "three_payments_with_retries",
+      "two_releases_then_consume",
+      "unicode_note_roundtrip",
+      "unnecessary_verified_inspection"
+    ]
+  },
+  "version": "v1"
+}
