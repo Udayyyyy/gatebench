@@ -1,0 +1,44 @@
+[build-system]
+requires = ["hatchling>=1.27,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "gatebench"
+version = "0.1.0"
+description = "Audit stateful agent verifiers with executable counterexamples and independent replay."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [{name = "Uday Radadiya"}]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8.3,<10", "hypothesis>=6.120,<7", "ruff>=0.12,<1", "mypy>=1.15,<2", "build>=1.2,<2"]
+
+[project.scripts]
+gatebench = "gatebench.cli:main"
+
+[project.urls]
+Repository = "https://github.com/Udayyyyy/gatebench"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I", "UP", "B"]
+
+[tool.mypy]
+python_version = "3.11"
+files = ["src/gatebench"]
+check_untyped_defs = true
+disallow_untyped_defs = true
+no_implicit_optional = true
+warn_unused_ignores = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/gatebench"]
