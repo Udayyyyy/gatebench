@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "gatebench"
-version = "0.1.0"
+version = "0.2.0"
 description = "Audit stateful agent verifiers with executable counterexamples and independent replay."
 readme = "README.md"
 requires-python = ">=3.11"
@@ -14,6 +14,11 @@ dependencies = []
 
 [project.optional-dependencies]
 dev = ["pytest>=8.3,<10", "hypothesis>=6.120,<7", "ruff>=0.12,<1", "mypy>=1.15,<2", "build>=1.2,<2"]
+tau = [
+  "pydantic>=2.10,<3", "docstring-parser>=0.16,<1", "loguru>=0.7,<1",
+  "deepdiff>=8.4,<10", "python-dotenv>=1,<2", "PyYAML>=6,<7",
+  "toml>=0.10,<1", "addict>=2.4,<3", "pandas>=2.2,<3",
+]
 
 [project.scripts]
 gatebench = "gatebench.cli:main"

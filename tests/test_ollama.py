@@ -74,6 +74,29 @@ def model_server(responses):
         worker.join(timeout=1)
 
 
+def test_missing_token_counts_remain_unknown_and_requests_are_snapshots():
+    task = make_task("refund", 1)
+    read = Action("get_order", {"order_id": task.order_id})
+    with model_server([assistant(read), assistant(content="I cannot finish.")]) as (endpoint, _):
+        _, record = run_model(task, model="http-fixture", endpoint=endpoint)
+    assert record["prompt_tokens"] is None
+    assert record["completion_tokens"] is None
+    assert len(record["requests"][0]["messages"]) == 2
+    assert len(record["requests"][1]["messages"]) == 4
+
+
+def test_transport_failure_does_not_report_partial_token_counts_as_complete_totals():
+    task = make_task("refund", 1)
+    response = assistant(Action("get_order", {"order_id": task.order_id}))
+    response.update(prompt_eval_count=120, eval_count=20)
+    with model_server([response, (503, {"error": "unavailable"})]) as (endpoint, _):
+        episode, record = run_model(task, model="http-fixture", endpoint=endpoint)
+    assert episode.stop_reason == "error"
+    assert record["responses"][0]["eval_count"] == 20
+    assert record["prompt_tokens"] is None
+    assert record["completion_tokens"] is None
+
+
 @pytest.mark.parametrize("family", ["refund", "cancel", "exchange"])
 def test_multiturn_transport_executes_tools_and_preserves_evidence(family):
     task = make_task(family, 10002, "eval")

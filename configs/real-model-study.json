@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "study_id": "gatebench-real-models-v1",
+  "kind": "real_model_study",
+  "models": ["qwen3.5:2b-q4_K_M", "qwen3.5:4b-q4_K_M"],
+  "quantization": "Q4_K_M",
+  "domain": "gatebench",
+  "task_selection": {
+    "split": "eval",
+    "families": ["refund", "cancel", "exchange"],
+    "seeds": [10020, 10021, 10022, 10023]
+  },
+  "repetitions": {"decode_seeds": [17, 29, 43]},
+  "generation": {
+    "temperature": 0.2,
+    "think": false,
+    "num_ctx": 8192,
+    "num_predict": 512,
+    "top_k": 20,
+    "top_p": 0.95,
+    "presence_penalty": 0.0,
+    "repeat_penalty": 1.0
+  },
+  "budgets": {"max_steps": 24, "max_turns": 16, "timeout": 60, "deadline": 180},
+  "analysis": {"reference_grader": "hardened", "bootstrap_samples": 2000, "seed": 17},
+  "pilot": {"split": "eval", "seed": 10000, "excluded_from_primary": true},
+  "provenance_requirements": [
+    "full model digest and quantization from local runtime metadata",
+    "runtime version, template and tokenizer metadata where exposed",
+    "frozen task states and public policy digest",
+    "raw model requests and responses, including errors and incomplete trials",
+    "tool journals, verifier decisions, token counts and elapsed time",
+    "configuration and source fingerprint captured before primary collection"
+  ]
+}

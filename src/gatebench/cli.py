@@ -42,6 +42,19 @@ def _parser() -> argparse.ArgumentParser:
     model.add_argument("--max-turns", type=int, default=24)
     model.add_argument("--timeout", type=float, default=30)
     model.add_argument("--deadline", type=float, default=120)
+    study = sub.add_parser("study", help="collect or resume a frozen real-model study")
+    study.add_argument("--config", type=Path, default=Path("configs/real-model-study.json"))
+    study.add_argument("--output", type=Path, default=Path("runs/real-models-v1"))
+    study.add_argument("--endpoint", default="http://127.0.0.1:11434")
+    summary = sub.add_parser(
+        "study-summary", help="validate and summarize captured model trials offline"
+    )
+    summary.add_argument("directory", type=Path)
+    redteam = sub.add_parser("redteam", help="assess committed independent controls")
+    redteam.add_argument("--output", type=Path, default=Path("runs/redteam"))
+    redteam.add_argument("--freeze", type=Path, default=Path("data/redteam/v1"))
+    tau = sub.add_parser("tau-audit", help="execute pinned native retail controls (tau extra)")
+    tau.add_argument("--output", type=Path, default=Path("runs/tau-retail"))
     return parser
 
 
@@ -99,7 +112,29 @@ def main(argv: list[str] | None = None) -> int:
             write_json(args.output / "verdict.json", verdict.to_dict())
             print(json.dumps(verdict.to_dict(), indent=2))
             return 0 if verdict.passed else 1
-    except (OSError, ValueError, TypeError, KeyError) as exc:
+        if args.command == "study":
+            from gatebench.experiments.runner import collect_study
+
+            result = collect_study(args.config, args.output, endpoint=args.endpoint)
+            print(json.dumps(result["corpus"], indent=2))
+            return 0
+        if args.command == "study-summary":
+            from gatebench.experiments.runner import summarize_study
+
+            print(json.dumps(summarize_study(args.directory)["corpus"], indent=2))
+            return 0
+        if args.command == "redteam":
+            from gatebench.redteam_audit import audit_redteam
+
+            result = audit_redteam(args.output, args.freeze)
+            print(json.dumps(result, indent=2))
+            return 0
+        if args.command == "tau-audit":
+            from gatebench.integrations.tau_retail import run_audit
+
+            print(json.dumps(run_audit(args.output), indent=2))
+            return 0
+    except (OSError, ValueError, TypeError, KeyError, RuntimeError) as exc:
         print(f"gatebench: {exc}", file=sys.stderr)
         return 2
     return 2

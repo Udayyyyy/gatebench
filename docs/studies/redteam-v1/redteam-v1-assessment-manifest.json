@@ -1,0 +1,8 @@
+{
+  "files": {
+    "redteam-v1-assessment-summary.json": "b20a3f350ee22b0ad64b90bd7edd974c0e67696046447e1c7c599f0030d68ba7",
+    "redteam-v1-assessment.tar.gz": "0ed472113ebf98e867347391f3e00a31e27807c57dfc6613e998adf28409635e"
+  },
+  "frozen_cases_sha256": "df3feb4bf3aefe41a818c540db278e18a67b01121ec80068f794dede5aba5315",
+  "schema_version": 1
+}

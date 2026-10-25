@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "study_id": "gatebench-tau2-retail-fixed-input-v1",
+  "kind": "real_model_study",
+  "models": [
+    "qwen3.5:2b-q4_K_M",
+    "qwen3.5:4b-q4_K_M"
+  ],
+  "quantization": "Q4_K_M",
+  "domain": "tau2-retail",
+  "task_selection": {
+    "per_family": 2,
+    "selection_rule": "first two eligible tasks per family in the full pinned upstream task order; see selection ledger"
+  },
+  "repetitions": {
+    "decode_seeds": [
+      17,
+      29,
+      43
+    ]
+  },
+  "generation": {
+    "temperature": 0.2,
+    "think": false,
+    "num_ctx": 16384,
+    "num_predict": 512,
+    "top_k": 20,
+    "top_p": 0.95,
+    "presence_penalty": 0.0,
+    "repeat_penalty": 1.0
+  },
+  "budgets": {
+    "max_steps": 24,
+    "max_turns": 16,
+    "timeout": 60,
+    "deadline": 180
+  },
+  "analysis": {
+    "reference_grader": "hardened",
+    "bootstrap_samples": 2000,
+    "seed": 17
+  },
+  "pilot": {
+    "upstream_id": "0",
+    "excluded_from_primary": false,
+    "note": "No pilot outcomes used for task/configuration selection; any infrastructure smoke controls use scripted reference actions only."
+  },
+  "provenance_requirements": [
+    "full model digest and quantization from local runtime metadata",
+    "runtime version, template and tokenizer metadata where exposed",
+    "frozen task states and public policy digest",
+    "raw model requests and responses, including errors and incomplete trials",
+    "tool journals, verifier decisions, token counts and elapsed time",
+    "configuration and source fingerprint captured before primary collection"
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "bundle_sha256": "5719a5db56c79a53be47331136a79889768eaec319298b719ab13e4b503ff73f",
+  "commit": "fc0055dc4e0a316c3f83133267fbd6faaa770992",
+  "files": {
+    "LICENSE": {
+      "bytes": 1072,
+      "sha256": "e67c5aa0074dfcaefd3c3a1aedb94cb539234aecd15d5a972574e3200e6252fe"
+    },
+    "data/tau2/domains/retail/db.json": {
+      "bytes": 2811616,
+      "sha256": "413a65160adbdb5fde0ffc0015c49b6d70250b10c18128de169b597af7766765"
+    },
+    "data/tau2/domains/retail/policy.md": {
+      "bytes": 6699,
+      "sha256": "2c9652afbce57d6e087768d37cda64d31c53d50b3e3225cfdb791bac66466467"
+    },
+    "data/tau2/domains/retail/tasks.json": {
+      "bytes": 345982,
+      "sha256": "8e03ebce7901bd6218e7a7dc3105faa9324091a68058f7fe61c65262868812e8"
+    },
+    "src/tau2/config.py": {
+      "bytes": 9952,
+      "sha256": "1f3589ff61392778079d688ad18b680ce13275a84462b2383b258614b665eb46"
+    },
+    "src/tau2/data_model/audio.py": {
+      "bytes": 6148,
+      "sha256": "443de1a2c4fa856621eaccf8b6d0637f4e8d4f0de0aba990e9732c49b3751bb0"
+    },
+    "src/tau2/data_model/audio_effects.py": {
+      "bytes": 9102,
+      "sha256": "30fc2e70e27e1691b5e098c7e165cdaee44108efff48ee36c41ccef9fb448ee0"
+    },
+    "src/tau2/data_model/message.py": {
+      "bytes": 32440,
+      "sha256": "378cc451ded5b4314c4fe177bf83e72abb2e0bba53b79c2a0e27c53f3cbd15b0"
+    },
+    "src/tau2/data_model/persona.py": {
+      "bytes": 5854,
+      "sha256": "e012387070438f51673aed61291288541c7270bce310b9851fde89493fac8e19"
+    },
+    "src/tau2/data_model/simulation.py": {
+      "bytes": 58699,
+      "sha256": "518a4eda9af783f25243e1bd2c714f4617cf86188878a0bb584fe73c9528a35a"
+    },
+    "src/tau2/data_model/tasks.py": {
+      "bytes": 22764,
+      "sha256": "0243a6454b2e9c8a14b8364c38ff95dc1dd7512105b69fada9bf9295fc8170fa"
+    },
+    "src/tau2/data_model/voice.py": {
+      "bytes": 13369,
+      "sha256": "019841fc7efa629043f4df2905c6f26c9c2d6b254421981ed60baf62a8515e82"
+    },
+    "src/tau2/data_model/voice_personas.py": {
+      "bytes": 9862,
+      "sha256": "674761a5b702aebfe3064d87644dd9bf95ca86b0f38ffbb31f94f45191927264"
+    },
+    "src/tau2/domains/retail/data_model.py": {
+      "bytes": 8799,
+      "sha256": "f5ad09590953855cc49d2ab2ad5c0594be408cae74d1500fb278e5a6bf2c50d6"
+    },
+    "src/tau2/domains/retail/environment.py": {
+      "bytes": 1615,
+      "sha256": "5b819fb895a4ef49df71404c3d9678ab09e8578eec841b8ec9229c8f51e32405"
+    },
+    "src/tau2/domains/retail/tools.py": {
+      "bytes": 29202,
+      "sha256": "34f4fe9702d36f0dd4697700fbcd63d0cf5386e6eb8e7499aaa336243bad8750"
+    },
+    "src/tau2/domains/retail/utils.py": {
+      "bytes": 248,
+      "sha256": "a385b085b63d0e5921c15f7e2201b00df1d984990f4dbb7b24a867e3bf7cb648"
+    },
+    "src/tau2/environment/db.py": {
+      "bytes": 1267,
+      "sha256": "49e12f900a8aabe62d6137a9baa1e7d471f9b3e516cf7c85fb61ecde8a65154c"
+    },
+    "src/tau2/environment/environment.py": {
+      "bytes": 18486,
+      "sha256": "b5357f11e2914c11ce0372af919cc1d726191b91cd97f776b8fb388ae0615350"
+    },
+    "src/tau2/environment/tool.py": {
+      "bytes": 8092,
+      "sha256": "6dd74021ba95a6f8dfa0971546b768b90e15b212f8f9051156ae6bcdd24b77d3"
+    },
+    "src/tau2/environment/toolkit.py": {
+      "bytes": 11313,
+      "sha256": "3e897891e8878c3399aec72e42eb0eb5546642420c0c902b225421fc936b924a"
+    },
+    "src/tau2/evaluator/evaluator_base.py": {
+      "bytes": 665,
+      "sha256": "1f79c11e5cb5c8cabc26cdaad7ff3a3a1687380f4d7fb1f9fbd9b6f9ab18e1ff"
+    },
+    "src/tau2/evaluator/evaluator_env.py": {
+      "bytes": 14100,
+      "sha256": "b53ebfe6b0b06d7a2071b5f9dd03ee6ca8ac6000b0ef44f3bd345b346c30d8ac"
+    },
+    "src/tau2/orchestrator/modes.py": {
+      "bytes": 808,
+      "sha256": "b2d131cef3f15b1558568b1e4b0b316aeea26ae7fbe1e1092d79febbb7d74553"
+    },
+    "src/tau2/utils/__init__.py": {
+      "bytes": 353,
+      "sha256": "e255aeff0258cf0042f57283c5375cd78b034509b886ba827cd927a2a6d27c6a"
+    },
+    "src/tau2/utils/io_utils.py": {
+      "bytes": 5890,
+      "sha256": "ce66fb275b9bbf09a17be2cb2092bf2e696ab07655bf7571fe53ba8db4ed3015"
+    },
+    "src/tau2/utils/pydantic_utils.py": {
+      "bytes": 994,
+      "sha256": "618dfc39b619bb0f623151682962ddc52bf2ea70bc2562dded884f118c84b78a"
+    },
+    "src/tau2/utils/utils.py": {
+      "bytes": 2957,
+      "sha256": "e0c39544b01700e60a3a26c7cf2c2d17e37e3852d5f0fa466b8517f82b83622b"
+    },
+    "src/tau2/voice_config.py": {
+      "bytes": 4071,
+      "sha256": "b644b1ef1c1f32c17e318d4f253ce420216b68c7ce30f184c6a1f5ff113f8121"
+    }
+  },
+  "license": "MIT",
+  "repository": "https://github.com/sierra-research/tau2-bench",
+  "version": "1.0.1"
+}
