@@ -1,0 +1,306 @@
+{
+  "events": [
+    {
+      "action": {
+        "arguments": {
+          "code": "verify-838928",
+          "customer_id": "C-8506313"
+        },
+        "name": "verify_customer"
+      },
+      "after_hash": "7ee5648d40083be9b9eb5e532cc8a11230c7352ccd1b0fa6b8f11622ca89109f",
+      "before_hash": "4e468b494134aabfd2cb7ce77469102aa1f075f571a0f9ab417aa21510c15413",
+      "result": {
+        "ok": true,
+        "verified": "C-8506313"
+      },
+      "seq": 0
+    },
+    {
+      "action": {
+        "arguments": {
+          "order_id": "O-8506313"
+        },
+        "name": "get_order"
+      },
+      "after_hash": "7ee5648d40083be9b9eb5e532cc8a11230c7352ccd1b0fa6b8f11622ca89109f",
+      "before_hash": "7ee5648d40083be9b9eb5e532cc8a11230c7352ccd1b0fa6b8f11622ca89109f",
+      "result": {
+        "ok": true,
+        "order": {
+          "customer_id": "C-8506313",
+          "note": "",
+          "paid_cents": 2189,
+          "quantity": 11,
+          "refunded_cents": 0,
+          "sku": "SKU-340",
+          "status": "delivered",
+          "unit_price_cents": 199
+        }
+      },
+      "seq": 1
+    },
+    {
+      "action": {
+        "arguments": {
+          "code": "return-164427",
+          "order_id": "O-8506313"
+        },
+        "name": "inspect_return"
+      },
+      "after_hash": "ffda5c88c7a21ae403da74a5a7ae1960e1b434ded953d1216c2c0d2358fabbfa",
+      "before_hash": "7ee5648d40083be9b9eb5e532cc8a11230c7352ccd1b0fa6b8f11622ca89109f",
+      "result": {
+        "inspected": "O-8506313",
+        "ok": true
+      },
+      "seq": 2
+    },
+    {
+      "action": {
+        "arguments": {
+          "amount_cents": 1990,
+          "idempotency_key": "refund-1990-8506313",
+          "order_id": "O-8506313"
+        },
+        "name": "issue_refund"
+      },
+      "after_hash": "708e82a42b6dc17963d90a16c0142ae0612065bf3541243c5fa7dda28e7e2791",
+      "before_hash": "ffda5c88c7a21ae403da74a5a7ae1960e1b434ded953d1216c2c0d2358fabbfa",
+      "result": {
+        "ok": true,
+        "refund_id": "f1",
+        "reused": false
+      },
+      "seq": 3
+    },
+    {
+      "action": {
+        "arguments": {
+          "order_id": "O-8506313",
+          "resolution": "refund"
+        },
+        "name": "close_case"
+      },
+      "after_hash": "1954a0eb5bd0157430bc5d7a4a253de9d6e4e881d2c20180444138919332970f",
+      "before_hash": "708e82a42b6dc17963d90a16c0142ae0612065bf3541243c5fa7dda28e7e2791",
+      "result": {
+        "ok": true,
+        "status": "closed"
+      },
+      "seq": 4
+    }
+  ],
+  "final_answer": "I have completed the customer request following all policy steps:\n\n1. **Verified customer C-8506313** using code verify-838928.\n2. **Read order O-8506313** - it was a delivered order with 11 units of SKU-340 at 199 cents each, paid 2189 cents total.\n3. **Inspected return** using code return-164427.\n4. **Issued refund** of 1990 cents for 10 returned units.\n5. **Closed the case** with resolution \"refund\" after the refund was complete.\n\nThe order is now closed with the refund processed. No other orders were modified, and no other inventory changes were made beyond the refund and return inspection.",
+  "final_state": {
+    "cases": {
+      "D-8506313-0": {
+        "resolution": "",
+        "status": "open"
+      },
+      "D-8506313-1": {
+        "resolution": "",
+        "status": "open"
+      },
+      "D-8506313-2": {
+        "resolution": "",
+        "status": "open"
+      },
+      "D-8506313-3": {
+        "resolution": "",
+        "status": "open"
+      },
+      "D-8506313-4": {
+        "resolution": "",
+        "status": "open"
+      },
+      "O-8506313": {
+        "resolution": "refund",
+        "status": "closed"
+      }
+    },
+    "inspected_orders": [
+      "O-8506313"
+    ],
+    "inventory": {
+      "SKU-340": 14,
+      "SKU-899": 14
+    },
+    "orders": {
+      "D-8506313-0": {
+        "customer_id": "OTHER-0",
+        "note": "",
+        "paid_cents": 2189,
+        "quantity": 11,
+        "refunded_cents": 0,
+        "sku": "SKU-340",
+        "status": "processing",
+        "unit_price_cents": 199
+      },
+      "D-8506313-1": {
+        "customer_id": "OTHER-1",
+        "note": "",
+        "paid_cents": 2189,
+        "quantity": 11,
+        "refunded_cents": 0,
+        "sku": "SKU-340",
+        "status": "processing",
+        "unit_price_cents": 199
+      },
+      "D-8506313-2": {
+        "customer_id": "OTHER-2",
+        "note": "",
+        "paid_cents": 2189,
+        "quantity": 11,
+        "refunded_cents": 0,
+        "sku": "SKU-340",
+        "status": "processing",
+        "unit_price_cents": 199
+      },
+      "D-8506313-3": {
+        "customer_id": "OTHER-3",
+        "note": "",
+        "paid_cents": 2189,
+        "quantity": 11,
+        "refunded_cents": 0,
+        "sku": "SKU-340",
+        "status": "processing",
+        "unit_price_cents": 199
+      },
+      "D-8506313-4": {
+        "customer_id": "OTHER-4",
+        "note": "",
+        "paid_cents": 2189,
+        "quantity": 11,
+        "refunded_cents": 0,
+        "sku": "SKU-340",
+        "status": "processing",
+        "unit_price_cents": 199
+      },
+      "O-8506313": {
+        "customer_id": "C-8506313",
+        "note": "",
+        "paid_cents": 2189,
+        "quantity": 11,
+        "refunded_cents": 1990,
+        "sku": "SKU-340",
+        "status": "delivered",
+        "unit_price_cents": 199
+      }
+    },
+    "refunds": [
+      {
+        "amount_cents": 1990,
+        "idempotency_key": "refund-1990-8506313",
+        "order_id": "O-8506313",
+        "refund_id": "f1"
+      }
+    ],
+    "replacements": [],
+    "reservations": {},
+    "verified_customers": [
+      "C-8506313"
+    ]
+  },
+  "initial_state": {
+    "cases": {
+      "D-8506313-0": {
+        "resolution": "",
+        "status": "open"
+      },
+      "D-8506313-1": {
+        "resolution": "",
+        "status": "open"
+      },
+      "D-8506313-2": {
+        "resolution": "",
+        "status": "open"
+      },
+      "D-8506313-3": {
+        "resolution": "",
+        "status": "open"
+      },
+      "D-8506313-4": {
+        "resolution": "",
+        "status": "open"
+      },
+      "O-8506313": {
+        "resolution": "",
+        "status": "open"
+      }
+    },
+    "inspected_orders": [],
+    "inventory": {
+      "SKU-340": 14,
+      "SKU-899": 14
+    },
+    "orders": {
+      "D-8506313-0": {
+        "customer_id": "OTHER-0",
+        "note": "",
+        "paid_cents": 2189,
+        "quantity": 11,
+        "refunded_cents": 0,
+        "sku": "SKU-340",
+        "status": "processing",
+        "unit_price_cents": 199
+      },
+      "D-8506313-1": {
+        "customer_id": "OTHER-1",
+        "note": "",
+        "paid_cents": 2189,
+        "quantity": 11,
+        "refunded_cents": 0,
+        "sku": "SKU-340",
+        "status": "processing",
+        "unit_price_cents": 199
+      },
+      "D-8506313-2": {
+        "customer_id": "OTHER-2",
+        "note": "",
+        "paid_cents": 2189,
+        "quantity": 11,
+        "refunded_cents": 0,
+        "sku": "SKU-340",
+        "status": "processing",
+        "unit_price_cents": 199
+      },
+      "D-8506313-3": {
+        "customer_id": "OTHER-3",
+        "note": "",
+        "paid_cents": 2189,
+        "quantity": 11,
+        "refunded_cents": 0,
+        "sku": "SKU-340",
+        "status": "processing",
+        "unit_price_cents": 199
+      },
+      "D-8506313-4": {
+        "customer_id": "OTHER-4",
+        "note": "",
+        "paid_cents": 2189,
+        "quantity": 11,
+        "refunded_cents": 0,
+        "sku": "SKU-340",
+        "status": "processing",
+        "unit_price_cents": 199
+      },
+      "O-8506313": {
+        "customer_id": "C-8506313",
+        "note": "",
+        "paid_cents": 2189,
+        "quantity": 11,
+        "refunded_cents": 0,
+        "sku": "SKU-340",
+        "status": "delivered",
+        "unit_price_cents": 199
+      }
+    },
+    "refunds": [],
+    "replacements": [],
+    "reservations": {},
+    "verified_customers": []
+  },
+  "stop_reason": "completed",
+  "task_id": "eval-refund-10000"
+}

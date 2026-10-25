@@ -1,0 +1,3048 @@
+[
+  {
+    "artifact": "trials/m0-eval-refund-10020-r0.json.gz",
+    "completion_tokens": 396,
+    "config_sha256": "9d6a81a1c37d7037cfa6292700b9fc3a05e482178cb076c7128026c18d62b817",
+    "decode_seed": 17,
+    "domain": "gatebench",
+    "elapsed_seconds": 8.818086,
+    "family": "refund",
+    "graders": {
+      "exact_trace": false,
+      "final_state": true,
+      "goal": true,
+      "hardened": true,
+      "no_frame": true,
+      "no_history": true,
+      "no_replay": true,
+      "transcript": true
+    },
+    "model": "qwen3.5:2b-q4_K_M",
+    "model_digest": "1e2d21a4f03ab9e4a9c1976a4b7e88f21de61d65f2c5485d8fde8942be73f1e7",
+    "prompt_tokens": 9919,
+    "reasons": {
+      "exact_trace": [
+        "Tool calls differ from the canonical plan."
+      ],
+      "final_state": [],
+      "goal": [],
+      "hardened": [],
+      "no_frame": [],
+      "no_history": [],
+      "no_replay": [],
+      "transcript": []
+    },
+    "repeat": 0,
+    "stop_reason": "completed",
+    "task_id": "eval-refund-10020",
+    "tool_calls": 5,
+    "trial_id": "m0-eval-refund-10020-r0"
+  },
+  {
+    "artifact": "trials/m0-eval-refund-10020-r1.json.gz",
+    "completion_tokens": 386,
+    "config_sha256": "9d6a81a1c37d7037cfa6292700b9fc3a05e482178cb076c7128026c18d62b817",
+    "decode_seed": 29,
+    "domain": "gatebench",
+    "elapsed_seconds": 7.073061,
+    "family": "refund",
+    "graders": {
+      "exact_trace": false,
+      "final_state": true,
+      "goal": true,
+      "hardened": true,
+      "no_frame": true,
+      "no_history": true,
+      "no_replay": true,
+      "transcript": true
+    },
+    "model": "qwen3.5:2b-q4_K_M",
+    "model_digest": "1e2d21a4f03ab9e4a9c1976a4b7e88f21de61d65f2c5485d8fde8942be73f1e7",
+    "prompt_tokens": 9915,
+    "reasons": {
+      "exact_trace": [
+        "Tool calls differ from the canonical plan."
+      ],
+      "final_state": [],
+      "goal": [],
+      "hardened": [],
+      "no_frame": [],
+      "no_history": [],
+      "no_replay": [],
+      "transcript": []
+    },
+    "repeat": 1,
+    "stop_reason": "completed",
+    "task_id": "eval-refund-10020",
+    "tool_calls": 5,
+    "trial_id": "m0-eval-refund-10020-r1"
+  },
+  {
+    "artifact": "trials/m0-eval-refund-10020-r2.json.gz",
+    "completion_tokens": 395,
+    "config_sha256": "9d6a81a1c37d7037cfa6292700b9fc3a05e482178cb076c7128026c18d62b817",
+    "decode_seed": 43,
+    "domain": "gatebench",
+    "elapsed_seconds": 7.157624,
+    "family": "refund",
+    "graders": {
+      "exact_trace": false,
+      "final_state": true,
+      "goal": true,
+      "hardened": true,
+      "no_frame": true,
+      "no_history": true,
+      "no_replay": true,
+      "transcript": true
+    },
+    "model": "qwen3.5:2b-q4_K_M",
+    "model_digest": "1e2d21a4f03ab9e4a9c1976a4b7e88f21de61d65f2c5485d8fde8942be73f1e7",
+    "prompt_tokens": 9915,
+    "reasons": {
+      "exact_trace": [
+        "Tool calls differ from the canonical plan."
+      ],
+      "final_state": [],
+      "goal": [],
+      "hardened": [],
+      "no_frame": [],
+      "no_history": [],
+      "no_replay": [],
+      "transcript": []
+    },
+    "repeat": 2,
+    "stop_reason": "completed",
+    "task_id": "eval-refund-10020",
+    "tool_calls": 5,
+    "trial_id": "m0-eval-refund-10020-r2"
+  },
+  {
+    "artifact": "trials/m0-eval-refund-10021-r0.json.gz",
+    "completion_tokens": 426,
+    "config_sha256": "9d6a81a1c37d7037cfa6292700b9fc3a05e482178cb076c7128026c18d62b817",
+    "decode_seed": 17,
+    "domain": "gatebench",
+    "elapsed_seconds": 8.861352,
+    "family": "refund",
+    "graders": {
+      "exact_trace": false,
+      "final_state": true,
+      "goal": true,
+      "hardened": true,
+      "no_frame": true,
+      "no_history": true,
+      "no_replay": true,
+      "transcript": true
+    },
+    "model": "qwen3.5:2b-q4_K_M",
+    "model_digest": "1e2d21a4f03ab9e4a9c1976a4b7e88f21de61d65f2c5485d8fde8942be73f1e7",
+    "prompt_tokens": 9927,
+    "reasons": {
+      "exact_trace": [
+        "Tool calls differ from the canonical plan."
+      ],
+      "final_state": [],
+      "goal": [],
+      "hardened": [],
+      "no_frame": [],
+      "no_history": [],
+      "no_replay": [],
+      "transcript": []
+    },
+    "repeat": 0,
+    "stop_reason": "completed",
+    "task_id": "eval-refund-10021",
+    "tool_calls": 5,
+    "trial_id": "m0-eval-refund-10021-r0"
+  },
+  {
+    "artifact": "trials/m0-eval-refund-10021-r1.json.gz",
+    "completion_tokens": 390,
+    "config_sha256": "9d6a81a1c37d7037cfa6292700b9fc3a05e482178cb076c7128026c18d62b817",
+    "decode_seed": 29,
+    "domain": "gatebench",
+    "elapsed_seconds": 7.131056,
+    "family": "refund",
+    "graders": {
+      "exact_trace": false,
+      "final_state": true,
+      "goal": true,
+      "hardened": true,
+      "no_frame": true,
+      "no_history": true,
+      "no_replay": true,
+      "transcript": true
+    },
+    "model": "qwen3.5:2b-q4_K_M",
+    "model_digest": "1e2d21a4f03ab9e4a9c1976a4b7e88f21de61d65f2c5485d8fde8942be73f1e7",
+    "prompt_tokens": 9935,
+    "reasons": {
+      "exact_trace": [
+        "Tool calls differ from the canonical plan."
+      ],
+      "final_state": [],
+      "goal": [],
+      "hardened": [],
+      "no_frame": [],
+      "no_history": [],
+      "no_replay": [],
+      "transcript": []
+    },
+    "repeat": 1,
+    "stop_reason": "completed",
+    "task_id": "eval-refund-10021",
+    "tool_calls": 5,
+    "trial_id": "m0-eval-refund-10021-r1"
+  },
+  {
+    "artifact": "trials/m0-eval-refund-10021-r2.json.gz",
+    "completion_tokens": 381,
+    "config_sha256": "9d6a81a1c37d7037cfa6292700b9fc3a05e482178cb076c7128026c18d62b817",
+    "decode_seed": 43,
+    "domain": "gatebench",
+    "elapsed_seconds": 7.009576,
+    "family": "refund",
+    "graders": {
+      "exact_trace": false,
+      "final_state": true,
+      "goal": true,
+      "hardened": true,
+      "no_frame": true,
+      "no_history": true,
+      "no_replay": true,
+      "transcript": true
+    },
+    "model": "qwen3.5:2b-q4_K_M",
+    "model_digest": "1e2d21a4f03ab9e4a9c1976a4b7e88f21de61d65f2c5485d8fde8942be73f1e7",
+    "prompt_tokens": 9927,
+    "reasons": {
+      "exact_trace": [
+        "Tool calls differ from the canonical plan."
+      ],
+      "final_state": [],
+      "goal": [],
+      "hardened": [],
+      "no_frame": [],
+      "no_history": [],
+      "no_replay": [],
+      "transcript": []
+    },
+    "repeat": 2,
+    "stop_reason": "completed",
+    "task_id": "eval-refund-10021",
+    "tool_calls": 5,
+    "trial_id": "m0-eval-refund-10021-r2"
+  },
+  {
+    "artifact": "trials/m0-eval-refund-10022-r0.json.gz",
+    "completion_tokens": 376,
+    "config_sha256": "9d6a81a1c37d7037cfa6292700b9fc3a05e482178cb076c7128026c18d62b817",
+    "decode_seed": 17,
+    "domain": "gatebench",
+    "elapsed_seconds": 8.256641,
+    "family": "refund",
+    "graders": {
+      "exact_trace": false,
+      "final_state": true,
+      "goal": true,
+      "hardened": true,
+      "no_frame": true,
+      "no_history": true,
+      "no_replay": true,
+      "transcript": true
+    },
+    "model": "qwen3.5:2b-q4_K_M",
+    "model_digest": "1e2d21a4f03ab9e4a9c1976a4b7e88f21de61d65f2c5485d8fde8942be73f1e7",
+    "prompt_tokens": 9913,
+    "reasons": {
+      "exact_trace": [
+        "Tool calls differ from the canonical plan."
+      ],
+      "final_state": [],
+      "goal": [],
+      "hardened": [],
+      "no_frame": [],
+      "no_history": [],
+      "no_replay": [],
+      "transcript": []
+    },
+    "repeat": 0,
+    "stop_reason": "completed",
+    "task_id": "eval-refund-10022",
+    "tool_calls": 5,
+    "trial_id": "m0-eval-refund-10022-r0"
+  },
+  {
+    "artifact": "trials/m0-eval-refund-10022-r1.json.gz",
+    "completion_tokens": 376,
+    "config_sha256": "9d6a81a1c37d7037cfa6292700b9fc3a05e482178cb076c7128026c18d62b817",
+    "decode_seed": 29,
+    "domain": "gatebench",
+    "elapsed_seconds": 6.993044,
+    "family": "refund",
+    "graders": {
+      "exact_trace": false,
+      "final_state": true,
+      "goal": true,
+      "hardened": true,
+      "no_frame": true,
+      "no_history": true,
+      "no_replay": true,
+      "transcript": true
+    },
+    "model": "qwen3.5:2b-q4_K_M",
+    "model_digest": "1e2d21a4f03ab9e4a9c1976a4b7e88f21de61d65f2c5485d8fde8942be73f1e7",
+    "prompt_tokens": 9913,
+    "reasons": {
+      "exact_trace": [
+        "Tool calls differ from the canonical plan."
+      ],
+      "final_state": [],
+      "goal": [],
+      "hardened": [],
+      "no_frame": [],
+      "no_history": [],
+      "no_replay": [],
+      "transcript": []
+    },
+    "repeat": 1,
+    "stop_reason": "completed",
+    "task_id": "eval-refund-10022",
+    "tool_calls": 5,
+    "trial_id": "m0-eval-refund-10022-r1"
+  },
+  {
+    "artifact": "trials/m0-eval-refund-10022-r2.json.gz",
+    "completion_tokens": 396,
+    "config_sha256": "9d6a81a1c37d7037cfa6292700b9fc3a05e482178cb076c7128026c18d62b817",
+    "decode_seed": 43,
+    "domain": "gatebench",
+    "elapsed_seconds": 7.350166,
+    "family": "refund",
+    "graders": {
+      "exact_trace": false,
+      "final_state": true,
+      "goal": true,
+      "hardened": true,
+      "no_frame": true,
+      "no_history": true,
+      "no_replay": true,
+      "transcript": true
+    },
+    "model": "qwen3.5:2b-q4_K_M",
+    "model_digest": "1e2d21a4f03ab9e4a9c1976a4b7e88f21de61d65f2c5485d8fde8942be73f1e7",
+    "prompt_tokens": 9913,
+    "reasons": {
+      "exact_trace": [
+        "Tool calls differ from the canonical plan."
+      ],
+      "final_state": [],
+      "goal": [],
+      "hardened": [],
+      "no_frame": [],
+      "no_history": [],
+      "no_replay": [],
+      "transcript": []
+    },
+    "repeat": 2,
+    "stop_reason": "completed",
+    "task_id": "eval-refund-10022",
+    "tool_calls": 5,
+    "trial_id": "m0-eval-refund-10022-r2"
+  },
+  {
+    "artifact": "trials/m0-eval-refund-10023-r0.json.gz",
+    "completion_tokens": 381,
+    "config_sha256": "9d6a81a1c37d7037cfa6292700b9fc3a05e482178cb076c7128026c18d62b817",
+    "decode_seed": 17,
+    "domain": "gatebench",
+    "elapsed_seconds": 8.476766,
+    "family": "refund",
+    "graders": {
+      "exact_trace": false,
+      "final_state": true,
+      "goal": true,
+      "hardened": true,
+      "no_frame": true,
+      "no_history": true,
+      "no_replay": true,
+      "transcript": true
+    },
+    "model": "qwen3.5:2b-q4_K_M",
+    "model_digest": "1e2d21a4f03ab9e4a9c1976a4b7e88f21de61d65f2c5485d8fde8942be73f1e7",
+    "prompt_tokens": 9931,
+    "reasons": {
+      "exact_trace": [
+        "Tool calls differ from the canonical plan."
+      ],
+      "final_state": [],
+      "goal": [],
+      "hardened": [],
+      "no_frame": [],
+      "no_history": [],
+      "no_replay": [],
+      "transcript": []
+    },
+    "repeat": 0,
+    "stop_reason": "completed",
+    "task_id": "eval-refund-10023",
+    "tool_calls": 5,
+    "trial_id": "m0-eval-refund-10023-r0"
+  },
+  {
+    "artifact": "trials/m0-eval-refund-10023-r1.json.gz",
+    "completion_tokens": 383,
+    "config_sha256": "9d6a81a1c37d7037cfa6292700b9fc3a05e482178cb076c7128026c18d62b817",
+    "decode_seed": 29,
+    "domain": "gatebench",
+    "elapsed_seconds": 7.305746,
+    "family": "refund",
+    "graders": {
+      "exact_trace": false,
+      "final_state": true,
+      "goal": true,
+      "hardened": true,
+      "no_frame": true,
+      "no_history": true,
+      "no_replay": true,
+      "transcript": true
+    },
+    "model": "qwen3.5:2b-q4_K_M",
+    "model_digest": "1e2d21a4f03ab9e4a9c1976a4b7e88f21de61d65f2c5485d8fde8942be73f1e7",
+    "prompt_tokens": 9919,
+    "reasons": {
+      "exact_trace": [
+        "Tool calls differ from the canonical plan."
+      ],
+      "final_state": [],
+      "goal": [],
+      "hardened": [],
+      "no_frame": [],
+      "no_history": [],
+      "no_replay": [],
+      "transcript": []
+    },
+    "repeat": 1,
+    "stop_reason": "completed",
+    "task_id": "eval-refund-10023",
+    "tool_calls": 5,
+    "trial_id": "m0-eval-refund-10023-r1"
+  },
+  {
+    "artifact": "trials/m0-eval-refund-10023-r2.json.gz",
+    "completion_tokens": 375,
+    "config_sha256": "9d6a81a1c37d7037cfa6292700b9fc3a05e482178cb076c7128026c18d62b817",
+    "decode_seed": 43,
+    "domain": "gatebench",
+    "elapsed_seconds": 7.375142,
+    "family": "refund",
+    "graders": {
+      "exact_trace": false,
+      "final_state": true,
+      "goal": true,
+      "hardened": true,
+      "no_frame": true,
+      "no_history": true,
+      "no_replay": true,
+      "transcript": true
+    },
+    "model": "qwen3.5:2b-q4_K_M",
+    "model_digest": "1e2d21a4f03ab9e4a9c1976a4b7e88f21de61d65f2c5485d8fde8942be73f1e7",
+    "prompt_tokens": 9919,
+    "reasons": {
+      "exact_trace": [
+        "Tool calls differ from the canonical plan."
+      ],
+      "final_state": [],
+      "goal": [],
+      "hardened": [],
+      "no_frame": [],
+      "no_history": [],
+      "no_replay": [],
+      "transcript": []
+    },
+    "repeat": 2,
+    "stop_reason": "completed",
+    "task_id": "eval-refund-10023",
+    "tool_calls": 5,
+    "trial_id": "m0-eval-refund-10023-r2"
+  },
+  {
+    "artifact": "trials/m0-eval-cancel-10020-r0.json.gz",
+    "completion_tokens": 427,
+    "config_sha256": "9d6a81a1c37d7037cfa6292700b9fc3a05e482178cb076c7128026c18d62b817",
+    "decode_seed": 17,
+    "domain": "gatebench",
+    "elapsed_seconds": 10.387821,
+    "family": "cancel",
+    "graders": {
+      "exact_trace": false,
+      "final_state": false,
+      "goal": false,
+      "hardened": false,
+      "no_frame": false,
+      "no_history": false,
+      "no_replay": false,
+      "transcript": true
+    },
+    "model": "qwen3.5:2b-q4_K_M",
+    "model_digest": "1e2d21a4f03ab9e4a9c1976a4b7e88f21de61d65f2c5485d8fde8942be73f1e7",
+    "prompt_tokens": 11788,
+    "reasons": {
+      "exact_trace": [
+        "Tool calls differ from the canonical plan."
+      ],
+      "final_state": [
+        "goal: requested resolution was not achieved"
+      ],
+      "goal": [
+        "Requested final fields are not satisfied."
+      ],
+      "hardened": [
+        "goal: requested resolution was not achieved",
+        "history.event[5].closure: prerequisites were not satisfied"
+      ],
+      "no_frame": [
+        "goal: requested resolution was not achieved",
+        "history.event[5].closure: prerequisites were not satisfied"
+      ],
+      "no_history": [
+        "goal: requested resolution was not achieved"
+      ],
+      "no_replay": [
+        "goal: requested resolution was not achieved",
+        "history.event[5].closure: prerequisites were not satisfied"
+      ],
+      "transcript": []
+    },
+    "repeat": 0,
+    "stop_reason": "completed",
+    "task_id": "eval-cancel-10020",
+    "tool_calls": 6,
+    "trial_id": "m0-eval-cancel-10020-r0"
+  },
+  {
+    "artifact": "trials/m0-eval-cancel-10020-r1.json.gz",
+    "completion_tokens": 641,
+    "config_sha256": "9d6a81a1c37d7037cfa6292700b9fc3a05e482178cb076c7128026c18d62b817",
+    "decode_seed": 29,
+    "domain": "gatebench",
+    "elapsed_seconds": 13.485819,
+    "family": "cancel",
+    "graders": {
+      "exact_trace": false,
+      "final_state": false,
+      "goal": false,
+      "hardened": false,
+      "no_frame": false,
+      "no_history": false,
+      "no_replay": false,
+      "transcript": true
+    },
+    "model": "qwen3.5:2b-q4_K_M",
+    "model_digest": "1e2d21a4f03ab9e4a9c1976a4b7e88f21de61d65f2c5485d8fde8942be73f1e7",
+    "prompt_tokens": 12434,
+    "reasons": {
+      "exact_trace": [
+        "Tool calls differ from the canonical plan."
+      ],
+      "final_state": [
+        "goal: requested resolution was not achieved"
+      ],
+      "goal": [
+        "Requested final fields are not satisfied."
+      ],
+      "hardened": [
+        "goal: requested resolution was not achieved",
+        "history.event[5].closure: prerequisites were not satisfied"
+      ],
+      "no_frame": [
+        "goal: requested resolution was not achieved",
+        "history.event[5].closure: prerequisites were not satisfied"
+      ],
+      "no_history": [
+        "goal: requested resolution was not achieved"
+      ],
+      "no_replay": [
+        "goal: requested resolution was not achieved",
+        "history.event[5].closure: prerequisites were not satisfied"
+      ],
+      "transcript": []
+    },
+    "repeat": 1,
+    "stop_reason": "completed",
+    "task_id": "eval-cancel-10020",
+    "tool_calls": 6,
+    "trial_id": "m0-eval-cancel-10020-r1"
+  },
+  {
+    "artifact": "trials/m0-eval-cancel-10020-r2.json.gz",
+    "completion_tokens": 427,
+    "config_sha256": "9d6a81a1c37d7037cfa6292700b9fc3a05e482178cb076c7128026c18d62b817",
+    "decode_seed": 43,
+    "domain": "gatebench",
+    "elapsed_seconds": 9.660314,
+    "family": "cancel",
+    "graders": {
+      "exact_trace": false,
+      "final_state": false,
+      "goal": false,
+      "hardened": false,
+      "no_frame": false,
+      "no_history": false,
+      "no_replay": false,
+      "transcript": true
+    },
+    "model": "qwen3.5:2b-q4_K_M",
+    "model_digest": "1e2d21a4f03ab9e4a9c1976a4b7e88f21de61d65f2c5485d8fde8942be73f1e7",
+    "prompt_tokens": 11790,
+    "reasons": {
+      "exact_trace": [
+        "Tool calls differ from the canonical plan."
+      ],
+      "final_state": [
+        "goal: requested resolution was not achieved"
+      ],
+      "goal": [
+        "Requested final fields are not satisfied."
+      ],
+      "hardened": [
+        "goal: requested resolution was not achieved",
+        "history.event[5].closure: prerequisites were not satisfied"
+      ],
+      "no_frame": [
+        "goal: requested resolution was not achieved",
+        "history.event[5].closure: prerequisites were not satisfied"
+      ],
+      "no_history": [
+        "goal: requested resolution was not achieved"
+      ],
+      "no_replay": [
+        "goal: requested resolution was not achieved",
+        "history.event[5].closure: prerequisites were not satisfied"
+      ],
+      "transcript": []
+    },
+    "repeat": 2,
+    "stop_reason": "completed",
+    "task_id": "eval-cancel-10020",
+    "tool_calls": 6,
+    "trial_id": "m0-eval-cancel-10020-r2"
+  },
+  {
+    "artifact": "trials/m0-eval-cancel-10021-r0.json.gz",
+    "completion_tokens": 425,
+    "config_sha256": "9d6a81a1c37d7037cfa6292700b9fc3a05e482178cb076c7128026c18d62b817",
+    "decode_seed": 17,
+    "domain": "gatebench",
+    "elapsed_seconds": 12.002206,
+    "family": "cancel",
+    "graders": {
+      "exact_trace": false,
+      "final_state": false,
+      "goal": false,
+      "hardened": false,
+      "no_frame": false,
+      "no_history": false,
+      "no_replay": false,
+      "transcript": true
+    },
+    "model": "qwen3.5:2b-q4_K_M",
+    "model_digest": "1e2d21a4f03ab9e4a9c1976a4b7e88f21de61d65f2c5485d8fde8942be73f1e7",
+    "prompt_tokens": 11780,
+    "reasons": {
+      "exact_trace": [
+        "Tool calls differ from the canonical plan."
+      ],
+      "final_state": [
+        "goal: requested resolution was not achieved"
+      ],
+      "goal": [
+        "Requested final fields are not satisfied."
+      ],
+      "hardened": [
+        "goal: requested resolution was not achieved",
+        "history.event[5].closure: prerequisites were not satisfied"
+      ],
+      "no_frame": [
+        "goal: requested resolution was not achieved",
+        "history.event[5].closure: prerequisites were not satisfied"
+      ],
+      "no_history": [
+        "goal: requested resolution was not achieved"
+      ],
+      "no_replay": [
+        "goal: requested resolution was not achieved",
+        "history.event[5].closure: prerequisites were not satisfied"
+      ],
+      "transcript": []
+    },
+    "repeat": 0,
+    "stop_reason": "completed",
+    "task_id": "eval-cancel-10021",
+    "tool_calls": 6,
+    "trial_id": "m0-eval-cancel-10021-r0"
+  },
+  {
+    "artifact": "trials/m0-eval-cancel-10021-r1.json.gz",
+    "completion_tokens": 818,
+    "config_sha256": "9d6a81a1c37d7037cfa6292700b9fc3a05e482178cb076c7128026c18d62b817",
+    "decode_seed": 29,
+    "domain": "gatebench",
+    "elapsed_seconds": 19.635476,
+    "family": "cancel",
+    "graders": {
+      "exact_trace": false,
+      "final_state": false,
+      "goal": false,
+      "hardened": false,
+      "no_frame": false,
+      "no_history": false,
+      "no_replay": false,
+      "transcript": true
+    },
+    "model": "qwen3.5:2b-q4_K_M",
+    "model_digest": "1e2d21a4f03ab9e4a9c1976a4b7e88f21de61d65f2c5485d8fde8942be73f1e7",
+    "prompt_tokens": 14833,
+    "reasons": {
+      "exact_trace": [
+        "Tool calls differ from the canonical plan."
+      ],
+      "final_state": [
+        "goal: requested resolution was not achieved"
+      ],
+      "goal": [
+        "Requested final fields are not satisfied."
+      ],
+      "hardened": [
+        "goal: requested resolution was not achieved",
+        "history.event[6].closure: prerequisites were not satisfied"
+      ],
+      "no_frame": [
+        "goal: requested resolution was not achieved",
+        "history.event[6].closure: prerequisites were not satisfied"
+      ],
+      "no_history": [
+        "goal: requested resolution was not achieved"
+      ],
+      "no_replay": [
+        "goal: requested resolution was not achieved",
+        "history.event[6].closure: prerequisites were not satisfied"
+      ],
+      "transcript": []
+    },
+    "repeat": 1,
+    "stop_reason": "completed",
+    "task_id": "eval-cancel-10021",
+    "tool_calls": 7,
+    "trial_id": "m0-eval-cancel-10021-r1"
+  },
+  {
+    "artifact": "trials/m0-eval-cancel-10021-r2.json.gz",
+    "completion_tokens": 414,
+    "config_sha256": "9d6a81a1c37d7037cfa6292700b9fc3a05e482178cb076c7128026c18d62b817",
+    "decode_seed": 43,
+    "domain": "gatebench",
+    "elapsed_seconds": 10.092112,
+    "family": "cancel",
+    "graders": {
+      "exact_trace": false,
+      "final_state": false,
+      "goal": false,
+      "hardened": false,
+      "no_frame": false,
+      "no_history": false,
+      "no_replay": false,
+      "transcript": true
+    },
+    "model": "qwen3.5:2b-q4_K_M",
+    "model_digest": "1e2d21a4f03ab9e4a9c1976a4b7e88f21de61d65f2c5485d8fde8942be73f1e7",
+    "prompt_tokens": 11762,
+    "reasons": {
+      "exact_trace": [
+        "Tool calls differ from the canonical plan."
+      ],
+      "final_state": [
+        "goal: requested resolution was not achieved"
+      ],
+      "goal": [
+        "Requested final fields are not satisfied."
+      ],
+      "hardened": [
+        "goal: requested resolution was not achieved",
+        "history.event[5].closure: prerequisites were not satisfied"
+      ],
+      "no_frame": [
+        "goal: requested resolution was not achieved",
+        "history.event[5].closure: prerequisites were not satisfied"
+      ],
+      "no_history": [
+        "goal: requested resolution was not achieved"
+      ],
+      "no_replay": [
+        "goal: requested resolution was not achieved",
+        "history.event[5].closure: prerequisites were not satisfied"
+      ],
+      "transcript": []
+    },
+    "repeat": 2,
+    "stop_reason": "completed",
+    "task_id": "eval-cancel-10021",
+    "tool_calls": 6,
+    "trial_id": "m0-eval-cancel-10021-r2"
+  },
+  {
+    "artifact": "trials/m0-eval-cancel-10022-r0.json.gz",
+    "completion_tokens": 423,
+    "config_sha256": "9d6a81a1c37d7037cfa6292700b9fc3a05e482178cb076c7128026c18d62b817",
+    "decode_seed": 17,
+    "domain": "gatebench",
+    "elapsed_seconds": 12.517397,
+    "family": "cancel",
+    "graders": {
+      "exact_trace": false,
+      "final_state": false,
+      "goal": false,
+      "hardened": false,
+      "no_frame": false,
+      "no_history": false,
+      "no_replay": false,
+      "transcript": true
+    },
+    "model": "qwen3.5:2b-q4_K_M",
+    "model_digest": "1e2d21a4f03ab9e4a9c1976a4b7e88f21de61d65f2c5485d8fde8942be73f1e7",
+    "prompt_tokens": 11776,
+    "reasons": {
+      "exact_trace": [
+        "Tool calls differ from the canonical plan."
+      ],
+      "final_state": [
+        "goal: requested resolution was not achieved"
+      ],
+      "goal": [
+        "Requested final fields are not satisfied."
+      ],
+      "hardened": [
+        "goal: requested resolution was not achieved",
+        "history.event[5].closure: prerequisites were not satisfied"
+      ],
+      "no_frame": [
+        "goal: requested resolution was not achieved",
+        "history.event[5].closure: prerequisites were not satisfied"
+      ],
+      "no_history": [
+        "goal: requested resolution was not achieved"
+      ],
+      "no_replay": [
+        "goal: requested resolution was not achieved",
+        "history.event[5].closure: prerequisites were not satisfied"
+      ],
+      "transcript": []
+    },
+    "repeat": 0,
+    "stop_reason": "completed",
+    "task_id": "eval-cancel-10022",
+    "tool_calls": 6,
+    "trial_id": "m0-eval-cancel-10022-r0"
+  },
+  {
+    "artifact": "trials/m0-eval-cancel-10022-r1.json.gz",
+    "completion_tokens": 631,
+    "config_sha256": "9d6a81a1c37d7037cfa6292700b9fc3a05e482178cb076c7128026c18d62b817",
+    "decode_seed": 29,
+    "domain": "gatebench",
+    "elapsed_seconds": 15.443354,
+    "family": "cancel",
+    "graders": {
+      "exact_trace": false,
+      "final_state": false,
+      "goal": false,
+      "hardened": false,
+      "no_frame": false,
+      "no_history": false,
+      "no_replay": false,
+      "transcript": true
+    },
+    "model": "qwen3.5:2b-q4_K_M",
+    "model_digest": "1e2d21a4f03ab9e4a9c1976a4b7e88f21de61d65f2c5485d8fde8942be73f1e7",
+    "prompt_tokens": 12399,
+    "reasons": {
+      "exact_trace": [
+        "Tool calls differ from the canonical plan."
+      ],
+      "final_state": [
+        "goal: requested resolution was not achieved"
+      ],
+      "goal": [
+        "Requested final fields are not satisfied."
+      ],
+      "hardened": [
+        "goal: requested resolution was not achieved",
+        "history.event[5].closure: prerequisites were not satisfied"
+      ],
+      "no_frame": [
+        "goal: requested resolution was not achieved",
+        "history.event[5].closure: prerequisites were not satisfied"
+      ],
+      "no_history": [
+        "goal: requested resolution was not achieved"
+      ],
+      "no_replay": [
+        "goal: requested resolution was not achieved",
+        "history.event[5].closure: prerequisites were not satisfied"
+      ],
+      "transcript": []
+    },
+    "repeat": 1,
+    "stop_reason": "completed",
+    "task_id": "eval-cancel-10022",
+    "tool_calls": 6,
+    "trial_id": "m0-eval-cancel-10022-r1"
+  },
+  {
+    "artifact": "trials/m0-eval-cancel-10022-r2.json.gz",
+    "completion_tokens": 416,
+    "config_sha256": "9d6a81a1c37d7037cfa6292700b9fc3a05e482178cb076c7128026c18d62b817",
+    "decode_seed": 43,
+    "domain": "gatebench",
+    "elapsed_seconds": 10.087724,
+    "family": "cancel",
+    "graders": {
+      "exact_trace": false,
+      "final_state": false,
+      "goal": false,
+      "hardened": false,
+      "no_frame": false,
+      "no_history": false,
+      "no_replay": false,
+      "transcript": true
+    },
+    "model": "qwen3.5:2b-q4_K_M",
+    "model_digest": "1e2d21a4f03ab9e4a9c1976a4b7e88f21de61d65f2c5485d8fde8942be73f1e7",
+    "prompt_tokens": 11766,
+    "reasons": {
+      "exact_trace": [
+        "Tool calls differ from the canonical plan."
+      ],
+      "final_state": [
+        "goal: requested resolution was not achieved"
+      ],
+      "goal": [
+        "Requested final fields are not satisfied."
+      ],
+      "hardened": [
+        "goal: requested resolution was not achieved",
+        "history.event[5].closure: prerequisites were not satisfied"
+      ],
+      "no_frame": [
+        "goal: requested resolution was not achieved",
+        "history.event[5].closure: prerequisites were not satisfied"
+      ],
+      "no_history": [
+        "goal: requested resolution was not achieved"
+      ],
+      "no_replay": [
+        "goal: requested resolution was not achieved",
+        "history.event[5].closure: prerequisites were not satisfied"
+      ],
+      "transcript": []
+    },
+    "repeat": 2,
+    "stop_reason": "completed",
+    "task_id": "eval-cancel-10022",
+    "tool_calls": 6,
+    "trial_id": "m0-eval-cancel-10022-r2"
+  },
+  {
+    "artifact": "trials/m0-eval-cancel-10023-r0.json.gz",
+    "completion_tokens": 420,
+    "config_sha256": "9d6a81a1c37d7037cfa6292700b9fc3a05e482178cb076c7128026c18d62b817",
+    "decode_seed": 17,
+    "domain": "gatebench",
+    "elapsed_seconds": 14.033755,
+    "family": "cancel",
+    "graders": {
+      "exact_trace": false,
+      "final_state": false,
+      "goal": false,
+      "hardened": false,
+      "no_frame": false,
+      "no_history": false,
+      "no_replay": false,
+      "transcript": true
+    },
+    "model": "qwen3.5:2b-q4_K_M",
+    "model_digest": "1e2d21a4f03ab9e4a9c1976a4b7e88f21de61d65f2c5485d8fde8942be73f1e7",
+    "prompt_tokens": 11804,
+    "reasons": {
+      "exact_trace": [
+        "Tool calls differ from the canonical plan."
+      ],
+      "final_state": [
+        "goal: requested resolution was not achieved"
+      ],
+      "goal": [
+        "Requested final fields are not satisfied."
+      ],
+      "hardened": [
+        "goal: requested resolution was not achieved",
+        "history.event[5].closure: prerequisites were not satisfied"
+      ],
+      "no_frame": [
+        "goal: requested resolution was not achieved",
+        "history.event[5].closure: prerequisites were not satisfied"
+      ],
+      "no_history": [
+        "goal: requested resolution was not achieved"
+      ],
+      "no_replay": [
+        "goal: requested resolution was not achieved",
+        "history.event[5].closure: prerequisites were not satisfied"
+      ],
+      "transcript": []
+    },
+    "repeat": 0,
+    "stop_reason": "completed",
+    "task_id": "eval-cancel-10023",
+    "tool_calls": 6,
+    "trial_id": "m0-eval-cancel-10023-r0"
+  },
+  {
+    "artifact": "trials/m0-eval-cancel-10023-r1.json.gz",
+    "completion_tokens": 680,
+    "config_sha256": "9d6a81a1c37d7037cfa6292700b9fc3a05e482178cb076c7128026c18d62b817",
+    "decode_seed": 29,
+    "domain": "gatebench",
+    "elapsed_seconds": 16.567227,
+    "family": "cancel",
+    "graders": {
+      "exact_trace": false,
+      "final_state": false,
+      "goal": false,
+      "hardened": false,
+      "no_frame": false,
+      "no_history": false,
+      "no_replay": false,
+      "transcript": true
+    },
+    "model": "qwen3.5:2b-q4_K_M",
+    "model_digest": "1e2d21a4f03ab9e4a9c1976a4b7e88f21de61d65f2c5485d8fde8942be73f1e7",
+    "prompt_tokens": 12480,
+    "reasons": {
+      "exact_trace": [
+        "Tool calls differ from the canonical plan."
+      ],
+      "final_state": [
+        "goal: requested resolution was not achieved"
+      ],
+      "goal": [
+        "Requested final fields are not satisfied."
+      ],
+      "hardened": [
+        "goal: requested resolution was not achieved",
+        "history.event[5].closure: prerequisites were not satisfied"
+      ],
+      "no_frame": [
+        "goal: requested resolution was not achieved",
+        "history.event[5].closure: prerequisites were not satisfied"
+      ],
+      "no_history": [
+        "goal: requested resolution was not achieved"
+      ],
+      "no_replay": [
+        "goal: requested resolution was not achieved",
+        "history.event[5].closure: prerequisites were not satisfied"
+      ],
+      "transcript": []
+    },
+    "repeat": 1,
+    "stop_reason": "completed",
+    "task_id": "eval-cancel-10023",
+    "tool_calls": 6,
+    "trial_id": "m0-eval-cancel-10023-r1"
+  },
+  {
+    "artifact": "trials/m0-eval-cancel-10023-r2.json.gz",
+    "completion_tokens": 422,
+    "config_sha256": "9d6a81a1c37d7037cfa6292700b9fc3a05e482178cb076c7128026c18d62b817",
+    "decode_seed": 43,
+    "domain": "gatebench",
+    "elapsed_seconds": 10.510722,
+    "family": "cancel",
+    "graders": {
+      "exact_trace": false,
+      "final_state": false,
+      "goal": false,
+      "hardened": false,
+      "no_frame": false,
+      "no_history": false,
+      "no_replay": false,
+      "transcript": true
+    },
+    "model": "qwen3.5:2b-q4_K_M",
+    "model_digest": "1e2d21a4f03ab9e4a9c1976a4b7e88f21de61d65f2c5485d8fde8942be73f1e7",
+    "prompt_tokens": 11804,
+    "reasons": {
+      "exact_trace": [
+        "Tool calls differ from the canonical plan."
+      ],
+      "final_state": [
+        "goal: requested resolution was not achieved"
+      ],
+      "goal": [
+        "Requested final fields are not satisfied."
+      ],
+      "hardened": [
+        "goal: requested resolution was not achieved",
+        "history.event[5].closure: prerequisites were not satisfied"
+      ],
+      "no_frame": [
+        "goal: requested resolution was not achieved",
+        "history.event[5].closure: prerequisites were not satisfied"
+      ],
+      "no_history": [
+        "goal: requested resolution was not achieved"
+      ],
+      "no_replay": [
+        "goal: requested resolution was not achieved",
+        "history.event[5].closure: prerequisites were not satisfied"
+      ],
+      "transcript": []
+    },
+    "repeat": 2,
+    "stop_reason": "completed",
+    "task_id": "eval-cancel-10023",
+    "tool_calls": 6,
+    "trial_id": "m0-eval-cancel-10023-r2"
+  },
+  {
+    "artifact": "trials/m0-eval-exchange-10020-r0.json.gz",
+    "completion_tokens": 631,
+    "config_sha256": "9d6a81a1c37d7037cfa6292700b9fc3a05e482178cb076c7128026c18d62b817",
+    "decode_seed": 17,
+    "domain": "gatebench",
+    "elapsed_seconds": 17.347001,
+    "family": "exchange",
+    "graders": {
+      "exact_trace": false,
+      "final_state": true,
+      "goal": true,
+      "hardened": true,
+      "no_frame": true,
+      "no_history": true,
+      "no_replay": true,
+      "transcript": true
+    },
+    "model": "qwen3.5:2b-q4_K_M",
+    "model_digest": "1e2d21a4f03ab9e4a9c1976a4b7e88f21de61d65f2c5485d8fde8942be73f1e7",
+    "prompt_tokens": 12418,
+    "reasons": {
+      "exact_trace": [
+        "Tool calls differ from the canonical plan."
+      ],
+      "final_state": [],
+      "goal": [],
+      "hardened": [],
+      "no_frame": [],
+      "no_history": [],
+      "no_replay": [],
+      "transcript": []
+    },
+    "repeat": 0,
+    "stop_reason": "completed",
+    "task_id": "eval-exchange-10020",
+    "tool_calls": 6,
+    "trial_id": "m0-eval-exchange-10020-r0"
+  },
+  {
+    "artifact": "trials/m0-eval-exchange-10020-r1.json.gz",
+    "completion_tokens": 399,
+    "config_sha256": "9d6a81a1c37d7037cfa6292700b9fc3a05e482178cb076c7128026c18d62b817",
+    "decode_seed": 29,
+    "domain": "gatebench",
+    "elapsed_seconds": 9.885268,
+    "family": "exchange",
+    "graders": {
+      "exact_trace": false,
+      "final_state": true,
+      "goal": true,
+      "hardened": true,
+      "no_frame": true,
+      "no_history": true,
+      "no_replay": true,
+      "transcript": true
+    },
+    "model": "qwen3.5:2b-q4_K_M",
+    "model_digest": "1e2d21a4f03ab9e4a9c1976a4b7e88f21de61d65f2c5485d8fde8942be73f1e7",
+    "prompt_tokens": 11776,
+    "reasons": {
+      "exact_trace": [
+        "Tool calls differ from the canonical plan."
+      ],
+      "final_state": [],
+      "goal": [],
+      "hardened": [],
+      "no_frame": [],
+      "no_history": [],
+      "no_replay": [],
+      "transcript": []
+    },
+    "repeat": 1,
+    "stop_reason": "completed",
+    "task_id": "eval-exchange-10020",
+    "tool_calls": 6,
+    "trial_id": "m0-eval-exchange-10020-r1"
+  },
+  {
+    "artifact": "trials/m0-eval-exchange-10020-r2.json.gz",
+    "completion_tokens": 713,
+    "config_sha256": "9d6a81a1c37d7037cfa6292700b9fc3a05e482178cb076c7128026c18d62b817",
+    "decode_seed": 43,
+    "domain": "gatebench",
+    "elapsed_seconds": 17.103723,
+    "family": "exchange",
+    "graders": {
+      "exact_trace": false,
+      "final_state": true,
+      "goal": true,
+      "hardened": false,
+      "no_frame": false,
+      "no_history": true,
+      "no_replay": false,
+      "transcript": true
+    },
+    "model": "qwen3.5:2b-q4_K_M",
+    "model_digest": "1e2d21a4f03ab9e4a9c1976a4b7e88f21de61d65f2c5485d8fde8942be73f1e7",
+    "prompt_tokens": 14579,
+    "reasons": {
+      "exact_trace": [
+        "Tool calls differ from the canonical plan."
+      ],
+      "final_state": [],
+      "goal": [],
+      "hardened": [
+        "history.event[5].replacement: invalid target, inspection, or reservation"
+      ],
+      "no_frame": [
+        "history.event[5].replacement: invalid target, inspection, or reservation"
+      ],
+      "no_history": [],
+      "no_replay": [
+        "history.event[5].replacement: invalid target, inspection, or reservation"
+      ],
+      "transcript": []
+    },
+    "repeat": 2,
+    "stop_reason": "completed",
+    "task_id": "eval-exchange-10020",
+    "tool_calls": 7,
+    "trial_id": "m0-eval-exchange-10020-r2"
+  },
+  {
+    "artifact": "trials/m0-eval-exchange-10021-r0.json.gz",
+    "completion_tokens": 413,
+    "config_sha256": "9d6a81a1c37d7037cfa6292700b9fc3a05e482178cb076c7128026c18d62b817",
+    "decode_seed": 17,
+    "domain": "gatebench",
+    "elapsed_seconds": 12.331983,
+    "family": "exchange",
+    "graders": {
+      "exact_trace": false,
+      "final_state": true,
+      "goal": true,
+      "hardened": true,
+      "no_frame": true,
+      "no_history": true,
+      "no_replay": true,
+      "transcript": true
+    },
+    "model": "qwen3.5:2b-q4_K_M",
+    "model_digest": "1e2d21a4f03ab9e4a9c1976a4b7e88f21de61d65f2c5485d8fde8942be73f1e7",
+    "prompt_tokens": 11761,
+    "reasons": {
+      "exact_trace": [
+        "Tool calls differ from the canonical plan."
+      ],
+      "final_state": [],
+      "goal": [],
+      "hardened": [],
+      "no_frame": [],
+      "no_history": [],
+      "no_replay": [],
+      "transcript": []
+    },
+    "repeat": 0,
+    "stop_reason": "completed",
+    "task_id": "eval-exchange-10021",
+    "tool_calls": 6,
+    "trial_id": "m0-eval-exchange-10021-r0"
+  },
+  {
+    "artifact": "trials/m0-eval-exchange-10021-r1.json.gz",
+    "completion_tokens": 634,
+    "config_sha256": "9d6a81a1c37d7037cfa6292700b9fc3a05e482178cb076c7128026c18d62b817",
+    "decode_seed": 29,
+    "domain": "gatebench",
+    "elapsed_seconds": 15.228631,
+    "family": "exchange",
+    "graders": {
+      "exact_trace": false,
+      "final_state": true,
+      "goal": true,
+      "hardened": true,
+      "no_frame": true,
+      "no_history": true,
+      "no_replay": true,
+      "transcript": true
+    },
+    "model": "qwen3.5:2b-q4_K_M",
+    "model_digest": "1e2d21a4f03ab9e4a9c1976a4b7e88f21de61d65f2c5485d8fde8942be73f1e7",
+    "prompt_tokens": 12441,
+    "reasons": {
+      "exact_trace": [
+        "Tool calls differ from the canonical plan."
+      ],
+      "final_state": [],
+      "goal": [],
+      "hardened": [],
+      "no_frame": [],
+      "no_history": [],
+      "no_replay": [],
+      "transcript": []
+    },
+    "repeat": 1,
+    "stop_reason": "completed",
+    "task_id": "eval-exchange-10021",
+    "tool_calls": 6,
+    "trial_id": "m0-eval-exchange-10021-r1"
+  },
+  {
+    "artifact": "trials/m0-eval-exchange-10021-r2.json.gz",
+    "completion_tokens": 599,
+    "config_sha256": "9d6a81a1c37d7037cfa6292700b9fc3a05e482178cb076c7128026c18d62b817",
+    "decode_seed": 43,
+    "domain": "gatebench",
+    "elapsed_seconds": 14.936043,
+    "family": "exchange",
+    "graders": {
+      "exact_trace": false,
+      "final_state": true,
+      "goal": true,
+      "hardened": true,
+      "no_frame": true,
+      "no_history": true,
+      "no_replay": true,
+      "transcript": true
+    },
+    "model": "qwen3.5:2b-q4_K_M",
+    "model_digest": "1e2d21a4f03ab9e4a9c1976a4b7e88f21de61d65f2c5485d8fde8942be73f1e7",
+    "prompt_tokens": 18141,
+    "reasons": {
+      "exact_trace": [
+        "Tool calls differ from the canonical plan."
+      ],
+      "final_state": [],
+      "goal": [],
+      "hardened": [],
+      "no_frame": [],
+      "no_history": [],
+      "no_replay": [],
+      "transcript": []
+    },
+    "repeat": 2,
+    "stop_reason": "completed",
+    "task_id": "eval-exchange-10021",
+    "tool_calls": 9,
+    "trial_id": "m0-eval-exchange-10021-r2"
+  },
+  {
+    "artifact": "trials/m0-eval-exchange-10022-r0.json.gz",
+    "completion_tokens": 419,
+    "config_sha256": "9d6a81a1c37d7037cfa6292700b9fc3a05e482178cb076c7128026c18d62b817",
+    "decode_seed": 17,
+    "domain": "gatebench",
+    "elapsed_seconds": 12.515537,
+    "family": "exchange",
+    "graders": {
+      "exact_trace": false,
+      "final_state": true,
+      "goal": true,
+      "hardened": true,
+      "no_frame": true,
+      "no_history": true,
+      "no_replay": true,
+      "transcript": true
+    },
+    "model": "qwen3.5:2b-q4_K_M",
+    "model_digest": "1e2d21a4f03ab9e4a9c1976a4b7e88f21de61d65f2c5485d8fde8942be73f1e7",
+    "prompt_tokens": 11766,
+    "reasons": {
+      "exact_trace": [
+        "Tool calls differ from the canonical plan."
+      ],
+      "final_state": [],
+      "goal": [],
+      "hardened": [],
+      "no_frame": [],
+      "no_history": [],
+      "no_replay": [],
+      "transcript": []
+    },
+    "repeat": 0,
+    "stop_reason": "completed",
+    "task_id": "eval-exchange-10022",
+    "tool_calls": 6,
+    "trial_id": "m0-eval-exchange-10022-r0"
+  },
+  {
+    "artifact": "trials/m0-eval-exchange-10022-r1.json.gz",
+    "completion_tokens": 650,
+    "config_sha256": "9d6a81a1c37d7037cfa6292700b9fc3a05e482178cb076c7128026c18d62b817",
+    "decode_seed": 29,
+    "domain": "gatebench",
+    "elapsed_seconds": 16.386746,
+    "family": "exchange",
+    "graders": {
+      "exact_trace": false,
+      "final_state": true,
+      "goal": true,
+      "hardened": true,
+      "no_frame": true,
+      "no_history": true,
+      "no_replay": true,
+      "transcript": true
+    },
+    "model": "qwen3.5:2b-q4_K_M",
+    "model_digest": "1e2d21a4f03ab9e4a9c1976a4b7e88f21de61d65f2c5485d8fde8942be73f1e7",
+    "prompt_tokens": 12490,
+    "reasons": {
+      "exact_trace": [
+        "Tool calls differ from the canonical plan."
+      ],
+      "final_state": [],
+      "goal": [],
+      "hardened": [],
+      "no_frame": [],
+      "no_history": [],
+      "no_replay": [],
+      "transcript": []
+    },
+    "repeat": 1,
+    "stop_reason": "completed",
+    "task_id": "eval-exchange-10022",
+    "tool_calls": 6,
+    "trial_id": "m0-eval-exchange-10022-r1"
+  },
+  {
+    "artifact": "trials/m0-eval-exchange-10022-r2.json.gz",
+    "completion_tokens": 541,
+    "config_sha256": "9d6a81a1c37d7037cfa6292700b9fc3a05e482178cb076c7128026c18d62b817",
+    "decode_seed": 43,
+    "domain": "gatebench",
+    "elapsed_seconds": 14.189698,
+    "family": "exchange",
+    "graders": {
+      "exact_trace": false,
+      "final_state": true,
+      "goal": true,
+      "hardened": true,
+      "no_frame": true,
+      "no_history": true,
+      "no_replay": true,
+      "transcript": true
+    },
+    "model": "qwen3.5:2b-q4_K_M",
+    "model_digest": "1e2d21a4f03ab9e4a9c1976a4b7e88f21de61d65f2c5485d8fde8942be73f1e7",
+    "prompt_tokens": 15972,
+    "reasons": {
+      "exact_trace": [
+        "Tool calls differ from the canonical plan."
+      ],
+      "final_state": [],
+      "goal": [],
+      "hardened": [],
+      "no_frame": [],
+      "no_history": [],
+      "no_replay": [],
+      "transcript": []
+    },
+    "repeat": 2,
+    "stop_reason": "completed",
+    "task_id": "eval-exchange-10022",
+    "tool_calls": 8,
+    "trial_id": "m0-eval-exchange-10022-r2"
+  },
+  {
+    "artifact": "trials/m0-eval-exchange-10023-r0.json.gz",
+    "completion_tokens": 404,
+    "config_sha256": "9d6a81a1c37d7037cfa6292700b9fc3a05e482178cb076c7128026c18d62b817",
+    "decode_seed": 17,
+    "domain": "gatebench",
+    "elapsed_seconds": 12.318632,
+    "family": "exchange",
+    "graders": {
+      "exact_trace": false,
+      "final_state": true,
+      "goal": true,
+      "hardened": true,
+      "no_frame": true,
+      "no_history": true,
+      "no_replay": true,
+      "transcript": true
+    },
+    "model": "qwen3.5:2b-q4_K_M",
+    "model_digest": "1e2d21a4f03ab9e4a9c1976a4b7e88f21de61d65f2c5485d8fde8942be73f1e7",
+    "prompt_tokens": 11741,
+    "reasons": {
+      "exact_trace": [
+        "Tool calls differ from the canonical plan."
+      ],
+      "final_state": [],
+      "goal": [],
+      "hardened": [],
+      "no_frame": [],
+      "no_history": [],
+      "no_replay": [],
+      "transcript": []
+    },
+    "repeat": 0,
+    "stop_reason": "completed",
+    "task_id": "eval-exchange-10023",
+    "tool_calls": 6,
+    "trial_id": "m0-eval-exchange-10023-r0"
+  },
+  {
+    "artifact": "trials/m0-eval-exchange-10023-r1.json.gz",
+    "completion_tokens": 569,
+    "config_sha256": "9d6a81a1c37d7037cfa6292700b9fc3a05e482178cb076c7128026c18d62b817",
+    "decode_seed": 29,
+    "domain": "gatebench",
+    "elapsed_seconds": 14.484934,
+    "family": "exchange",
+    "graders": {
+      "exact_trace": false,
+      "final_state": true,
+      "goal": true,
+      "hardened": false,
+      "no_frame": false,
+      "no_history": true,
+      "no_replay": false,
+      "transcript": true
+    },
+    "model": "qwen3.5:2b-q4_K_M",
+    "model_digest": "1e2d21a4f03ab9e4a9c1976a4b7e88f21de61d65f2c5485d8fde8942be73f1e7",
+    "prompt_tokens": 8767,
+    "reasons": {
+      "exact_trace": [
+        "Tool calls differ from the canonical plan."
+      ],
+      "final_state": [],
+      "goal": [],
+      "hardened": [
+        "history.event[3].replacement: invalid target, inspection, or reservation"
+      ],
+      "no_frame": [
+        "history.event[3].replacement: invalid target, inspection, or reservation"
+      ],
+      "no_history": [],
+      "no_replay": [
+        "history.event[3].replacement: invalid target, inspection, or reservation"
+      ],
+      "transcript": []
+    },
+    "repeat": 1,
+    "stop_reason": "completed",
+    "task_id": "eval-exchange-10023",
+    "tool_calls": 5,
+    "trial_id": "m0-eval-exchange-10023-r1"
+  },
+  {
+    "artifact": "trials/m0-eval-exchange-10023-r2.json.gz",
+    "completion_tokens": 500,
+    "config_sha256": "9d6a81a1c37d7037cfa6292700b9fc3a05e482178cb076c7128026c18d62b817",
+    "decode_seed": 43,
+    "domain": "gatebench",
+    "elapsed_seconds": 12.867977,
+    "family": "exchange",
+    "graders": {
+      "exact_trace": false,
+      "final_state": true,
+      "goal": true,
+      "hardened": true,
+      "no_frame": true,
+      "no_history": true,
+      "no_replay": true,
+      "transcript": true
+    },
+    "model": "qwen3.5:2b-q4_K_M",
+    "model_digest": "1e2d21a4f03ab9e4a9c1976a4b7e88f21de61d65f2c5485d8fde8942be73f1e7",
+    "prompt_tokens": 13845,
+    "reasons": {
+      "exact_trace": [
+        "Tool calls differ from the canonical plan."
+      ],
+      "final_state": [],
+      "goal": [],
+      "hardened": [],
+      "no_frame": [],
+      "no_history": [],
+      "no_replay": [],
+      "transcript": []
+    },
+    "repeat": 2,
+    "stop_reason": "completed",
+    "task_id": "eval-exchange-10023",
+    "tool_calls": 7,
+    "trial_id": "m0-eval-exchange-10023-r2"
+  },
+  {
+    "artifact": "trials/m1-eval-refund-10020-r0.json.gz",
+    "completion_tokens": 705,
+    "config_sha256": "9d6a81a1c37d7037cfa6292700b9fc3a05e482178cb076c7128026c18d62b817",
+    "decode_seed": 17,
+    "domain": "gatebench",
+    "elapsed_seconds": 46.818707,
+    "family": "refund",
+    "graders": {
+      "exact_trace": false,
+      "final_state": true,
+      "goal": true,
+      "hardened": true,
+      "no_frame": true,
+      "no_history": true,
+      "no_replay": true,
+      "transcript": true
+    },
+    "model": "qwen3.5:4b-q4_K_M",
+    "model_digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "prompt_tokens": 12949,
+    "reasons": {
+      "exact_trace": [
+        "Tool calls differ from the canonical plan."
+      ],
+      "final_state": [],
+      "goal": [],
+      "hardened": [],
+      "no_frame": [],
+      "no_history": [],
+      "no_replay": [],
+      "transcript": []
+    },
+    "repeat": 0,
+    "stop_reason": "completed",
+    "task_id": "eval-refund-10020",
+    "tool_calls": 6,
+    "trial_id": "m1-eval-refund-10020-r0"
+  },
+  {
+    "artifact": "trials/m1-eval-refund-10020-r1.json.gz",
+    "completion_tokens": 767,
+    "config_sha256": "9d6a81a1c37d7037cfa6292700b9fc3a05e482178cb076c7128026c18d62b817",
+    "decode_seed": 29,
+    "domain": "gatebench",
+    "elapsed_seconds": 48.402912,
+    "family": "refund",
+    "graders": {
+      "exact_trace": false,
+      "final_state": true,
+      "goal": true,
+      "hardened": true,
+      "no_frame": true,
+      "no_history": true,
+      "no_replay": true,
+      "transcript": true
+    },
+    "model": "qwen3.5:4b-q4_K_M",
+    "model_digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "prompt_tokens": 13048,
+    "reasons": {
+      "exact_trace": [
+        "Tool calls differ from the canonical plan."
+      ],
+      "final_state": [],
+      "goal": [],
+      "hardened": [],
+      "no_frame": [],
+      "no_history": [],
+      "no_replay": [],
+      "transcript": []
+    },
+    "repeat": 1,
+    "stop_reason": "completed",
+    "task_id": "eval-refund-10020",
+    "tool_calls": 6,
+    "trial_id": "m1-eval-refund-10020-r1"
+  },
+  {
+    "artifact": "trials/m1-eval-refund-10020-r2.json.gz",
+    "completion_tokens": 729,
+    "config_sha256": "9d6a81a1c37d7037cfa6292700b9fc3a05e482178cb076c7128026c18d62b817",
+    "decode_seed": 43,
+    "domain": "gatebench",
+    "elapsed_seconds": 41.029366,
+    "family": "refund",
+    "graders": {
+      "exact_trace": false,
+      "final_state": true,
+      "goal": true,
+      "hardened": true,
+      "no_frame": true,
+      "no_history": true,
+      "no_replay": true,
+      "transcript": false
+    },
+    "model": "qwen3.5:4b-q4_K_M",
+    "model_digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "prompt_tokens": 10824,
+    "reasons": {
+      "exact_trace": [
+        "Tool calls differ from the canonical plan."
+      ],
+      "final_state": [],
+      "goal": [],
+      "hardened": [],
+      "no_frame": [],
+      "no_history": [],
+      "no_replay": [],
+      "transcript": [
+        "No completion claim in final answer."
+      ]
+    },
+    "repeat": 2,
+    "stop_reason": "completed",
+    "task_id": "eval-refund-10020",
+    "tool_calls": 6,
+    "trial_id": "m1-eval-refund-10020-r2"
+  },
+  {
+    "artifact": "trials/m1-eval-refund-10021-r0.json.gz",
+    "completion_tokens": 887,
+    "config_sha256": "9d6a81a1c37d7037cfa6292700b9fc3a05e482178cb076c7128026c18d62b817",
+    "decode_seed": 17,
+    "domain": "gatebench",
+    "elapsed_seconds": 52.494641,
+    "family": "refund",
+    "graders": {
+      "exact_trace": false,
+      "final_state": true,
+      "goal": true,
+      "hardened": true,
+      "no_frame": true,
+      "no_history": true,
+      "no_replay": true,
+      "transcript": true
+    },
+    "model": "qwen3.5:4b-q4_K_M",
+    "model_digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "prompt_tokens": 13517,
+    "reasons": {
+      "exact_trace": [
+        "Tool calls differ from the canonical plan."
+      ],
+      "final_state": [],
+      "goal": [],
+      "hardened": [],
+      "no_frame": [],
+      "no_history": [],
+      "no_replay": [],
+      "transcript": []
+    },
+    "repeat": 0,
+    "stop_reason": "completed",
+    "task_id": "eval-refund-10021",
+    "tool_calls": 6,
+    "trial_id": "m1-eval-refund-10021-r0"
+  },
+  {
+    "artifact": "trials/m1-eval-refund-10021-r1.json.gz",
+    "completion_tokens": 778,
+    "config_sha256": "9d6a81a1c37d7037cfa6292700b9fc3a05e482178cb076c7128026c18d62b817",
+    "decode_seed": 29,
+    "domain": "gatebench",
+    "elapsed_seconds": 47.393113,
+    "family": "refund",
+    "graders": {
+      "exact_trace": false,
+      "final_state": true,
+      "goal": true,
+      "hardened": true,
+      "no_frame": true,
+      "no_history": true,
+      "no_replay": true,
+      "transcript": true
+    },
+    "model": "qwen3.5:4b-q4_K_M",
+    "model_digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "prompt_tokens": 13194,
+    "reasons": {
+      "exact_trace": [
+        "Tool calls differ from the canonical plan."
+      ],
+      "final_state": [],
+      "goal": [],
+      "hardened": [],
+      "no_frame": [],
+      "no_history": [],
+      "no_replay": [],
+      "transcript": []
+    },
+    "repeat": 1,
+    "stop_reason": "completed",
+    "task_id": "eval-refund-10021",
+    "tool_calls": 6,
+    "trial_id": "m1-eval-refund-10021-r1"
+  },
+  {
+    "artifact": "trials/m1-eval-refund-10021-r2.json.gz",
+    "completion_tokens": 754,
+    "config_sha256": "9d6a81a1c37d7037cfa6292700b9fc3a05e482178cb076c7128026c18d62b817",
+    "decode_seed": 43,
+    "domain": "gatebench",
+    "elapsed_seconds": 53.126496,
+    "family": "refund",
+    "graders": {
+      "exact_trace": false,
+      "final_state": true,
+      "goal": true,
+      "hardened": true,
+      "no_frame": true,
+      "no_history": true,
+      "no_replay": true,
+      "transcript": false
+    },
+    "model": "qwen3.5:4b-q4_K_M",
+    "model_digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "prompt_tokens": 13190,
+    "reasons": {
+      "exact_trace": [
+        "Tool calls differ from the canonical plan."
+      ],
+      "final_state": [],
+      "goal": [],
+      "hardened": [],
+      "no_frame": [],
+      "no_history": [],
+      "no_replay": [],
+      "transcript": [
+        "No completion claim in final answer."
+      ]
+    },
+    "repeat": 2,
+    "stop_reason": "completed",
+    "task_id": "eval-refund-10021",
+    "tool_calls": 6,
+    "trial_id": "m1-eval-refund-10021-r2"
+  },
+  {
+    "artifact": "trials/m1-eval-refund-10022-r0.json.gz",
+    "completion_tokens": 791,
+    "config_sha256": "9d6a81a1c37d7037cfa6292700b9fc3a05e482178cb076c7128026c18d62b817",
+    "decode_seed": 17,
+    "domain": "gatebench",
+    "elapsed_seconds": 59.020919,
+    "family": "refund",
+    "graders": {
+      "exact_trace": false,
+      "final_state": true,
+      "goal": true,
+      "hardened": true,
+      "no_frame": true,
+      "no_history": true,
+      "no_replay": true,
+      "transcript": true
+    },
+    "model": "qwen3.5:4b-q4_K_M",
+    "model_digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "prompt_tokens": 13077,
+    "reasons": {
+      "exact_trace": [
+        "Tool calls differ from the canonical plan."
+      ],
+      "final_state": [],
+      "goal": [],
+      "hardened": [],
+      "no_frame": [],
+      "no_history": [],
+      "no_replay": [],
+      "transcript": []
+    },
+    "repeat": 0,
+    "stop_reason": "completed",
+    "task_id": "eval-refund-10022",
+    "tool_calls": 6,
+    "trial_id": "m1-eval-refund-10022-r0"
+  },
+  {
+    "artifact": "trials/m1-eval-refund-10022-r1.json.gz",
+    "completion_tokens": 600,
+    "config_sha256": "9d6a81a1c37d7037cfa6292700b9fc3a05e482178cb076c7128026c18d62b817",
+    "decode_seed": 29,
+    "domain": "gatebench",
+    "elapsed_seconds": 36.525648,
+    "family": "refund",
+    "graders": {
+      "exact_trace": false,
+      "final_state": true,
+      "goal": true,
+      "hardened": true,
+      "no_frame": true,
+      "no_history": true,
+      "no_replay": true,
+      "transcript": true
+    },
+    "model": "qwen3.5:4b-q4_K_M",
+    "model_digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "prompt_tokens": 10466,
+    "reasons": {
+      "exact_trace": [
+        "Tool calls differ from the canonical plan."
+      ],
+      "final_state": [],
+      "goal": [],
+      "hardened": [],
+      "no_frame": [],
+      "no_history": [],
+      "no_replay": [],
+      "transcript": []
+    },
+    "repeat": 1,
+    "stop_reason": "completed",
+    "task_id": "eval-refund-10022",
+    "tool_calls": 5,
+    "trial_id": "m1-eval-refund-10022-r1"
+  },
+  {
+    "artifact": "trials/m1-eval-refund-10022-r2.json.gz",
+    "completion_tokens": 674,
+    "config_sha256": "9d6a81a1c37d7037cfa6292700b9fc3a05e482178cb076c7128026c18d62b817",
+    "decode_seed": 43,
+    "domain": "gatebench",
+    "elapsed_seconds": 41.735641,
+    "family": "refund",
+    "graders": {
+      "exact_trace": false,
+      "final_state": true,
+      "goal": true,
+      "hardened": true,
+      "no_frame": true,
+      "no_history": true,
+      "no_replay": true,
+      "transcript": false
+    },
+    "model": "qwen3.5:4b-q4_K_M",
+    "model_digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "prompt_tokens": 10709,
+    "reasons": {
+      "exact_trace": [
+        "Tool calls differ from the canonical plan."
+      ],
+      "final_state": [],
+      "goal": [],
+      "hardened": [],
+      "no_frame": [],
+      "no_history": [],
+      "no_replay": [],
+      "transcript": [
+        "No completion claim in final answer."
+      ]
+    },
+    "repeat": 2,
+    "stop_reason": "completed",
+    "task_id": "eval-refund-10022",
+    "tool_calls": 5,
+    "trial_id": "m1-eval-refund-10022-r2"
+  },
+  {
+    "artifact": "trials/m1-eval-refund-10023-r0.json.gz",
+    "completion_tokens": 737,
+    "config_sha256": "9d6a81a1c37d7037cfa6292700b9fc3a05e482178cb076c7128026c18d62b817",
+    "decode_seed": 17,
+    "domain": "gatebench",
+    "elapsed_seconds": 50.855023,
+    "family": "refund",
+    "graders": {
+      "exact_trace": false,
+      "final_state": true,
+      "goal": true,
+      "hardened": true,
+      "no_frame": true,
+      "no_history": true,
+      "no_replay": true,
+      "transcript": true
+    },
+    "model": "qwen3.5:4b-q4_K_M",
+    "model_digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "prompt_tokens": 12983,
+    "reasons": {
+      "exact_trace": [
+        "Tool calls differ from the canonical plan."
+      ],
+      "final_state": [],
+      "goal": [],
+      "hardened": [],
+      "no_frame": [],
+      "no_history": [],
+      "no_replay": [],
+      "transcript": []
+    },
+    "repeat": 0,
+    "stop_reason": "completed",
+    "task_id": "eval-refund-10023",
+    "tool_calls": 6,
+    "trial_id": "m1-eval-refund-10023-r0"
+  },
+  {
+    "artifact": "trials/m1-eval-refund-10023-r1.json.gz",
+    "completion_tokens": 797,
+    "config_sha256": "9d6a81a1c37d7037cfa6292700b9fc3a05e482178cb076c7128026c18d62b817",
+    "decode_seed": 29,
+    "domain": "gatebench",
+    "elapsed_seconds": 46.917779,
+    "family": "refund",
+    "graders": {
+      "exact_trace": false,
+      "final_state": true,
+      "goal": true,
+      "hardened": true,
+      "no_frame": true,
+      "no_history": true,
+      "no_replay": true,
+      "transcript": false
+    },
+    "model": "qwen3.5:4b-q4_K_M",
+    "model_digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "prompt_tokens": 13175,
+    "reasons": {
+      "exact_trace": [
+        "Tool calls differ from the canonical plan."
+      ],
+      "final_state": [],
+      "goal": [],
+      "hardened": [],
+      "no_frame": [],
+      "no_history": [],
+      "no_replay": [],
+      "transcript": [
+        "No completion claim in final answer."
+      ]
+    },
+    "repeat": 1,
+    "stop_reason": "completed",
+    "task_id": "eval-refund-10023",
+    "tool_calls": 6,
+    "trial_id": "m1-eval-refund-10023-r1"
+  },
+  {
+    "artifact": "trials/m1-eval-refund-10023-r2.json.gz",
+    "completion_tokens": 776,
+    "config_sha256": "9d6a81a1c37d7037cfa6292700b9fc3a05e482178cb076c7128026c18d62b817",
+    "decode_seed": 43,
+    "domain": "gatebench",
+    "elapsed_seconds": 45.689719,
+    "family": "refund",
+    "graders": {
+      "exact_trace": false,
+      "final_state": true,
+      "goal": true,
+      "hardened": true,
+      "no_frame": true,
+      "no_history": true,
+      "no_replay": true,
+      "transcript": true
+    },
+    "model": "qwen3.5:4b-q4_K_M",
+    "model_digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "prompt_tokens": 13165,
+    "reasons": {
+      "exact_trace": [
+        "Tool calls differ from the canonical plan."
+      ],
+      "final_state": [],
+      "goal": [],
+      "hardened": [],
+      "no_frame": [],
+      "no_history": [],
+      "no_replay": [],
+      "transcript": []
+    },
+    "repeat": 2,
+    "stop_reason": "completed",
+    "task_id": "eval-refund-10023",
+    "tool_calls": 6,
+    "trial_id": "m1-eval-refund-10023-r2"
+  },
+  {
+    "artifact": "trials/m1-eval-cancel-10020-r0.json.gz",
+    "completion_tokens": 697,
+    "config_sha256": "9d6a81a1c37d7037cfa6292700b9fc3a05e482178cb076c7128026c18d62b817",
+    "decode_seed": 17,
+    "domain": "gatebench",
+    "elapsed_seconds": 47.002076,
+    "family": "cancel",
+    "graders": {
+      "exact_trace": false,
+      "final_state": true,
+      "goal": true,
+      "hardened": true,
+      "no_frame": true,
+      "no_history": true,
+      "no_replay": true,
+      "transcript": true
+    },
+    "model": "qwen3.5:4b-q4_K_M",
+    "model_digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "prompt_tokens": 10764,
+    "reasons": {
+      "exact_trace": [
+        "Tool calls differ from the canonical plan."
+      ],
+      "final_state": [],
+      "goal": [],
+      "hardened": [],
+      "no_frame": [],
+      "no_history": [],
+      "no_replay": [],
+      "transcript": []
+    },
+    "repeat": 0,
+    "stop_reason": "completed",
+    "task_id": "eval-cancel-10020",
+    "tool_calls": 5,
+    "trial_id": "m1-eval-cancel-10020-r0"
+  },
+  {
+    "artifact": "trials/m1-eval-cancel-10020-r1.json.gz",
+    "completion_tokens": 620,
+    "config_sha256": "9d6a81a1c37d7037cfa6292700b9fc3a05e482178cb076c7128026c18d62b817",
+    "decode_seed": 29,
+    "domain": "gatebench",
+    "elapsed_seconds": 37.471554,
+    "family": "cancel",
+    "graders": {
+      "exact_trace": false,
+      "final_state": true,
+      "goal": true,
+      "hardened": true,
+      "no_frame": true,
+      "no_history": true,
+      "no_replay": true,
+      "transcript": false
+    },
+    "model": "qwen3.5:4b-q4_K_M",
+    "model_digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "prompt_tokens": 10575,
+    "reasons": {
+      "exact_trace": [
+        "Tool calls differ from the canonical plan."
+      ],
+      "final_state": [],
+      "goal": [],
+      "hardened": [],
+      "no_frame": [],
+      "no_history": [],
+      "no_replay": [],
+      "transcript": [
+        "No completion claim in final answer."
+      ]
+    },
+    "repeat": 1,
+    "stop_reason": "completed",
+    "task_id": "eval-cancel-10020",
+    "tool_calls": 5,
+    "trial_id": "m1-eval-cancel-10020-r1"
+  },
+  {
+    "artifact": "trials/m1-eval-cancel-10020-r2.json.gz",
+    "completion_tokens": 655,
+    "config_sha256": "9d6a81a1c37d7037cfa6292700b9fc3a05e482178cb076c7128026c18d62b817",
+    "decode_seed": 43,
+    "domain": "gatebench",
+    "elapsed_seconds": 38.335471,
+    "family": "cancel",
+    "graders": {
+      "exact_trace": false,
+      "final_state": false,
+      "goal": false,
+      "hardened": false,
+      "no_frame": false,
+      "no_history": false,
+      "no_replay": false,
+      "transcript": false
+    },
+    "model": "qwen3.5:4b-q4_K_M",
+    "model_digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "prompt_tokens": 10702,
+    "reasons": {
+      "exact_trace": [
+        "Tool calls differ from the canonical plan."
+      ],
+      "final_state": [
+        "goal: requested resolution was not achieved"
+      ],
+      "goal": [
+        "Requested final fields are not satisfied."
+      ],
+      "hardened": [
+        "goal: requested resolution was not achieved",
+        "history.event[4].closure: prerequisites were not satisfied"
+      ],
+      "no_frame": [
+        "goal: requested resolution was not achieved",
+        "history.event[4].closure: prerequisites were not satisfied"
+      ],
+      "no_history": [
+        "goal: requested resolution was not achieved"
+      ],
+      "no_replay": [
+        "goal: requested resolution was not achieved",
+        "history.event[4].closure: prerequisites were not satisfied"
+      ],
+      "transcript": [
+        "No completion claim in final answer."
+      ]
+    },
+    "repeat": 2,
+    "stop_reason": "completed",
+    "task_id": "eval-cancel-10020",
+    "tool_calls": 5,
+    "trial_id": "m1-eval-cancel-10020-r2"
+  },
+  {
+    "artifact": "trials/m1-eval-cancel-10021-r0.json.gz",
+    "completion_tokens": 773,
+    "config_sha256": "9d6a81a1c37d7037cfa6292700b9fc3a05e482178cb076c7128026c18d62b817",
+    "decode_seed": 17,
+    "domain": "gatebench",
+    "elapsed_seconds": 50.681554,
+    "family": "cancel",
+    "graders": {
+      "exact_trace": false,
+      "final_state": true,
+      "goal": true,
+      "hardened": true,
+      "no_frame": true,
+      "no_history": true,
+      "no_replay": true,
+      "transcript": true
+    },
+    "model": "qwen3.5:4b-q4_K_M",
+    "model_digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "prompt_tokens": 12949,
+    "reasons": {
+      "exact_trace": [
+        "Tool calls differ from the canonical plan."
+      ],
+      "final_state": [],
+      "goal": [],
+      "hardened": [],
+      "no_frame": [],
+      "no_history": [],
+      "no_replay": [],
+      "transcript": []
+    },
+    "repeat": 0,
+    "stop_reason": "completed",
+    "task_id": "eval-cancel-10021",
+    "tool_calls": 6,
+    "trial_id": "m1-eval-cancel-10021-r0"
+  },
+  {
+    "artifact": "trials/m1-eval-cancel-10021-r1.json.gz",
+    "completion_tokens": 614,
+    "config_sha256": "9d6a81a1c37d7037cfa6292700b9fc3a05e482178cb076c7128026c18d62b817",
+    "decode_seed": 29,
+    "domain": "gatebench",
+    "elapsed_seconds": 36.104,
+    "family": "cancel",
+    "graders": {
+      "exact_trace": false,
+      "final_state": true,
+      "goal": true,
+      "hardened": true,
+      "no_frame": true,
+      "no_history": true,
+      "no_replay": true,
+      "transcript": true
+    },
+    "model": "qwen3.5:4b-q4_K_M",
+    "model_digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "prompt_tokens": 10541,
+    "reasons": {
+      "exact_trace": [
+        "Tool calls differ from the canonical plan."
+      ],
+      "final_state": [],
+      "goal": [],
+      "hardened": [],
+      "no_frame": [],
+      "no_history": [],
+      "no_replay": [],
+      "transcript": []
+    },
+    "repeat": 1,
+    "stop_reason": "completed",
+    "task_id": "eval-cancel-10021",
+    "tool_calls": 5,
+    "trial_id": "m1-eval-cancel-10021-r1"
+  },
+  {
+    "artifact": "trials/m1-eval-cancel-10021-r2.json.gz",
+    "completion_tokens": 657,
+    "config_sha256": "9d6a81a1c37d7037cfa6292700b9fc3a05e482178cb076c7128026c18d62b817",
+    "decode_seed": 43,
+    "domain": "gatebench",
+    "elapsed_seconds": 39.077141,
+    "family": "cancel",
+    "graders": {
+      "exact_trace": false,
+      "final_state": true,
+      "goal": true,
+      "hardened": true,
+      "no_frame": true,
+      "no_history": true,
+      "no_replay": true,
+      "transcript": false
+    },
+    "model": "qwen3.5:4b-q4_K_M",
+    "model_digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "prompt_tokens": 10659,
+    "reasons": {
+      "exact_trace": [
+        "Tool calls differ from the canonical plan."
+      ],
+      "final_state": [],
+      "goal": [],
+      "hardened": [],
+      "no_frame": [],
+      "no_history": [],
+      "no_replay": [],
+      "transcript": [
+        "No completion claim in final answer."
+      ]
+    },
+    "repeat": 2,
+    "stop_reason": "completed",
+    "task_id": "eval-cancel-10021",
+    "tool_calls": 5,
+    "trial_id": "m1-eval-cancel-10021-r2"
+  },
+  {
+    "artifact": "trials/m1-eval-cancel-10022-r0.json.gz",
+    "completion_tokens": 630,
+    "config_sha256": "9d6a81a1c37d7037cfa6292700b9fc3a05e482178cb076c7128026c18d62b817",
+    "decode_seed": 17,
+    "domain": "gatebench",
+    "elapsed_seconds": 41.524255,
+    "family": "cancel",
+    "graders": {
+      "exact_trace": false,
+      "final_state": true,
+      "goal": true,
+      "hardened": true,
+      "no_frame": true,
+      "no_history": true,
+      "no_replay": true,
+      "transcript": true
+    },
+    "model": "qwen3.5:4b-q4_K_M",
+    "model_digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "prompt_tokens": 10588,
+    "reasons": {
+      "exact_trace": [
+        "Tool calls differ from the canonical plan."
+      ],
+      "final_state": [],
+      "goal": [],
+      "hardened": [],
+      "no_frame": [],
+      "no_history": [],
+      "no_replay": [],
+      "transcript": []
+    },
+    "repeat": 0,
+    "stop_reason": "completed",
+    "task_id": "eval-cancel-10022",
+    "tool_calls": 5,
+    "trial_id": "m1-eval-cancel-10022-r0"
+  },
+  {
+    "artifact": "trials/m1-eval-cancel-10022-r1.json.gz",
+    "completion_tokens": 728,
+    "config_sha256": "9d6a81a1c37d7037cfa6292700b9fc3a05e482178cb076c7128026c18d62b817",
+    "decode_seed": 29,
+    "domain": "gatebench",
+    "elapsed_seconds": 39.404082,
+    "family": "cancel",
+    "graders": {
+      "exact_trace": false,
+      "final_state": false,
+      "goal": false,
+      "hardened": false,
+      "no_frame": false,
+      "no_history": false,
+      "no_replay": false,
+      "transcript": true
+    },
+    "model": "qwen3.5:4b-q4_K_M",
+    "model_digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "prompt_tokens": 10847,
+    "reasons": {
+      "exact_trace": [
+        "Tool calls differ from the canonical plan."
+      ],
+      "final_state": [
+        "goal: requested resolution was not achieved"
+      ],
+      "goal": [
+        "Requested final fields are not satisfied."
+      ],
+      "hardened": [
+        "goal: requested resolution was not achieved",
+        "history.event[4].closure: prerequisites were not satisfied"
+      ],
+      "no_frame": [
+        "goal: requested resolution was not achieved",
+        "history.event[4].closure: prerequisites were not satisfied"
+      ],
+      "no_history": [
+        "goal: requested resolution was not achieved"
+      ],
+      "no_replay": [
+        "goal: requested resolution was not achieved",
+        "history.event[4].closure: prerequisites were not satisfied"
+      ],
+      "transcript": []
+    },
+    "repeat": 1,
+    "stop_reason": "completed",
+    "task_id": "eval-cancel-10022",
+    "tool_calls": 5,
+    "trial_id": "m1-eval-cancel-10022-r1"
+  },
+  {
+    "artifact": "trials/m1-eval-cancel-10022-r2.json.gz",
+    "completion_tokens": 648,
+    "config_sha256": "9d6a81a1c37d7037cfa6292700b9fc3a05e482178cb076c7128026c18d62b817",
+    "decode_seed": 43,
+    "domain": "gatebench",
+    "elapsed_seconds": 35.039706,
+    "family": "cancel",
+    "graders": {
+      "exact_trace": false,
+      "final_state": true,
+      "goal": true,
+      "hardened": true,
+      "no_frame": true,
+      "no_history": true,
+      "no_replay": true,
+      "transcript": false
+    },
+    "model": "qwen3.5:4b-q4_K_M",
+    "model_digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "prompt_tokens": 10653,
+    "reasons": {
+      "exact_trace": [
+        "Tool calls differ from the canonical plan."
+      ],
+      "final_state": [],
+      "goal": [],
+      "hardened": [],
+      "no_frame": [],
+      "no_history": [],
+      "no_replay": [],
+      "transcript": [
+        "No completion claim in final answer."
+      ]
+    },
+    "repeat": 2,
+    "stop_reason": "completed",
+    "task_id": "eval-cancel-10022",
+    "tool_calls": 5,
+    "trial_id": "m1-eval-cancel-10022-r2"
+  },
+  {
+    "artifact": "trials/m1-eval-cancel-10023-r0.json.gz",
+    "completion_tokens": 618,
+    "config_sha256": "9d6a81a1c37d7037cfa6292700b9fc3a05e482178cb076c7128026c18d62b817",
+    "decode_seed": 17,
+    "domain": "gatebench",
+    "elapsed_seconds": 40.600366,
+    "family": "cancel",
+    "graders": {
+      "exact_trace": false,
+      "final_state": true,
+      "goal": true,
+      "hardened": true,
+      "no_frame": true,
+      "no_history": true,
+      "no_replay": true,
+      "transcript": true
+    },
+    "model": "qwen3.5:4b-q4_K_M",
+    "model_digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "prompt_tokens": 10608,
+    "reasons": {
+      "exact_trace": [
+        "Tool calls differ from the canonical plan."
+      ],
+      "final_state": [],
+      "goal": [],
+      "hardened": [],
+      "no_frame": [],
+      "no_history": [],
+      "no_replay": [],
+      "transcript": []
+    },
+    "repeat": 0,
+    "stop_reason": "completed",
+    "task_id": "eval-cancel-10023",
+    "tool_calls": 5,
+    "trial_id": "m1-eval-cancel-10023-r0"
+  },
+  {
+    "artifact": "trials/m1-eval-cancel-10023-r1.json.gz",
+    "completion_tokens": 671,
+    "config_sha256": "9d6a81a1c37d7037cfa6292700b9fc3a05e482178cb076c7128026c18d62b817",
+    "decode_seed": 29,
+    "domain": "gatebench",
+    "elapsed_seconds": 38.553626,
+    "family": "cancel",
+    "graders": {
+      "exact_trace": false,
+      "final_state": true,
+      "goal": true,
+      "hardened": true,
+      "no_frame": true,
+      "no_history": true,
+      "no_replay": true,
+      "transcript": true
+    },
+    "model": "qwen3.5:4b-q4_K_M",
+    "model_digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "prompt_tokens": 10550,
+    "reasons": {
+      "exact_trace": [
+        "Tool calls differ from the canonical plan."
+      ],
+      "final_state": [],
+      "goal": [],
+      "hardened": [],
+      "no_frame": [],
+      "no_history": [],
+      "no_replay": [],
+      "transcript": []
+    },
+    "repeat": 1,
+    "stop_reason": "completed",
+    "task_id": "eval-cancel-10023",
+    "tool_calls": 5,
+    "trial_id": "m1-eval-cancel-10023-r1"
+  },
+  {
+    "artifact": "trials/m1-eval-cancel-10023-r2.json.gz",
+    "completion_tokens": 890,
+    "config_sha256": "9d6a81a1c37d7037cfa6292700b9fc3a05e482178cb076c7128026c18d62b817",
+    "decode_seed": 43,
+    "domain": "gatebench",
+    "elapsed_seconds": 47.414528,
+    "family": "cancel",
+    "graders": {
+      "exact_trace": false,
+      "final_state": true,
+      "goal": true,
+      "hardened": true,
+      "no_frame": true,
+      "no_history": true,
+      "no_replay": true,
+      "transcript": true
+    },
+    "model": "qwen3.5:4b-q4_K_M",
+    "model_digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "prompt_tokens": 13345,
+    "reasons": {
+      "exact_trace": [
+        "Tool calls differ from the canonical plan."
+      ],
+      "final_state": [],
+      "goal": [],
+      "hardened": [],
+      "no_frame": [],
+      "no_history": [],
+      "no_replay": [],
+      "transcript": []
+    },
+    "repeat": 2,
+    "stop_reason": "completed",
+    "task_id": "eval-cancel-10023",
+    "tool_calls": 6,
+    "trial_id": "m1-eval-cancel-10023-r2"
+  },
+  {
+    "artifact": "trials/m1-eval-exchange-10020-r0.json.gz",
+    "completion_tokens": 683,
+    "config_sha256": "9d6a81a1c37d7037cfa6292700b9fc3a05e482178cb076c7128026c18d62b817",
+    "decode_seed": 17,
+    "domain": "gatebench",
+    "elapsed_seconds": 41.899386,
+    "family": "exchange",
+    "graders": {
+      "exact_trace": false,
+      "final_state": true,
+      "goal": true,
+      "hardened": true,
+      "no_frame": true,
+      "no_history": true,
+      "no_replay": true,
+      "transcript": true
+    },
+    "model": "qwen3.5:4b-q4_K_M",
+    "model_digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "prompt_tokens": 12520,
+    "reasons": {
+      "exact_trace": [
+        "Tool calls differ from the canonical plan."
+      ],
+      "final_state": [],
+      "goal": [],
+      "hardened": [],
+      "no_frame": [],
+      "no_history": [],
+      "no_replay": [],
+      "transcript": []
+    },
+    "repeat": 0,
+    "stop_reason": "completed",
+    "task_id": "eval-exchange-10020",
+    "tool_calls": 6,
+    "trial_id": "m1-eval-exchange-10020-r0"
+  },
+  {
+    "artifact": "trials/m1-eval-exchange-10020-r1.json.gz",
+    "completion_tokens": 644,
+    "config_sha256": "9d6a81a1c37d7037cfa6292700b9fc3a05e482178cb076c7128026c18d62b817",
+    "decode_seed": 29,
+    "domain": "gatebench",
+    "elapsed_seconds": 34.875086,
+    "family": "exchange",
+    "graders": {
+      "exact_trace": false,
+      "final_state": true,
+      "goal": true,
+      "hardened": true,
+      "no_frame": true,
+      "no_history": true,
+      "no_replay": true,
+      "transcript": true
+    },
+    "model": "qwen3.5:4b-q4_K_M",
+    "model_digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "prompt_tokens": 12512,
+    "reasons": {
+      "exact_trace": [
+        "Tool calls differ from the canonical plan."
+      ],
+      "final_state": [],
+      "goal": [],
+      "hardened": [],
+      "no_frame": [],
+      "no_history": [],
+      "no_replay": [],
+      "transcript": []
+    },
+    "repeat": 1,
+    "stop_reason": "completed",
+    "task_id": "eval-exchange-10020",
+    "tool_calls": 6,
+    "trial_id": "m1-eval-exchange-10020-r1"
+  },
+  {
+    "artifact": "trials/m1-eval-exchange-10020-r2.json.gz",
+    "completion_tokens": 710,
+    "config_sha256": "9d6a81a1c37d7037cfa6292700b9fc3a05e482178cb076c7128026c18d62b817",
+    "decode_seed": 43,
+    "domain": "gatebench",
+    "elapsed_seconds": 40.123249,
+    "family": "exchange",
+    "graders": {
+      "exact_trace": false,
+      "final_state": true,
+      "goal": true,
+      "hardened": true,
+      "no_frame": true,
+      "no_history": true,
+      "no_replay": true,
+      "transcript": true
+    },
+    "model": "qwen3.5:4b-q4_K_M",
+    "model_digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "prompt_tokens": 12875,
+    "reasons": {
+      "exact_trace": [
+        "Tool calls differ from the canonical plan."
+      ],
+      "final_state": [],
+      "goal": [],
+      "hardened": [],
+      "no_frame": [],
+      "no_history": [],
+      "no_replay": [],
+      "transcript": []
+    },
+    "repeat": 2,
+    "stop_reason": "completed",
+    "task_id": "eval-exchange-10020",
+    "tool_calls": 6,
+    "trial_id": "m1-eval-exchange-10020-r2"
+  },
+  {
+    "artifact": "trials/m1-eval-exchange-10021-r0.json.gz",
+    "completion_tokens": 690,
+    "config_sha256": "9d6a81a1c37d7037cfa6292700b9fc3a05e482178cb076c7128026c18d62b817",
+    "decode_seed": 17,
+    "domain": "gatebench",
+    "elapsed_seconds": 42.158788,
+    "family": "exchange",
+    "graders": {
+      "exact_trace": false,
+      "final_state": true,
+      "goal": true,
+      "hardened": true,
+      "no_frame": true,
+      "no_history": true,
+      "no_replay": true,
+      "transcript": true
+    },
+    "model": "qwen3.5:4b-q4_K_M",
+    "model_digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "prompt_tokens": 12800,
+    "reasons": {
+      "exact_trace": [
+        "Tool calls differ from the canonical plan."
+      ],
+      "final_state": [],
+      "goal": [],
+      "hardened": [],
+      "no_frame": [],
+      "no_history": [],
+      "no_replay": [],
+      "transcript": []
+    },
+    "repeat": 0,
+    "stop_reason": "completed",
+    "task_id": "eval-exchange-10021",
+    "tool_calls": 6,
+    "trial_id": "m1-eval-exchange-10021-r0"
+  },
+  {
+    "artifact": "trials/m1-eval-exchange-10021-r1.json.gz",
+    "completion_tokens": 621,
+    "config_sha256": "9d6a81a1c37d7037cfa6292700b9fc3a05e482178cb076c7128026c18d62b817",
+    "decode_seed": 29,
+    "domain": "gatebench",
+    "elapsed_seconds": 33.408972,
+    "family": "exchange",
+    "graders": {
+      "exact_trace": false,
+      "final_state": true,
+      "goal": true,
+      "hardened": true,
+      "no_frame": true,
+      "no_history": true,
+      "no_replay": true,
+      "transcript": true
+    },
+    "model": "qwen3.5:4b-q4_K_M",
+    "model_digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "prompt_tokens": 12388,
+    "reasons": {
+      "exact_trace": [
+        "Tool calls differ from the canonical plan."
+      ],
+      "final_state": [],
+      "goal": [],
+      "hardened": [],
+      "no_frame": [],
+      "no_history": [],
+      "no_replay": [],
+      "transcript": []
+    },
+    "repeat": 1,
+    "stop_reason": "completed",
+    "task_id": "eval-exchange-10021",
+    "tool_calls": 6,
+    "trial_id": "m1-eval-exchange-10021-r1"
+  },
+  {
+    "artifact": "trials/m1-eval-exchange-10021-r2.json.gz",
+    "completion_tokens": 658,
+    "config_sha256": "9d6a81a1c37d7037cfa6292700b9fc3a05e482178cb076c7128026c18d62b817",
+    "decode_seed": 43,
+    "domain": "gatebench",
+    "elapsed_seconds": 35.864627,
+    "family": "exchange",
+    "graders": {
+      "exact_trace": false,
+      "final_state": true,
+      "goal": true,
+      "hardened": true,
+      "no_frame": true,
+      "no_history": true,
+      "no_replay": true,
+      "transcript": true
+    },
+    "model": "qwen3.5:4b-q4_K_M",
+    "model_digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "prompt_tokens": 12674,
+    "reasons": {
+      "exact_trace": [
+        "Tool calls differ from the canonical plan."
+      ],
+      "final_state": [],
+      "goal": [],
+      "hardened": [],
+      "no_frame": [],
+      "no_history": [],
+      "no_replay": [],
+      "transcript": []
+    },
+    "repeat": 2,
+    "stop_reason": "completed",
+    "task_id": "eval-exchange-10021",
+    "tool_calls": 6,
+    "trial_id": "m1-eval-exchange-10021-r2"
+  },
+  {
+    "artifact": "trials/m1-eval-exchange-10022-r0.json.gz",
+    "completion_tokens": 539,
+    "config_sha256": "9d6a81a1c37d7037cfa6292700b9fc3a05e482178cb076c7128026c18d62b817",
+    "decode_seed": 17,
+    "domain": "gatebench",
+    "elapsed_seconds": 33.967313,
+    "family": "exchange",
+    "graders": {
+      "exact_trace": false,
+      "final_state": true,
+      "goal": true,
+      "hardened": true,
+      "no_frame": true,
+      "no_history": true,
+      "no_replay": true,
+      "transcript": true
+    },
+    "model": "qwen3.5:4b-q4_K_M",
+    "model_digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "prompt_tokens": 12361,
+    "reasons": {
+      "exact_trace": [
+        "Tool calls differ from the canonical plan."
+      ],
+      "final_state": [],
+      "goal": [],
+      "hardened": [],
+      "no_frame": [],
+      "no_history": [],
+      "no_replay": [],
+      "transcript": []
+    },
+    "repeat": 0,
+    "stop_reason": "completed",
+    "task_id": "eval-exchange-10022",
+    "tool_calls": 6,
+    "trial_id": "m1-eval-exchange-10022-r0"
+  },
+  {
+    "artifact": "trials/m1-eval-exchange-10022-r1.json.gz",
+    "completion_tokens": 635,
+    "config_sha256": "9d6a81a1c37d7037cfa6292700b9fc3a05e482178cb076c7128026c18d62b817",
+    "decode_seed": 29,
+    "domain": "gatebench",
+    "elapsed_seconds": 34.728481,
+    "family": "exchange",
+    "graders": {
+      "exact_trace": false,
+      "final_state": true,
+      "goal": true,
+      "hardened": true,
+      "no_frame": true,
+      "no_history": true,
+      "no_replay": true,
+      "transcript": true
+    },
+    "model": "qwen3.5:4b-q4_K_M",
+    "model_digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "prompt_tokens": 12520,
+    "reasons": {
+      "exact_trace": [
+        "Tool calls differ from the canonical plan."
+      ],
+      "final_state": [],
+      "goal": [],
+      "hardened": [],
+      "no_frame": [],
+      "no_history": [],
+      "no_replay": [],
+      "transcript": []
+    },
+    "repeat": 1,
+    "stop_reason": "completed",
+    "task_id": "eval-exchange-10022",
+    "tool_calls": 6,
+    "trial_id": "m1-eval-exchange-10022-r1"
+  },
+  {
+    "artifact": "trials/m1-eval-exchange-10022-r2.json.gz",
+    "completion_tokens": 654,
+    "config_sha256": "9d6a81a1c37d7037cfa6292700b9fc3a05e482178cb076c7128026c18d62b817",
+    "decode_seed": 43,
+    "domain": "gatebench",
+    "elapsed_seconds": 35.387946,
+    "family": "exchange",
+    "graders": {
+      "exact_trace": false,
+      "final_state": true,
+      "goal": true,
+      "hardened": true,
+      "no_frame": true,
+      "no_history": true,
+      "no_replay": true,
+      "transcript": true
+    },
+    "model": "qwen3.5:4b-q4_K_M",
+    "model_digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "prompt_tokens": 12675,
+    "reasons": {
+      "exact_trace": [
+        "Tool calls differ from the canonical plan."
+      ],
+      "final_state": [],
+      "goal": [],
+      "hardened": [],
+      "no_frame": [],
+      "no_history": [],
+      "no_replay": [],
+      "transcript": []
+    },
+    "repeat": 2,
+    "stop_reason": "completed",
+    "task_id": "eval-exchange-10022",
+    "tool_calls": 6,
+    "trial_id": "m1-eval-exchange-10022-r2"
+  },
+  {
+    "artifact": "trials/m1-eval-exchange-10023-r0.json.gz",
+    "completion_tokens": 582,
+    "config_sha256": "9d6a81a1c37d7037cfa6292700b9fc3a05e482178cb076c7128026c18d62b817",
+    "decode_seed": 17,
+    "domain": "gatebench",
+    "elapsed_seconds": 36.91898,
+    "family": "exchange",
+    "graders": {
+      "exact_trace": false,
+      "final_state": true,
+      "goal": true,
+      "hardened": true,
+      "no_frame": true,
+      "no_history": true,
+      "no_replay": true,
+      "transcript": true
+    },
+    "model": "qwen3.5:4b-q4_K_M",
+    "model_digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "prompt_tokens": 12376,
+    "reasons": {
+      "exact_trace": [
+        "Tool calls differ from the canonical plan."
+      ],
+      "final_state": [],
+      "goal": [],
+      "hardened": [],
+      "no_frame": [],
+      "no_history": [],
+      "no_replay": [],
+      "transcript": []
+    },
+    "repeat": 0,
+    "stop_reason": "completed",
+    "task_id": "eval-exchange-10023",
+    "tool_calls": 6,
+    "trial_id": "m1-eval-exchange-10023-r0"
+  },
+  {
+    "artifact": "trials/m1-eval-exchange-10023-r1.json.gz",
+    "completion_tokens": 641,
+    "config_sha256": "9d6a81a1c37d7037cfa6292700b9fc3a05e482178cb076c7128026c18d62b817",
+    "decode_seed": 29,
+    "domain": "gatebench",
+    "elapsed_seconds": 34.720635,
+    "family": "exchange",
+    "graders": {
+      "exact_trace": false,
+      "final_state": true,
+      "goal": true,
+      "hardened": true,
+      "no_frame": true,
+      "no_history": true,
+      "no_replay": true,
+      "transcript": true
+    },
+    "model": "qwen3.5:4b-q4_K_M",
+    "model_digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "prompt_tokens": 12420,
+    "reasons": {
+      "exact_trace": [
+        "Tool calls differ from the canonical plan."
+      ],
+      "final_state": [],
+      "goal": [],
+      "hardened": [],
+      "no_frame": [],
+      "no_history": [],
+      "no_replay": [],
+      "transcript": []
+    },
+    "repeat": 1,
+    "stop_reason": "completed",
+    "task_id": "eval-exchange-10023",
+    "tool_calls": 6,
+    "trial_id": "m1-eval-exchange-10023-r1"
+  },
+  {
+    "artifact": "trials/m1-eval-exchange-10023-r2.json.gz",
+    "completion_tokens": 661,
+    "config_sha256": "9d6a81a1c37d7037cfa6292700b9fc3a05e482178cb076c7128026c18d62b817",
+    "decode_seed": 43,
+    "domain": "gatebench",
+    "elapsed_seconds": 37.322992,
+    "family": "exchange",
+    "graders": {
+      "exact_trace": false,
+      "final_state": true,
+      "goal": true,
+      "hardened": true,
+      "no_frame": true,
+      "no_history": true,
+      "no_replay": true,
+      "transcript": true
+    },
+    "model": "qwen3.5:4b-q4_K_M",
+    "model_digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "prompt_tokens": 12650,
+    "reasons": {
+      "exact_trace": [
+        "Tool calls differ from the canonical plan."
+      ],
+      "final_state": [],
+      "goal": [],
+      "hardened": [],
+      "no_frame": [],
+      "no_history": [],
+      "no_replay": [],
+      "transcript": []
+    },
+    "repeat": 2,
+    "stop_reason": "completed",
+    "task_id": "eval-exchange-10023",
+    "tool_calls": 6,
+    "trial_id": "m1-eval-exchange-10023-r2"
+  }
+]

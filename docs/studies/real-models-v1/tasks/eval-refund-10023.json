@@ -1,0 +1,112 @@
+{
+  "auth_code": "verify-444799",
+  "customer_id": "C-3725019",
+  "family": "refund",
+  "id": "eval-refund-10023",
+  "initial_state": {
+    "cases": {
+      "D-3725019-0": {
+        "resolution": "",
+        "status": "open"
+      },
+      "D-3725019-1": {
+        "resolution": "",
+        "status": "open"
+      },
+      "D-3725019-2": {
+        "resolution": "",
+        "status": "open"
+      },
+      "D-3725019-3": {
+        "resolution": "",
+        "status": "open"
+      },
+      "D-3725019-4": {
+        "resolution": "",
+        "status": "open"
+      },
+      "O-3725019": {
+        "resolution": "",
+        "status": "open"
+      }
+    },
+    "inspected_orders": [],
+    "inventory": {
+      "SKU-484": 12,
+      "SKU-758": 11
+    },
+    "orders": {
+      "D-3725019-0": {
+        "customer_id": "OTHER-0",
+        "note": "",
+        "paid_cents": 111105,
+        "quantity": 9,
+        "refunded_cents": 0,
+        "sku": "SKU-484",
+        "status": "processing",
+        "unit_price_cents": 12345
+      },
+      "D-3725019-1": {
+        "customer_id": "OTHER-1",
+        "note": "",
+        "paid_cents": 111105,
+        "quantity": 9,
+        "refunded_cents": 0,
+        "sku": "SKU-484",
+        "status": "processing",
+        "unit_price_cents": 12345
+      },
+      "D-3725019-2": {
+        "customer_id": "OTHER-2",
+        "note": "",
+        "paid_cents": 111105,
+        "quantity": 9,
+        "refunded_cents": 0,
+        "sku": "SKU-484",
+        "status": "processing",
+        "unit_price_cents": 12345
+      },
+      "D-3725019-3": {
+        "customer_id": "OTHER-3",
+        "note": "",
+        "paid_cents": 111105,
+        "quantity": 9,
+        "refunded_cents": 0,
+        "sku": "SKU-484",
+        "status": "processing",
+        "unit_price_cents": 12345
+      },
+      "D-3725019-4": {
+        "customer_id": "OTHER-4",
+        "note": "",
+        "paid_cents": 111105,
+        "quantity": 9,
+        "refunded_cents": 0,
+        "sku": "SKU-484",
+        "status": "processing",
+        "unit_price_cents": 12345
+      },
+      "O-3725019": {
+        "customer_id": "C-3725019",
+        "note": "",
+        "paid_cents": 111105,
+        "quantity": 9,
+        "refunded_cents": 0,
+        "sku": "SKU-484",
+        "status": "delivered",
+        "unit_price_cents": 12345
+      }
+    },
+    "refunds": [],
+    "replacements": [],
+    "reservations": {},
+    "verified_customers": []
+  },
+  "order_id": "O-3725019",
+  "quantity": 7,
+  "refund_cents": 86415,
+  "replacement_sku": "SKU-758",
+  "return_code": "return-127163",
+  "seed": 10023,
+  "split": "eval"
+}

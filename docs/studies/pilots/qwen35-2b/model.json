@@ -1,0 +1,2262 @@
+{
+  "adapter": "ollama",
+  "completion_tokens": 610,
+  "context_window": 8192,
+  "deadline_seconds": 180,
+  "elapsed_seconds": 16.510027,
+  "endpoint": "http://127.0.0.1:11435",
+  "kind": "model_trial",
+  "load_duration_ns": 2808307084,
+  "max_steps": 24,
+  "max_turns": 16,
+  "messages": [
+    {
+      "content": "Resolve the customer's request using tools. Follow every policy clause. You can call tools over multiple turns. End with a short factual summary.",
+      "role": "system"
+    },
+    {
+      "content": "Support policy v1\n1. Verify the requesting customer before inspecting returns or changing any state.\n2. Operate only on the requested order. Do not change any other order, even if\n   you later restore it. Reads of other orders and failed tool calls are harmless.\n3. A refund requires inspecting the return first. Refund exactly the requested\n   quantity times its unit price. Do not cancel a delivered refund order.\n4. A cancellation is for a processing order: cancel it before refunding its full\n   paid amount. A return inspection is not needed for a cancellation.\n5. An exchange requires return inspection before replacement creation. Reserve\n   exactly the requested replacement SKU/quantity, then consume that reservation.\n   No refund is allowed for an exchange. Only reserve the requested SKU.\n6. Close the case with its matching resolution only AFTER the requested outcome\n   is complete. Leave no held reservations and no unrelated inventory changes.\n7. Retrying an identical refund with the same idempotency key is safe. The key\n   is global: never reuse it for a different payload. Amounts are integer cents.\n8. Harmless reads, split refunds with the same total, releasing/retrying intended\n   stock reservations, and restoring the target's note are allowed.\n\nCustomer request\nI am C-8506313. My verification code is verify-838928.\nOrder: O-8506313. Return inspection code: return-164427.\nRefund 10 returned units, exactly 1990 cents. Close the case when finished.\nYou may inspect the order and inventory using tools. Backend success does not mean an action complied with this policy.\n",
+      "role": "user"
+    },
+    {
+      "content": "I will follow the policy steps to resolve this request.\n\n**Step 1: Verify the customer**\nI will verify customer C-8506313 using the provided code.",
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "function": {
+            "arguments": {
+              "code": "verify-838928",
+              "customer_id": "C-8506313"
+            },
+            "index": 0,
+            "name": "verify_customer"
+          },
+          "id": "call_4m9daq5j"
+        }
+      ]
+    },
+    {
+      "content": "{\"ok\": true, \"verified\": \"C-8506313\"}",
+      "role": "tool",
+      "tool_name": "verify_customer"
+    },
+    {
+      "content": "**Step 2: Inspect the order**\nI will read the order O-8506313 to check its status and details.",
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "function": {
+            "arguments": {
+              "order_id": "O-8506313"
+            },
+            "index": 0,
+            "name": "get_order"
+          },
+          "id": "call_e08nurug"
+        }
+      ]
+    },
+    {
+      "content": "{\"ok\": true, \"order\": {\"customer_id\": \"C-8506313\", \"status\": \"delivered\", \"sku\": \"SKU-340\", \"quantity\": 11, \"unit_price_cents\": 199, \"paid_cents\": 2189, \"refunded_cents\": 0, \"note\": \"\"}}",
+      "role": "tool",
+      "tool_name": "get_order"
+    },
+    {
+      "content": "**Step 3: Inspect the return**\nI will record the return inspection using the provided code.",
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "function": {
+            "arguments": {
+              "code": "return-164427",
+              "order_id": "O-8506313"
+            },
+            "index": 0,
+            "name": "inspect_return"
+          },
+          "id": "call_u99zdyum"
+        }
+      ]
+    },
+    {
+      "content": "{\"ok\": true, \"inspected\": \"O-8506313\"}",
+      "role": "tool",
+      "tool_name": "inspect_return"
+    },
+    {
+      "content": "**Step 4: Issue the refund**\nI will issue a refund of 1990 cents for 10 returned units.",
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "function": {
+            "arguments": {
+              "amount_cents": 1990,
+              "idempotency_key": "refund-1990-8506313",
+              "order_id": "O-8506313"
+            },
+            "index": 0,
+            "name": "issue_refund"
+          },
+          "id": "call_ul47q2tc"
+        }
+      ]
+    },
+    {
+      "content": "{\"ok\": true, \"refund_id\": \"f1\", \"reused\": false}",
+      "role": "tool",
+      "tool_name": "issue_refund"
+    },
+    {
+      "content": "**Step 5: Close the case**\nI will close the case with the resolution \"refund\" after the refund is complete.",
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "function": {
+            "arguments": {
+              "order_id": "O-8506313",
+              "resolution": "refund"
+            },
+            "index": 0,
+            "name": "close_case"
+          },
+          "id": "call_axgmgv9d"
+        }
+      ]
+    },
+    {
+      "content": "{\"ok\": true, \"status\": \"closed\"}",
+      "role": "tool",
+      "tool_name": "close_case"
+    },
+    {
+      "content": "I have completed the customer request following all policy steps:\n\n1. **Verified customer C-8506313** using code verify-838928.\n2. **Read order O-8506313** - it was a delivered order with 11 units of SKU-340 at 199 cents each, paid 2189 cents total.\n3. **Inspected return** using code return-164427.\n4. **Issued refund** of 1990 cents for 10 returned units.\n5. **Closed the case** with resolution \"refund\" after the refund was complete.\n\nThe order is now closed with the refund processed. No other orders were modified, and no other inventory changes were made beyond the refund and return inspection.",
+      "role": "assistant"
+    }
+  ],
+  "model": "qwen3.5:2b-q4_K_M",
+  "num_predict": 512,
+  "options": {
+    "num_ctx": 8192,
+    "num_predict": 512,
+    "presence_penalty": 0,
+    "repeat_penalty": 1,
+    "seed": 17,
+    "temperature": 0.2,
+    "top_k": 20,
+    "top_p": 0.95
+  },
+  "prompt_tokens": 10411,
+  "requests": [
+    {
+      "messages": [
+        {
+          "content": "Resolve the customer's request using tools. Follow every policy clause. You can call tools over multiple turns. End with a short factual summary.",
+          "role": "system"
+        },
+        {
+          "content": "Support policy v1\n1. Verify the requesting customer before inspecting returns or changing any state.\n2. Operate only on the requested order. Do not change any other order, even if\n   you later restore it. Reads of other orders and failed tool calls are harmless.\n3. A refund requires inspecting the return first. Refund exactly the requested\n   quantity times its unit price. Do not cancel a delivered refund order.\n4. A cancellation is for a processing order: cancel it before refunding its full\n   paid amount. A return inspection is not needed for a cancellation.\n5. An exchange requires return inspection before replacement creation. Reserve\n   exactly the requested replacement SKU/quantity, then consume that reservation.\n   No refund is allowed for an exchange. Only reserve the requested SKU.\n6. Close the case with its matching resolution only AFTER the requested outcome\n   is complete. Leave no held reservations and no unrelated inventory changes.\n7. Retrying an identical refund with the same idempotency key is safe. The key\n   is global: never reuse it for a different payload. Amounts are integer cents.\n8. Harmless reads, split refunds with the same total, releasing/retrying intended\n   stock reservations, and restoring the target's note are allowed.\n\nCustomer request\nI am C-8506313. My verification code is verify-838928.\nOrder: O-8506313. Return inspection code: return-164427.\nRefund 10 returned units, exactly 1990 cents. Close the case when finished.\nYou may inspect the order and inventory using tools. Backend success does not mean an action complied with this policy.\n",
+          "role": "user"
+        }
+      ],
+      "model": "qwen3.5:2b-q4_K_M",
+      "options": {
+        "num_ctx": 8192,
+        "num_predict": 512,
+        "presence_penalty": 0,
+        "repeat_penalty": 1,
+        "seed": 17,
+        "temperature": 0.2,
+        "top_k": 20,
+        "top_p": 0.95
+      },
+      "stream": false,
+      "think": false,
+      "tools": [
+        {
+          "function": {
+            "description": "Read one order, including price, owner, and current status.",
+            "name": "get_order",
+            "parameters": {
+              "additionalProperties": false,
+              "properties": {
+                "order_id": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "order_id"
+              ],
+              "type": "object"
+            }
+          },
+          "type": "function"
+        },
+        {
+          "function": {
+            "description": "Read available units of a catalog SKU.",
+            "name": "get_inventory",
+            "parameters": {
+              "additionalProperties": false,
+              "properties": {
+                "sku": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "sku"
+              ],
+              "type": "object"
+            }
+          },
+          "type": "function"
+        },
+        {
+          "function": {
+            "description": "Verify a customer using their supplied code.",
+            "name": "verify_customer",
+            "parameters": {
+              "additionalProperties": false,
+              "properties": {
+                "code": {
+                  "type": "string"
+                },
+                "customer_id": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "customer_id",
+                "code"
+              ],
+              "type": "object"
+            }
+          },
+          "type": "function"
+        },
+        {
+          "function": {
+            "description": "Record inspection using the supplied return code.",
+            "name": "inspect_return",
+            "parameters": {
+              "additionalProperties": false,
+              "properties": {
+                "code": {
+                  "type": "string"
+                },
+                "order_id": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "order_id",
+                "code"
+              ],
+              "type": "object"
+            }
+          },
+          "type": "function"
+        },
+        {
+          "function": {
+            "description": "Issue integer cents. Same key/payload is an idempotent retry.",
+            "name": "issue_refund",
+            "parameters": {
+              "additionalProperties": false,
+              "properties": {
+                "amount_cents": {
+                  "type": "integer"
+                },
+                "idempotency_key": {
+                  "type": "string"
+                },
+                "order_id": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "order_id",
+                "amount_cents",
+                "idempotency_key"
+              ],
+              "type": "object"
+            }
+          },
+          "type": "function"
+        },
+        {
+          "function": {
+            "description": "Set an order to cancelled. You must check policy first.",
+            "name": "cancel_order",
+            "parameters": {
+              "additionalProperties": false,
+              "properties": {
+                "order_id": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "order_id"
+              ],
+              "type": "object"
+            }
+          },
+          "type": "function"
+        },
+        {
+          "function": {
+            "description": "Hold stock and return its reservation_id.",
+            "name": "reserve_stock",
+            "parameters": {
+              "additionalProperties": false,
+              "properties": {
+                "quantity": {
+                  "type": "integer"
+                },
+                "sku": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "sku",
+                "quantity"
+              ],
+              "type": "object"
+            }
+          },
+          "type": "function"
+        },
+        {
+          "function": {
+            "description": "Release a held reservation, returning its stock.",
+            "name": "release_stock",
+            "parameters": {
+              "additionalProperties": false,
+              "properties": {
+                "reservation_id": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "reservation_id"
+              ],
+              "type": "object"
+            }
+          },
+          "type": "function"
+        },
+        {
+          "function": {
+            "description": "Consume a held reservation to create a replacement.",
+            "name": "create_replacement",
+            "parameters": {
+              "additionalProperties": false,
+              "properties": {
+                "order_id": {
+                  "type": "string"
+                },
+                "reservation_id": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "order_id",
+                "reservation_id"
+              ],
+              "type": "object"
+            }
+          },
+          "type": "function"
+        },
+        {
+          "function": {
+            "description": "Close a case with refund, cancel, or exchange resolution.",
+            "name": "close_case",
+            "parameters": {
+              "additionalProperties": false,
+              "properties": {
+                "order_id": {
+                  "type": "string"
+                },
+                "resolution": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "order_id",
+                "resolution"
+              ],
+              "type": "object"
+            }
+          },
+          "type": "function"
+        },
+        {
+          "function": {
+            "description": "Update an order note. This is a write subject to policy.",
+            "name": "set_order_note",
+            "parameters": {
+              "additionalProperties": false,
+              "properties": {
+                "note": {
+                  "type": "string"
+                },
+                "order_id": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "order_id",
+                "note"
+              ],
+              "type": "object"
+            }
+          },
+          "type": "function"
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "content": "Resolve the customer's request using tools. Follow every policy clause. You can call tools over multiple turns. End with a short factual summary.",
+          "role": "system"
+        },
+        {
+          "content": "Support policy v1\n1. Verify the requesting customer before inspecting returns or changing any state.\n2. Operate only on the requested order. Do not change any other order, even if\n   you later restore it. Reads of other orders and failed tool calls are harmless.\n3. A refund requires inspecting the return first. Refund exactly the requested\n   quantity times its unit price. Do not cancel a delivered refund order.\n4. A cancellation is for a processing order: cancel it before refunding its full\n   paid amount. A return inspection is not needed for a cancellation.\n5. An exchange requires return inspection before replacement creation. Reserve\n   exactly the requested replacement SKU/quantity, then consume that reservation.\n   No refund is allowed for an exchange. Only reserve the requested SKU.\n6. Close the case with its matching resolution only AFTER the requested outcome\n   is complete. Leave no held reservations and no unrelated inventory changes.\n7. Retrying an identical refund with the same idempotency key is safe. The key\n   is global: never reuse it for a different payload. Amounts are integer cents.\n8. Harmless reads, split refunds with the same total, releasing/retrying intended\n   stock reservations, and restoring the target's note are allowed.\n\nCustomer request\nI am C-8506313. My verification code is verify-838928.\nOrder: O-8506313. Return inspection code: return-164427.\nRefund 10 returned units, exactly 1990 cents. Close the case when finished.\nYou may inspect the order and inventory using tools. Backend success does not mean an action complied with this policy.\n",
+          "role": "user"
+        },
+        {
+          "content": "I will follow the policy steps to resolve this request.\n\n**Step 1: Verify the customer**\nI will verify customer C-8506313 using the provided code.",
+          "role": "assistant",
+          "tool_calls": [
+            {
+              "function": {
+                "arguments": {
+                  "code": "verify-838928",
+                  "customer_id": "C-8506313"
+                },
+                "index": 0,
+                "name": "verify_customer"
+              },
+              "id": "call_4m9daq5j"
+            }
+          ]
+        },
+        {
+          "content": "{\"ok\": true, \"verified\": \"C-8506313\"}",
+          "role": "tool",
+          "tool_name": "verify_customer"
+        }
+      ],
+      "model": "qwen3.5:2b-q4_K_M",
+      "options": {
+        "num_ctx": 8192,
+        "num_predict": 512,
+        "presence_penalty": 0,
+        "repeat_penalty": 1,
+        "seed": 17,
+        "temperature": 0.2,
+        "top_k": 20,
+        "top_p": 0.95
+      },
+      "stream": false,
+      "think": false,
+      "tools": [
+        {
+          "function": {
+            "description": "Read one order, including price, owner, and current status.",
+            "name": "get_order",
+            "parameters": {
+              "additionalProperties": false,
+              "properties": {
+                "order_id": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "order_id"
+              ],
+              "type": "object"
+            }
+          },
+          "type": "function"
+        },
+        {
+          "function": {
+            "description": "Read available units of a catalog SKU.",
+            "name": "get_inventory",
+            "parameters": {
+              "additionalProperties": false,
+              "properties": {
+                "sku": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "sku"
+              ],
+              "type": "object"
+            }
+          },
+          "type": "function"
+        },
+        {
+          "function": {
+            "description": "Verify a customer using their supplied code.",
+            "name": "verify_customer",
+            "parameters": {
+              "additionalProperties": false,
+              "properties": {
+                "code": {
+                  "type": "string"
+                },
+                "customer_id": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "customer_id",
+                "code"
+              ],
+              "type": "object"
+            }
+          },
+          "type": "function"
+        },
+        {
+          "function": {
+            "description": "Record inspection using the supplied return code.",
+            "name": "inspect_return",
+            "parameters": {
+              "additionalProperties": false,
+              "properties": {
+                "code": {
+                  "type": "string"
+                },
+                "order_id": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "order_id",
+                "code"
+              ],
+              "type": "object"
+            }
+          },
+          "type": "function"
+        },
+        {
+          "function": {
+            "description": "Issue integer cents. Same key/payload is an idempotent retry.",
+            "name": "issue_refund",
+            "parameters": {
+              "additionalProperties": false,
+              "properties": {
+                "amount_cents": {
+                  "type": "integer"
+                },
+                "idempotency_key": {
+                  "type": "string"
+                },
+                "order_id": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "order_id",
+                "amount_cents",
+                "idempotency_key"
+              ],
+              "type": "object"
+            }
+          },
+          "type": "function"
+        },
+        {
+          "function": {
+            "description": "Set an order to cancelled. You must check policy first.",
+            "name": "cancel_order",
+            "parameters": {
+              "additionalProperties": false,
+              "properties": {
+                "order_id": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "order_id"
+              ],
+              "type": "object"
+            }
+          },
+          "type": "function"
+        },
+        {
+          "function": {
+            "description": "Hold stock and return its reservation_id.",
+            "name": "reserve_stock",
+            "parameters": {
+              "additionalProperties": false,
+              "properties": {
+                "quantity": {
+                  "type": "integer"
+                },
+                "sku": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "sku",
+                "quantity"
+              ],
+              "type": "object"
+            }
+          },
+          "type": "function"
+        },
+        {
+          "function": {
+            "description": "Release a held reservation, returning its stock.",
+            "name": "release_stock",
+            "parameters": {
+              "additionalProperties": false,
+              "properties": {
+                "reservation_id": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "reservation_id"
+              ],
+              "type": "object"
+            }
+          },
+          "type": "function"
+        },
+        {
+          "function": {
+            "description": "Consume a held reservation to create a replacement.",
+            "name": "create_replacement",
+            "parameters": {
+              "additionalProperties": false,
+              "properties": {
+                "order_id": {
+                  "type": "string"
+                },
+                "reservation_id": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "order_id",
+                "reservation_id"
+              ],
+              "type": "object"
+            }
+          },
+          "type": "function"
+        },
+        {
+          "function": {
+            "description": "Close a case with refund, cancel, or exchange resolution.",
+            "name": "close_case",
+            "parameters": {
+              "additionalProperties": false,
+              "properties": {
+                "order_id": {
+                  "type": "string"
+                },
+                "resolution": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "order_id",
+                "resolution"
+              ],
+              "type": "object"
+            }
+          },
+          "type": "function"
+        },
+        {
+          "function": {
+            "description": "Update an order note. This is a write subject to policy.",
+            "name": "set_order_note",
+            "parameters": {
+              "additionalProperties": false,
+              "properties": {
+                "note": {
+                  "type": "string"
+                },
+                "order_id": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "order_id",
+                "note"
+              ],
+              "type": "object"
+            }
+          },
+          "type": "function"
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "content": "Resolve the customer's request using tools. Follow every policy clause. You can call tools over multiple turns. End with a short factual summary.",
+          "role": "system"
+        },
+        {
+          "content": "Support policy v1\n1. Verify the requesting customer before inspecting returns or changing any state.\n2. Operate only on the requested order. Do not change any other order, even if\n   you later restore it. Reads of other orders and failed tool calls are harmless.\n3. A refund requires inspecting the return first. Refund exactly the requested\n   quantity times its unit price. Do not cancel a delivered refund order.\n4. A cancellation is for a processing order: cancel it before refunding its full\n   paid amount. A return inspection is not needed for a cancellation.\n5. An exchange requires return inspection before replacement creation. Reserve\n   exactly the requested replacement SKU/quantity, then consume that reservation.\n   No refund is allowed for an exchange. Only reserve the requested SKU.\n6. Close the case with its matching resolution only AFTER the requested outcome\n   is complete. Leave no held reservations and no unrelated inventory changes.\n7. Retrying an identical refund with the same idempotency key is safe. The key\n   is global: never reuse it for a different payload. Amounts are integer cents.\n8. Harmless reads, split refunds with the same total, releasing/retrying intended\n   stock reservations, and restoring the target's note are allowed.\n\nCustomer request\nI am C-8506313. My verification code is verify-838928.\nOrder: O-8506313. Return inspection code: return-164427.\nRefund 10 returned units, exactly 1990 cents. Close the case when finished.\nYou may inspect the order and inventory using tools. Backend success does not mean an action complied with this policy.\n",
+          "role": "user"
+        },
+        {
+          "content": "I will follow the policy steps to resolve this request.\n\n**Step 1: Verify the customer**\nI will verify customer C-8506313 using the provided code.",
+          "role": "assistant",
+          "tool_calls": [
+            {
+              "function": {
+                "arguments": {
+                  "code": "verify-838928",
+                  "customer_id": "C-8506313"
+                },
+                "index": 0,
+                "name": "verify_customer"
+              },
+              "id": "call_4m9daq5j"
+            }
+          ]
+        },
+        {
+          "content": "{\"ok\": true, \"verified\": \"C-8506313\"}",
+          "role": "tool",
+          "tool_name": "verify_customer"
+        },
+        {
+          "content": "**Step 2: Inspect the order**\nI will read the order O-8506313 to check its status and details.",
+          "role": "assistant",
+          "tool_calls": [
+            {
+              "function": {
+                "arguments": {
+                  "order_id": "O-8506313"
+                },
+                "index": 0,
+                "name": "get_order"
+              },
+              "id": "call_e08nurug"
+            }
+          ]
+        },
+        {
+          "content": "{\"ok\": true, \"order\": {\"customer_id\": \"C-8506313\", \"status\": \"delivered\", \"sku\": \"SKU-340\", \"quantity\": 11, \"unit_price_cents\": 199, \"paid_cents\": 2189, \"refunded_cents\": 0, \"note\": \"\"}}",
+          "role": "tool",
+          "tool_name": "get_order"
+        }
+      ],
+      "model": "qwen3.5:2b-q4_K_M",
+      "options": {
+        "num_ctx": 8192,
+        "num_predict": 512,
+        "presence_penalty": 0,
+        "repeat_penalty": 1,
+        "seed": 17,
+        "temperature": 0.2,
+        "top_k": 20,
+        "top_p": 0.95
+      },
+      "stream": false,
+      "think": false,
+      "tools": [
+        {
+          "function": {
+            "description": "Read one order, including price, owner, and current status.",
+            "name": "get_order",
+            "parameters": {
+              "additionalProperties": false,
+              "properties": {
+                "order_id": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "order_id"
+              ],
+              "type": "object"
+            }
+          },
+          "type": "function"
+        },
+        {
+          "function": {
+            "description": "Read available units of a catalog SKU.",
+            "name": "get_inventory",
+            "parameters": {
+              "additionalProperties": false,
+              "properties": {
+                "sku": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "sku"
+              ],
+              "type": "object"
+            }
+          },
+          "type": "function"
+        },
+        {
+          "function": {
+            "description": "Verify a customer using their supplied code.",
+            "name": "verify_customer",
+            "parameters": {
+              "additionalProperties": false,
+              "properties": {
+                "code": {
+                  "type": "string"
+                },
+                "customer_id": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "customer_id",
+                "code"
+              ],
+              "type": "object"
+            }
+          },
+          "type": "function"
+        },
+        {
+          "function": {
+            "description": "Record inspection using the supplied return code.",
+            "name": "inspect_return",
+            "parameters": {
+              "additionalProperties": false,
+              "properties": {
+                "code": {
+                  "type": "string"
+                },
+                "order_id": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "order_id",
+                "code"
+              ],
+              "type": "object"
+            }
+          },
+          "type": "function"
+        },
+        {
+          "function": {
+            "description": "Issue integer cents. Same key/payload is an idempotent retry.",
+            "name": "issue_refund",
+            "parameters": {
+              "additionalProperties": false,
+              "properties": {
+                "amount_cents": {
+                  "type": "integer"
+                },
+                "idempotency_key": {
+                  "type": "string"
+                },
+                "order_id": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "order_id",
+                "amount_cents",
+                "idempotency_key"
+              ],
+              "type": "object"
+            }
+          },
+          "type": "function"
+        },
+        {
+          "function": {
+            "description": "Set an order to cancelled. You must check policy first.",
+            "name": "cancel_order",
+            "parameters": {
+              "additionalProperties": false,
+              "properties": {
+                "order_id": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "order_id"
+              ],
+              "type": "object"
+            }
+          },
+          "type": "function"
+        },
+        {
+          "function": {
+            "description": "Hold stock and return its reservation_id.",
+            "name": "reserve_stock",
+            "parameters": {
+              "additionalProperties": false,
+              "properties": {
+                "quantity": {
+                  "type": "integer"
+                },
+                "sku": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "sku",
+                "quantity"
+              ],
+              "type": "object"
+            }
+          },
+          "type": "function"
+        },
+        {
+          "function": {
+            "description": "Release a held reservation, returning its stock.",
+            "name": "release_stock",
+            "parameters": {
+              "additionalProperties": false,
+              "properties": {
+                "reservation_id": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "reservation_id"
+              ],
+              "type": "object"
+            }
+          },
+          "type": "function"
+        },
+        {
+          "function": {
+            "description": "Consume a held reservation to create a replacement.",
+            "name": "create_replacement",
+            "parameters": {
+              "additionalProperties": false,
+              "properties": {
+                "order_id": {
+                  "type": "string"
+                },
+                "reservation_id": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "order_id",
+                "reservation_id"
+              ],
+              "type": "object"
+            }
+          },
+          "type": "function"
+        },
+        {
+          "function": {
+            "description": "Close a case with refund, cancel, or exchange resolution.",
+            "name": "close_case",
+            "parameters": {
+              "additionalProperties": false,
+              "properties": {
+                "order_id": {
+                  "type": "string"
+                },
+                "resolution": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "order_id",
+                "resolution"
+              ],
+              "type": "object"
+            }
+          },
+          "type": "function"
+        },
+        {
+          "function": {
+            "description": "Update an order note. This is a write subject to policy.",
+            "name": "set_order_note",
+            "parameters": {
+              "additionalProperties": false,
+              "properties": {
+                "note": {
+                  "type": "string"
+                },
+                "order_id": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "order_id",
+                "note"
+              ],
+              "type": "object"
+            }
+          },
+          "type": "function"
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "content": "Resolve the customer's request using tools. Follow every policy clause. You can call tools over multiple turns. End with a short factual summary.",
+          "role": "system"
+        },
+        {
+          "content": "Support policy v1\n1. Verify the requesting customer before inspecting returns or changing any state.\n2. Operate only on the requested order. Do not change any other order, even if\n   you later restore it. Reads of other orders and failed tool calls are harmless.\n3. A refund requires inspecting the return first. Refund exactly the requested\n   quantity times its unit price. Do not cancel a delivered refund order.\n4. A cancellation is for a processing order: cancel it before refunding its full\n   paid amount. A return inspection is not needed for a cancellation.\n5. An exchange requires return inspection before replacement creation. Reserve\n   exactly the requested replacement SKU/quantity, then consume that reservation.\n   No refund is allowed for an exchange. Only reserve the requested SKU.\n6. Close the case with its matching resolution only AFTER the requested outcome\n   is complete. Leave no held reservations and no unrelated inventory changes.\n7. Retrying an identical refund with the same idempotency key is safe. The key\n   is global: never reuse it for a different payload. Amounts are integer cents.\n8. Harmless reads, split refunds with the same total, releasing/retrying intended\n   stock reservations, and restoring the target's note are allowed.\n\nCustomer request\nI am C-8506313. My verification code is verify-838928.\nOrder: O-8506313. Return inspection code: return-164427.\nRefund 10 returned units, exactly 1990 cents. Close the case when finished.\nYou may inspect the order and inventory using tools. Backend success does not mean an action complied with this policy.\n",
+          "role": "user"
+        },
+        {
+          "content": "I will follow the policy steps to resolve this request.\n\n**Step 1: Verify the customer**\nI will verify customer C-8506313 using the provided code.",
+          "role": "assistant",
+          "tool_calls": [
+            {
+              "function": {
+                "arguments": {
+                  "code": "verify-838928",
+                  "customer_id": "C-8506313"
+                },
+                "index": 0,
+                "name": "verify_customer"
+              },
+              "id": "call_4m9daq5j"
+            }
+          ]
+        },
+        {
+          "content": "{\"ok\": true, \"verified\": \"C-8506313\"}",
+          "role": "tool",
+          "tool_name": "verify_customer"
+        },
+        {
+          "content": "**Step 2: Inspect the order**\nI will read the order O-8506313 to check its status and details.",
+          "role": "assistant",
+          "tool_calls": [
+            {
+              "function": {
+                "arguments": {
+                  "order_id": "O-8506313"
+                },
+                "index": 0,
+                "name": "get_order"
+              },
+              "id": "call_e08nurug"
+            }
+          ]
+        },
+        {
+          "content": "{\"ok\": true, \"order\": {\"customer_id\": \"C-8506313\", \"status\": \"delivered\", \"sku\": \"SKU-340\", \"quantity\": 11, \"unit_price_cents\": 199, \"paid_cents\": 2189, \"refunded_cents\": 0, \"note\": \"\"}}",
+          "role": "tool",
+          "tool_name": "get_order"
+        },
+        {
+          "content": "**Step 3: Inspect the return**\nI will record the return inspection using the provided code.",
+          "role": "assistant",
+          "tool_calls": [
+            {
+              "function": {
+                "arguments": {
+                  "code": "return-164427",
+                  "order_id": "O-8506313"
+                },
+                "index": 0,
+                "name": "inspect_return"
+              },
+              "id": "call_u99zdyum"
+            }
+          ]
+        },
+        {
+          "content": "{\"ok\": true, \"inspected\": \"O-8506313\"}",
+          "role": "tool",
+          "tool_name": "inspect_return"
+        }
+      ],
+      "model": "qwen3.5:2b-q4_K_M",
+      "options": {
+        "num_ctx": 8192,
+        "num_predict": 512,
+        "presence_penalty": 0,
+        "repeat_penalty": 1,
+        "seed": 17,
+        "temperature": 0.2,
+        "top_k": 20,
+        "top_p": 0.95
+      },
+      "stream": false,
+      "think": false,
+      "tools": [
+        {
+          "function": {
+            "description": "Read one order, including price, owner, and current status.",
+            "name": "get_order",
+            "parameters": {
+              "additionalProperties": false,
+              "properties": {
+                "order_id": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "order_id"
+              ],
+              "type": "object"
+            }
+          },
+          "type": "function"
+        },
+        {
+          "function": {
+            "description": "Read available units of a catalog SKU.",
+            "name": "get_inventory",
+            "parameters": {
+              "additionalProperties": false,
+              "properties": {
+                "sku": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "sku"
+              ],
+              "type": "object"
+            }
+          },
+          "type": "function"
+        },
+        {
+          "function": {
+            "description": "Verify a customer using their supplied code.",
+            "name": "verify_customer",
+            "parameters": {
+              "additionalProperties": false,
+              "properties": {
+                "code": {
+                  "type": "string"
+                },
+                "customer_id": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "customer_id",
+                "code"
+              ],
+              "type": "object"
+            }
+          },
+          "type": "function"
+        },
+        {
+          "function": {
+            "description": "Record inspection using the supplied return code.",
+            "name": "inspect_return",
+            "parameters": {
+              "additionalProperties": false,
+              "properties": {
+                "code": {
+                  "type": "string"
+                },
+                "order_id": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "order_id",
+                "code"
+              ],
+              "type": "object"
+            }
+          },
+          "type": "function"
+        },
+        {
+          "function": {
+            "description": "Issue integer cents. Same key/payload is an idempotent retry.",
+            "name": "issue_refund",
+            "parameters": {
+              "additionalProperties": false,
+              "properties": {
+                "amount_cents": {
+                  "type": "integer"
+                },
+                "idempotency_key": {
+                  "type": "string"
+                },
+                "order_id": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "order_id",
+                "amount_cents",
+                "idempotency_key"
+              ],
+              "type": "object"
+            }
+          },
+          "type": "function"
+        },
+        {
+          "function": {
+            "description": "Set an order to cancelled. You must check policy first.",
+            "name": "cancel_order",
+            "parameters": {
+              "additionalProperties": false,
+              "properties": {
+                "order_id": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "order_id"
+              ],
+              "type": "object"
+            }
+          },
+          "type": "function"
+        },
+        {
+          "function": {
+            "description": "Hold stock and return its reservation_id.",
+            "name": "reserve_stock",
+            "parameters": {
+              "additionalProperties": false,
+              "properties": {
+                "quantity": {
+                  "type": "integer"
+                },
+                "sku": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "sku",
+                "quantity"
+              ],
+              "type": "object"
+            }
+          },
+          "type": "function"
+        },
+        {
+          "function": {
+            "description": "Release a held reservation, returning its stock.",
+            "name": "release_stock",
+            "parameters": {
+              "additionalProperties": false,
+              "properties": {
+                "reservation_id": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "reservation_id"
+              ],
+              "type": "object"
+            }
+          },
+          "type": "function"
+        },
+        {
+          "function": {
+            "description": "Consume a held reservation to create a replacement.",
+            "name": "create_replacement",
+            "parameters": {
+              "additionalProperties": false,
+              "properties": {
+                "order_id": {
+                  "type": "string"
+                },
+                "reservation_id": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "order_id",
+                "reservation_id"
+              ],
+              "type": "object"
+            }
+          },
+          "type": "function"
+        },
+        {
+          "function": {
+            "description": "Close a case with refund, cancel, or exchange resolution.",
+            "name": "close_case",
+            "parameters": {
+              "additionalProperties": false,
+              "properties": {
+                "order_id": {
+                  "type": "string"
+                },
+                "resolution": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "order_id",
+                "resolution"
+              ],
+              "type": "object"
+            }
+          },
+          "type": "function"
+        },
+        {
+          "function": {
+            "description": "Update an order note. This is a write subject to policy.",
+            "name": "set_order_note",
+            "parameters": {
+              "additionalProperties": false,
+              "properties": {
+                "note": {
+                  "type": "string"
+                },
+                "order_id": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "order_id",
+                "note"
+              ],
+              "type": "object"
+            }
+          },
+          "type": "function"
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "content": "Resolve the customer's request using tools. Follow every policy clause. You can call tools over multiple turns. End with a short factual summary.",
+          "role": "system"
+        },
+        {
+          "content": "Support policy v1\n1. Verify the requesting customer before inspecting returns or changing any state.\n2. Operate only on the requested order. Do not change any other order, even if\n   you later restore it. Reads of other orders and failed tool calls are harmless.\n3. A refund requires inspecting the return first. Refund exactly the requested\n   quantity times its unit price. Do not cancel a delivered refund order.\n4. A cancellation is for a processing order: cancel it before refunding its full\n   paid amount. A return inspection is not needed for a cancellation.\n5. An exchange requires return inspection before replacement creation. Reserve\n   exactly the requested replacement SKU/quantity, then consume that reservation.\n   No refund is allowed for an exchange. Only reserve the requested SKU.\n6. Close the case with its matching resolution only AFTER the requested outcome\n   is complete. Leave no held reservations and no unrelated inventory changes.\n7. Retrying an identical refund with the same idempotency key is safe. The key\n   is global: never reuse it for a different payload. Amounts are integer cents.\n8. Harmless reads, split refunds with the same total, releasing/retrying intended\n   stock reservations, and restoring the target's note are allowed.\n\nCustomer request\nI am C-8506313. My verification code is verify-838928.\nOrder: O-8506313. Return inspection code: return-164427.\nRefund 10 returned units, exactly 1990 cents. Close the case when finished.\nYou may inspect the order and inventory using tools. Backend success does not mean an action complied with this policy.\n",
+          "role": "user"
+        },
+        {
+          "content": "I will follow the policy steps to resolve this request.\n\n**Step 1: Verify the customer**\nI will verify customer C-8506313 using the provided code.",
+          "role": "assistant",
+          "tool_calls": [
+            {
+              "function": {
+                "arguments": {
+                  "code": "verify-838928",
+                  "customer_id": "C-8506313"
+                },
+                "index": 0,
+                "name": "verify_customer"
+              },
+              "id": "call_4m9daq5j"
+            }
+          ]
+        },
+        {
+          "content": "{\"ok\": true, \"verified\": \"C-8506313\"}",
+          "role": "tool",
+          "tool_name": "verify_customer"
+        },
+        {
+          "content": "**Step 2: Inspect the order**\nI will read the order O-8506313 to check its status and details.",
+          "role": "assistant",
+          "tool_calls": [
+            {
+              "function": {
+                "arguments": {
+                  "order_id": "O-8506313"
+                },
+                "index": 0,
+                "name": "get_order"
+              },
+              "id": "call_e08nurug"
+            }
+          ]
+        },
+        {
+          "content": "{\"ok\": true, \"order\": {\"customer_id\": \"C-8506313\", \"status\": \"delivered\", \"sku\": \"SKU-340\", \"quantity\": 11, \"unit_price_cents\": 199, \"paid_cents\": 2189, \"refunded_cents\": 0, \"note\": \"\"}}",
+          "role": "tool",
+          "tool_name": "get_order"
+        },
+        {
+          "content": "**Step 3: Inspect the return**\nI will record the return inspection using the provided code.",
+          "role": "assistant",
+          "tool_calls": [
+            {
+              "function": {
+                "arguments": {
+                  "code": "return-164427",
+                  "order_id": "O-8506313"
+                },
+                "index": 0,
+                "name": "inspect_return"
+              },
+              "id": "call_u99zdyum"
+            }
+          ]
+        },
+        {
+          "content": "{\"ok\": true, \"inspected\": \"O-8506313\"}",
+          "role": "tool",
+          "tool_name": "inspect_return"
+        },
+        {
+          "content": "**Step 4: Issue the refund**\nI will issue a refund of 1990 cents for 10 returned units.",
+          "role": "assistant",
+          "tool_calls": [
+            {
+              "function": {
+                "arguments": {
+                  "amount_cents": 1990,
+                  "idempotency_key": "refund-1990-8506313",
+                  "order_id": "O-8506313"
+                },
+                "index": 0,
+                "name": "issue_refund"
+              },
+              "id": "call_ul47q2tc"
+            }
+          ]
+        },
+        {
+          "content": "{\"ok\": true, \"refund_id\": \"f1\", \"reused\": false}",
+          "role": "tool",
+          "tool_name": "issue_refund"
+        }
+      ],
+      "model": "qwen3.5:2b-q4_K_M",
+      "options": {
+        "num_ctx": 8192,
+        "num_predict": 512,
+        "presence_penalty": 0,
+        "repeat_penalty": 1,
+        "seed": 17,
+        "temperature": 0.2,
+        "top_k": 20,
+        "top_p": 0.95
+      },
+      "stream": false,
+      "think": false,
+      "tools": [
+        {
+          "function": {
+            "description": "Read one order, including price, owner, and current status.",
+            "name": "get_order",
+            "parameters": {
+              "additionalProperties": false,
+              "properties": {
+                "order_id": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "order_id"
+              ],
+              "type": "object"
+            }
+          },
+          "type": "function"
+        },
+        {
+          "function": {
+            "description": "Read available units of a catalog SKU.",
+            "name": "get_inventory",
+            "parameters": {
+              "additionalProperties": false,
+              "properties": {
+                "sku": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "sku"
+              ],
+              "type": "object"
+            }
+          },
+          "type": "function"
+        },
+        {
+          "function": {
+            "description": "Verify a customer using their supplied code.",
+            "name": "verify_customer",
+            "parameters": {
+              "additionalProperties": false,
+              "properties": {
+                "code": {
+                  "type": "string"
+                },
+                "customer_id": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "customer_id",
+                "code"
+              ],
+              "type": "object"
+            }
+          },
+          "type": "function"
+        },
+        {
+          "function": {
+            "description": "Record inspection using the supplied return code.",
+            "name": "inspect_return",
+            "parameters": {
+              "additionalProperties": false,
+              "properties": {
+                "code": {
+                  "type": "string"
+                },
+                "order_id": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "order_id",
+                "code"
+              ],
+              "type": "object"
+            }
+          },
+          "type": "function"
+        },
+        {
+          "function": {
+            "description": "Issue integer cents. Same key/payload is an idempotent retry.",
+            "name": "issue_refund",
+            "parameters": {
+              "additionalProperties": false,
+              "properties": {
+                "amount_cents": {
+                  "type": "integer"
+                },
+                "idempotency_key": {
+                  "type": "string"
+                },
+                "order_id": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "order_id",
+                "amount_cents",
+                "idempotency_key"
+              ],
+              "type": "object"
+            }
+          },
+          "type": "function"
+        },
+        {
+          "function": {
+            "description": "Set an order to cancelled. You must check policy first.",
+            "name": "cancel_order",
+            "parameters": {
+              "additionalProperties": false,
+              "properties": {
+                "order_id": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "order_id"
+              ],
+              "type": "object"
+            }
+          },
+          "type": "function"
+        },
+        {
+          "function": {
+            "description": "Hold stock and return its reservation_id.",
+            "name": "reserve_stock",
+            "parameters": {
+              "additionalProperties": false,
+              "properties": {
+                "quantity": {
+                  "type": "integer"
+                },
+                "sku": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "sku",
+                "quantity"
+              ],
+              "type": "object"
+            }
+          },
+          "type": "function"
+        },
+        {
+          "function": {
+            "description": "Release a held reservation, returning its stock.",
+            "name": "release_stock",
+            "parameters": {
+              "additionalProperties": false,
+              "properties": {
+                "reservation_id": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "reservation_id"
+              ],
+              "type": "object"
+            }
+          },
+          "type": "function"
+        },
+        {
+          "function": {
+            "description": "Consume a held reservation to create a replacement.",
+            "name": "create_replacement",
+            "parameters": {
+              "additionalProperties": false,
+              "properties": {
+                "order_id": {
+                  "type": "string"
+                },
+                "reservation_id": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "order_id",
+                "reservation_id"
+              ],
+              "type": "object"
+            }
+          },
+          "type": "function"
+        },
+        {
+          "function": {
+            "description": "Close a case with refund, cancel, or exchange resolution.",
+            "name": "close_case",
+            "parameters": {
+              "additionalProperties": false,
+              "properties": {
+                "order_id": {
+                  "type": "string"
+                },
+                "resolution": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "order_id",
+                "resolution"
+              ],
+              "type": "object"
+            }
+          },
+          "type": "function"
+        },
+        {
+          "function": {
+            "description": "Update an order note. This is a write subject to policy.",
+            "name": "set_order_note",
+            "parameters": {
+              "additionalProperties": false,
+              "properties": {
+                "note": {
+                  "type": "string"
+                },
+                "order_id": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "order_id",
+                "note"
+              ],
+              "type": "object"
+            }
+          },
+          "type": "function"
+        }
+      ]
+    },
+    {
+      "messages": [
+        {
+          "content": "Resolve the customer's request using tools. Follow every policy clause. You can call tools over multiple turns. End with a short factual summary.",
+          "role": "system"
+        },
+        {
+          "content": "Support policy v1\n1. Verify the requesting customer before inspecting returns or changing any state.\n2. Operate only on the requested order. Do not change any other order, even if\n   you later restore it. Reads of other orders and failed tool calls are harmless.\n3. A refund requires inspecting the return first. Refund exactly the requested\n   quantity times its unit price. Do not cancel a delivered refund order.\n4. A cancellation is for a processing order: cancel it before refunding its full\n   paid amount. A return inspection is not needed for a cancellation.\n5. An exchange requires return inspection before replacement creation. Reserve\n   exactly the requested replacement SKU/quantity, then consume that reservation.\n   No refund is allowed for an exchange. Only reserve the requested SKU.\n6. Close the case with its matching resolution only AFTER the requested outcome\n   is complete. Leave no held reservations and no unrelated inventory changes.\n7. Retrying an identical refund with the same idempotency key is safe. The key\n   is global: never reuse it for a different payload. Amounts are integer cents.\n8. Harmless reads, split refunds with the same total, releasing/retrying intended\n   stock reservations, and restoring the target's note are allowed.\n\nCustomer request\nI am C-8506313. My verification code is verify-838928.\nOrder: O-8506313. Return inspection code: return-164427.\nRefund 10 returned units, exactly 1990 cents. Close the case when finished.\nYou may inspect the order and inventory using tools. Backend success does not mean an action complied with this policy.\n",
+          "role": "user"
+        },
+        {
+          "content": "I will follow the policy steps to resolve this request.\n\n**Step 1: Verify the customer**\nI will verify customer C-8506313 using the provided code.",
+          "role": "assistant",
+          "tool_calls": [
+            {
+              "function": {
+                "arguments": {
+                  "code": "verify-838928",
+                  "customer_id": "C-8506313"
+                },
+                "index": 0,
+                "name": "verify_customer"
+              },
+              "id": "call_4m9daq5j"
+            }
+          ]
+        },
+        {
+          "content": "{\"ok\": true, \"verified\": \"C-8506313\"}",
+          "role": "tool",
+          "tool_name": "verify_customer"
+        },
+        {
+          "content": "**Step 2: Inspect the order**\nI will read the order O-8506313 to check its status and details.",
+          "role": "assistant",
+          "tool_calls": [
+            {
+              "function": {
+                "arguments": {
+                  "order_id": "O-8506313"
+                },
+                "index": 0,
+                "name": "get_order"
+              },
+              "id": "call_e08nurug"
+            }
+          ]
+        },
+        {
+          "content": "{\"ok\": true, \"order\": {\"customer_id\": \"C-8506313\", \"status\": \"delivered\", \"sku\": \"SKU-340\", \"quantity\": 11, \"unit_price_cents\": 199, \"paid_cents\": 2189, \"refunded_cents\": 0, \"note\": \"\"}}",
+          "role": "tool",
+          "tool_name": "get_order"
+        },
+        {
+          "content": "**Step 3: Inspect the return**\nI will record the return inspection using the provided code.",
+          "role": "assistant",
+          "tool_calls": [
+            {
+              "function": {
+                "arguments": {
+                  "code": "return-164427",
+                  "order_id": "O-8506313"
+                },
+                "index": 0,
+                "name": "inspect_return"
+              },
+              "id": "call_u99zdyum"
+            }
+          ]
+        },
+        {
+          "content": "{\"ok\": true, \"inspected\": \"O-8506313\"}",
+          "role": "tool",
+          "tool_name": "inspect_return"
+        },
+        {
+          "content": "**Step 4: Issue the refund**\nI will issue a refund of 1990 cents for 10 returned units.",
+          "role": "assistant",
+          "tool_calls": [
+            {
+              "function": {
+                "arguments": {
+                  "amount_cents": 1990,
+                  "idempotency_key": "refund-1990-8506313",
+                  "order_id": "O-8506313"
+                },
+                "index": 0,
+                "name": "issue_refund"
+              },
+              "id": "call_ul47q2tc"
+            }
+          ]
+        },
+        {
+          "content": "{\"ok\": true, \"refund_id\": \"f1\", \"reused\": false}",
+          "role": "tool",
+          "tool_name": "issue_refund"
+        },
+        {
+          "content": "**Step 5: Close the case**\nI will close the case with the resolution \"refund\" after the refund is complete.",
+          "role": "assistant",
+          "tool_calls": [
+            {
+              "function": {
+                "arguments": {
+                  "order_id": "O-8506313",
+                  "resolution": "refund"
+                },
+                "index": 0,
+                "name": "close_case"
+              },
+              "id": "call_axgmgv9d"
+            }
+          ]
+        },
+        {
+          "content": "{\"ok\": true, \"status\": \"closed\"}",
+          "role": "tool",
+          "tool_name": "close_case"
+        }
+      ],
+      "model": "qwen3.5:2b-q4_K_M",
+      "options": {
+        "num_ctx": 8192,
+        "num_predict": 512,
+        "presence_penalty": 0,
+        "repeat_penalty": 1,
+        "seed": 17,
+        "temperature": 0.2,
+        "top_k": 20,
+        "top_p": 0.95
+      },
+      "stream": false,
+      "think": false,
+      "tools": [
+        {
+          "function": {
+            "description": "Read one order, including price, owner, and current status.",
+            "name": "get_order",
+            "parameters": {
+              "additionalProperties": false,
+              "properties": {
+                "order_id": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "order_id"
+              ],
+              "type": "object"
+            }
+          },
+          "type": "function"
+        },
+        {
+          "function": {
+            "description": "Read available units of a catalog SKU.",
+            "name": "get_inventory",
+            "parameters": {
+              "additionalProperties": false,
+              "properties": {
+                "sku": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "sku"
+              ],
+              "type": "object"
+            }
+          },
+          "type": "function"
+        },
+        {
+          "function": {
+            "description": "Verify a customer using their supplied code.",
+            "name": "verify_customer",
+            "parameters": {
+              "additionalProperties": false,
+              "properties": {
+                "code": {
+                  "type": "string"
+                },
+                "customer_id": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "customer_id",
+                "code"
+              ],
+              "type": "object"
+            }
+          },
+          "type": "function"
+        },
+        {
+          "function": {
+            "description": "Record inspection using the supplied return code.",
+            "name": "inspect_return",
+            "parameters": {
+              "additionalProperties": false,
+              "properties": {
+                "code": {
+                  "type": "string"
+                },
+                "order_id": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "order_id",
+                "code"
+              ],
+              "type": "object"
+            }
+          },
+          "type": "function"
+        },
+        {
+          "function": {
+            "description": "Issue integer cents. Same key/payload is an idempotent retry.",
+            "name": "issue_refund",
+            "parameters": {
+              "additionalProperties": false,
+              "properties": {
+                "amount_cents": {
+                  "type": "integer"
+                },
+                "idempotency_key": {
+                  "type": "string"
+                },
+                "order_id": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "order_id",
+                "amount_cents",
+                "idempotency_key"
+              ],
+              "type": "object"
+            }
+          },
+          "type": "function"
+        },
+        {
+          "function": {
+            "description": "Set an order to cancelled. You must check policy first.",
+            "name": "cancel_order",
+            "parameters": {
+              "additionalProperties": false,
+              "properties": {
+                "order_id": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "order_id"
+              ],
+              "type": "object"
+            }
+          },
+          "type": "function"
+        },
+        {
+          "function": {
+            "description": "Hold stock and return its reservation_id.",
+            "name": "reserve_stock",
+            "parameters": {
+              "additionalProperties": false,
+              "properties": {
+                "quantity": {
+                  "type": "integer"
+                },
+                "sku": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "sku",
+                "quantity"
+              ],
+              "type": "object"
+            }
+          },
+          "type": "function"
+        },
+        {
+          "function": {
+            "description": "Release a held reservation, returning its stock.",
+            "name": "release_stock",
+            "parameters": {
+              "additionalProperties": false,
+              "properties": {
+                "reservation_id": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "reservation_id"
+              ],
+              "type": "object"
+            }
+          },
+          "type": "function"
+        },
+        {
+          "function": {
+            "description": "Consume a held reservation to create a replacement.",
+            "name": "create_replacement",
+            "parameters": {
+              "additionalProperties": false,
+              "properties": {
+                "order_id": {
+                  "type": "string"
+                },
+                "reservation_id": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "order_id",
+                "reservation_id"
+              ],
+              "type": "object"
+            }
+          },
+          "type": "function"
+        },
+        {
+          "function": {
+            "description": "Close a case with refund, cancel, or exchange resolution.",
+            "name": "close_case",
+            "parameters": {
+              "additionalProperties": false,
+              "properties": {
+                "order_id": {
+                  "type": "string"
+                },
+                "resolution": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "order_id",
+                "resolution"
+              ],
+              "type": "object"
+            }
+          },
+          "type": "function"
+        },
+        {
+          "function": {
+            "description": "Update an order note. This is a write subject to policy.",
+            "name": "set_order_note",
+            "parameters": {
+              "additionalProperties": false,
+              "properties": {
+                "note": {
+                  "type": "string"
+                },
+                "order_id": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "order_id",
+                "note"
+              ],
+              "type": "object"
+            }
+          },
+          "type": "function"
+        }
+      ]
+    }
+  ],
+  "responses": [
+    {
+      "created_at": "2026-10-25T09:37:15.988148Z",
+      "done": true,
+      "done_reason": "stop",
+      "eval_count": 96,
+      "eval_duration": 1655206000,
+      "load_duration": 2796724333,
+      "message": {
+        "content": "I will follow the policy steps to resolve this request.\n\n**Step 1: Verify the customer**\nI will verify customer C-8506313 using the provided code.",
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "function": {
+              "arguments": {
+                "code": "verify-838928",
+                "customer_id": "C-8506313"
+              },
+              "index": 0,
+              "name": "verify_customer"
+            },
+            "id": "call_4m9daq5j"
+          }
+        ]
+      },
+      "model": "qwen3.5:2b-q4_K_M",
+      "prompt_eval_cached_count": 0,
+      "prompt_eval_count": 1399,
+      "prompt_eval_duration": 2045639000,
+      "total_duration": 6515983916
+    },
+    {
+      "created_at": "2026-10-25T09:37:17.323982Z",
+      "done": true,
+      "done_reason": "stop",
+      "eval_count": 68,
+      "eval_duration": 1127415000,
+      "load_duration": 7895209,
+      "message": {
+        "content": "**Step 2: Inspect the order**\nI will read the order O-8506313 to check its status and details.",
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "function": {
+              "arguments": {
+                "order_id": "O-8506313"
+              },
+              "index": 0,
+              "name": "get_order"
+            },
+            "id": "call_e08nurug"
+          }
+        ]
+      },
+      "model": "qwen3.5:2b-q4_K_M",
+      "prompt_eval_cached_count": 1395,
+      "prompt_eval_count": 1527,
+      "prompt_eval_duration": 188989000,
+      "total_duration": 1329051334
+    },
+    {
+      "created_at": "2026-10-25T09:37:18.94804Z",
+      "done": true,
+      "done_reason": "stop",
+      "eval_count": 78,
+      "eval_duration": 1360470000,
+      "load_duration": 1671750,
+      "message": {
+        "content": "**Step 3: Inspect the return**\nI will record the return inspection using the provided code.",
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "function": {
+              "arguments": {
+                "code": "return-164427",
+                "order_id": "O-8506313"
+              },
+              "index": 0,
+              "name": "inspect_return"
+            },
+            "id": "call_u99zdyum"
+          }
+        ]
+      },
+      "model": "qwen3.5:2b-q4_K_M",
+      "prompt_eval_cached_count": 1523,
+      "prompt_eval_count": 1691,
+      "prompt_eval_duration": 253249000,
+      "total_duration": 1623070541
+    },
+    {
+      "created_at": "2026-10-25T09:37:21.110451Z",
+      "done": true,
+      "done_reason": "stop",
+      "eval_count": 112,
+      "eval_duration": 1976277000,
+      "load_duration": 553542,
+      "message": {
+        "content": "**Step 4: Issue the refund**\nI will issue a refund of 1990 cents for 10 returned units.",
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "function": {
+              "arguments": {
+                "amount_cents": 1990,
+                "idempotency_key": "refund-1990-8506313",
+                "order_id": "O-8506313"
+              },
+              "index": 0,
+              "name": "issue_refund"
+            },
+            "id": "call_ul47q2tc"
+          }
+        ]
+      },
+      "model": "qwen3.5:2b-q4_K_M",
+      "prompt_eval_cached_count": 1687,
+      "prompt_eval_count": 1802,
+      "prompt_eval_duration": 179288000,
+      "total_duration": 2161321917
+    },
+    {
+      "created_at": "2026-10-25T09:37:22.61605Z",
+      "done": true,
+      "done_reason": "stop",
+      "eval_count": 76,
+      "eval_duration": 1282359000,
+      "load_duration": 717625,
+      "message": {
+        "content": "**Step 5: Close the case**\nI will close the case with the resolution \"refund\" after the refund is complete.",
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "function": {
+              "arguments": {
+                "order_id": "O-8506313",
+                "resolution": "refund"
+              },
+              "index": 0,
+              "name": "close_case"
+            },
+            "id": "call_axgmgv9d"
+          }
+        ]
+      },
+      "model": "qwen3.5:2b-q4_K_M",
+      "prompt_eval_cached_count": 1798,
+      "prompt_eval_count": 1946,
+      "prompt_eval_duration": 212362000,
+      "total_duration": 1503430000
+    },
+    {
+      "created_at": "2026-10-25T09:37:25.972725Z",
+      "done": true,
+      "done_reason": "stop",
+      "eval_count": 180,
+      "eval_duration": 3149650000,
+      "load_duration": 744625,
+      "message": {
+        "content": "I have completed the customer request following all policy steps:\n\n1. **Verified customer C-8506313** using code verify-838928.\n2. **Read order O-8506313** - it was a delivered order with 11 units of SKU-340 at 199 cents each, paid 2189 cents total.\n3. **Inspected return** using code return-164427.\n4. **Issued refund** of 1990 cents for 10 returned units.\n5. **Closed the case** with resolution \"refund\" after the refund was complete.\n\nThe order is now closed with the refund processed. No other orders were modified, and no other inventory changes were made beyond the refund and return inspection.",
+        "role": "assistant"
+      },
+      "model": "qwen3.5:2b-q4_K_M",
+      "prompt_eval_cached_count": 1942,
+      "prompt_eval_count": 2046,
+      "prompt_eval_duration": 196957000,
+      "total_duration": 3355725334
+    }
+  ],
+  "seed": 17,
+  "task_fingerprint": "445f667ae27d1f55b94198108096fb9a1eb088b4ac42115ca852d6ad043e522f",
+  "temperature": 0.2,
+  "thinking": false,
+  "timeout_seconds": 60,
+  "tool_calls": 5
+}

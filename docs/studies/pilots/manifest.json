@@ -1,0 +1,13 @@
+{
+  "files": {
+    "qwen35-2b/episode.json": "7177e30e754b7a08a74b365cb6177b6766188eaf9f614265becaf873f7077e36",
+    "qwen35-2b/model.json": "1dd6b56d48ad285cf0bf7202b17ee22c29ea9417839102fa9fb184d91e03fecf",
+    "qwen35-2b/task.json": "fa1b0ac5bad26689b78e39c117c868c94ae0c00aeb0873c09547786d82d9a536",
+    "qwen35-4b/episode.json": "84e044ff68d6a23878da85ef55bcf489b8e111617dddc0c8cc9d88ca79e4dd08",
+    "qwen35-4b/model.json": "95701b70ce819ebba3dc051a69cb232299b3e7de8c4fb38b94db7391d0d82e93",
+    "qwen35-4b/task.json": "fa1b0ac5bad26689b78e39c117c868c94ae0c00aeb0873c09547786d82d9a536"
+  },
+  "kind": "excluded_infrastructure_pilots",
+  "schema_version": 1,
+  "scope": "Two synthetic refund-seed10000 pilots, excluded from all primary results. Byte identity only, not proof of origin. These pilots predate the full primary study freeze."
+}

@@ -1,0 +1,2954 @@
+{
+  "bootstrap": {
+    "confidence": 0.95,
+    "method": "paired case-cluster percentile; all repetitions retained",
+    "samples": 2000,
+    "seed": 17,
+    "unit": "domain+task_id"
+  },
+  "corpus": {
+    "decode_seeds_by_repeat": {
+      "0": 17,
+      "1": 29,
+      "2": 43
+    },
+    "domains": [
+      "gatebench"
+    ],
+    "models": [
+      "qwen3.5:2b-q4_K_M",
+      "qwen3.5:4b-q4_K_M"
+    ],
+    "repeats": 3,
+    "task_clusters": 12,
+    "trials": 72
+  },
+  "kind": "real_model_study",
+  "models": {
+    "qwen3.5:2b-q4_K_M": {
+      "consistency": {
+        "exact_trace": {
+          "pass^1": {
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "estimate": 0.0
+          },
+          "pass^2": {
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "estimate": 0.0
+          },
+          "pass^3": {
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "estimate": 0.0
+          }
+        },
+        "final_state": {
+          "pass^1": {
+            "ci": [
+              0.4166666666666667,
+              0.9166666666666666
+            ],
+            "estimate": 0.6666666666666666
+          },
+          "pass^2": {
+            "ci": [
+              0.4166666666666667,
+              0.9166666666666666
+            ],
+            "estimate": 0.6666666666666666
+          },
+          "pass^3": {
+            "ci": [
+              0.4166666666666667,
+              0.9166666666666666
+            ],
+            "estimate": 0.6666666666666666
+          }
+        },
+        "goal": {
+          "pass^1": {
+            "ci": [
+              0.4166666666666667,
+              0.9166666666666666
+            ],
+            "estimate": 0.6666666666666666
+          },
+          "pass^2": {
+            "ci": [
+              0.4166666666666667,
+              0.9166666666666666
+            ],
+            "estimate": 0.6666666666666666
+          },
+          "pass^3": {
+            "ci": [
+              0.4166666666666667,
+              0.9166666666666666
+            ],
+            "estimate": 0.6666666666666666
+          }
+        },
+        "hardened": {
+          "pass^1": {
+            "ci": [
+              0.3611111111111111,
+              0.8333333333333334
+            ],
+            "estimate": 0.6111111111111112
+          },
+          "pass^2": {
+            "ci": [
+              0.3055555555555556,
+              0.8055555555555556
+            ],
+            "estimate": 0.5555555555555556
+          },
+          "pass^3": {
+            "ci": [
+              0.25,
+              0.75
+            ],
+            "estimate": 0.5
+          }
+        },
+        "no_frame": {
+          "pass^1": {
+            "ci": [
+              0.3611111111111111,
+              0.8333333333333334
+            ],
+            "estimate": 0.6111111111111112
+          },
+          "pass^2": {
+            "ci": [
+              0.3055555555555556,
+              0.8055555555555556
+            ],
+            "estimate": 0.5555555555555556
+          },
+          "pass^3": {
+            "ci": [
+              0.25,
+              0.75
+            ],
+            "estimate": 0.5
+          }
+        },
+        "no_history": {
+          "pass^1": {
+            "ci": [
+              0.4166666666666667,
+              0.9166666666666666
+            ],
+            "estimate": 0.6666666666666666
+          },
+          "pass^2": {
+            "ci": [
+              0.4166666666666667,
+              0.9166666666666666
+            ],
+            "estimate": 0.6666666666666666
+          },
+          "pass^3": {
+            "ci": [
+              0.4166666666666667,
+              0.9166666666666666
+            ],
+            "estimate": 0.6666666666666666
+          }
+        },
+        "no_replay": {
+          "pass^1": {
+            "ci": [
+              0.3611111111111111,
+              0.8333333333333334
+            ],
+            "estimate": 0.6111111111111112
+          },
+          "pass^2": {
+            "ci": [
+              0.3055555555555556,
+              0.8055555555555556
+            ],
+            "estimate": 0.5555555555555556
+          },
+          "pass^3": {
+            "ci": [
+              0.25,
+              0.75
+            ],
+            "estimate": 0.5
+          }
+        },
+        "transcript": {
+          "pass^1": {
+            "ci": [
+              1.0,
+              1.0
+            ],
+            "estimate": 1.0
+          },
+          "pass^2": {
+            "ci": [
+              1.0,
+              1.0
+            ],
+            "estimate": 1.0
+          },
+          "pass^3": {
+            "ci": [
+              1.0,
+              1.0
+            ],
+            "estimate": 1.0
+          }
+        }
+      },
+      "disagreements_vs_hardened": {
+        "exact_trace": {
+          "both_fail": 14,
+          "both_pass": 0,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "grader_only_pass": 0,
+          "hardened_only_pass": 22,
+          "rate": 0.0,
+          "trials": 36
+        },
+        "final_state": {
+          "both_fail": 12,
+          "both_pass": 22,
+          "ci": [
+            0.0,
+            0.1388888888888889
+          ],
+          "grader_only_pass": 2,
+          "hardened_only_pass": 0,
+          "rate": 0.05555555555555555,
+          "trials": 36
+        },
+        "goal": {
+          "both_fail": 12,
+          "both_pass": 22,
+          "ci": [
+            0.0,
+            0.1388888888888889
+          ],
+          "grader_only_pass": 2,
+          "hardened_only_pass": 0,
+          "rate": 0.05555555555555555,
+          "trials": 36
+        },
+        "hardened": {
+          "both_fail": 14,
+          "both_pass": 22,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "grader_only_pass": 0,
+          "hardened_only_pass": 0,
+          "rate": 0.0,
+          "trials": 36
+        },
+        "no_frame": {
+          "both_fail": 14,
+          "both_pass": 22,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "grader_only_pass": 0,
+          "hardened_only_pass": 0,
+          "rate": 0.0,
+          "trials": 36
+        },
+        "no_history": {
+          "both_fail": 12,
+          "both_pass": 22,
+          "ci": [
+            0.0,
+            0.1388888888888889
+          ],
+          "grader_only_pass": 2,
+          "hardened_only_pass": 0,
+          "rate": 0.05555555555555555,
+          "trials": 36
+        },
+        "no_replay": {
+          "both_fail": 14,
+          "both_pass": 22,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "grader_only_pass": 0,
+          "hardened_only_pass": 0,
+          "rate": 0.0,
+          "trials": 36
+        },
+        "transcript": {
+          "both_fail": 0,
+          "both_pass": 22,
+          "ci": [
+            0.16666666666666666,
+            0.6388888888888888
+          ],
+          "grader_only_pass": 14,
+          "hardened_only_pass": 0,
+          "rate": 0.3888888888888889,
+          "trials": 36
+        }
+      },
+      "domain": {
+        "gatebench": {
+          "consistency": {
+            "exact_trace": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 0.0
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 0.0
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 0.0
+              }
+            },
+            "final_state": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 0.6666666666666666
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 0.6666666666666666
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 0.6666666666666666
+              }
+            },
+            "goal": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 0.6666666666666666
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 0.6666666666666666
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 0.6666666666666666
+              }
+            },
+            "hardened": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 0.6111111111111112
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 0.5555555555555556
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 0.5
+              }
+            },
+            "no_frame": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 0.6111111111111112
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 0.5555555555555556
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 0.5
+              }
+            },
+            "no_history": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 0.6666666666666666
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 0.6666666666666666
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 0.6666666666666666
+              }
+            },
+            "no_replay": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 0.6111111111111112
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 0.5555555555555556
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 0.5
+              }
+            },
+            "transcript": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 1.0
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 1.0
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 1.0
+              }
+            }
+          },
+          "disagreements_vs_hardened": {
+            "exact_trace": {
+              "both_fail": 14,
+              "both_pass": 0,
+              "ci": null,
+              "grader_only_pass": 0,
+              "hardened_only_pass": 22,
+              "rate": 0.0,
+              "trials": 36
+            },
+            "final_state": {
+              "both_fail": 12,
+              "both_pass": 22,
+              "ci": null,
+              "grader_only_pass": 2,
+              "hardened_only_pass": 0,
+              "rate": 0.05555555555555555,
+              "trials": 36
+            },
+            "goal": {
+              "both_fail": 12,
+              "both_pass": 22,
+              "ci": null,
+              "grader_only_pass": 2,
+              "hardened_only_pass": 0,
+              "rate": 0.05555555555555555,
+              "trials": 36
+            },
+            "hardened": {
+              "both_fail": 14,
+              "both_pass": 22,
+              "ci": null,
+              "grader_only_pass": 0,
+              "hardened_only_pass": 0,
+              "rate": 0.0,
+              "trials": 36
+            },
+            "no_frame": {
+              "both_fail": 14,
+              "both_pass": 22,
+              "ci": null,
+              "grader_only_pass": 0,
+              "hardened_only_pass": 0,
+              "rate": 0.0,
+              "trials": 36
+            },
+            "no_history": {
+              "both_fail": 12,
+              "both_pass": 22,
+              "ci": null,
+              "grader_only_pass": 2,
+              "hardened_only_pass": 0,
+              "rate": 0.05555555555555555,
+              "trials": 36
+            },
+            "no_replay": {
+              "both_fail": 14,
+              "both_pass": 22,
+              "ci": null,
+              "grader_only_pass": 0,
+              "hardened_only_pass": 0,
+              "rate": 0.0,
+              "trials": 36
+            },
+            "transcript": {
+              "both_fail": 0,
+              "both_pass": 22,
+              "ci": null,
+              "grader_only_pass": 14,
+              "hardened_only_pass": 0,
+              "rate": 0.3888888888888889,
+              "trials": 36
+            }
+          },
+          "graders": {
+            "exact_trace": {
+              "ci": null,
+              "passed": 0,
+              "rate": 0.0,
+              "trials": 36
+            },
+            "final_state": {
+              "ci": null,
+              "passed": 24,
+              "rate": 0.6666666666666666,
+              "trials": 36
+            },
+            "goal": {
+              "ci": null,
+              "passed": 24,
+              "rate": 0.6666666666666666,
+              "trials": 36
+            },
+            "hardened": {
+              "ci": null,
+              "passed": 22,
+              "rate": 0.6111111111111112,
+              "trials": 36
+            },
+            "no_frame": {
+              "ci": null,
+              "passed": 22,
+              "rate": 0.6111111111111112,
+              "trials": 36
+            },
+            "no_history": {
+              "ci": null,
+              "passed": 24,
+              "rate": 0.6666666666666666,
+              "trials": 36
+            },
+            "no_replay": {
+              "ci": null,
+              "passed": 22,
+              "rate": 0.6111111111111112,
+              "trials": 36
+            },
+            "transcript": {
+              "ci": null,
+              "passed": 36,
+              "rate": 1.0,
+              "trials": 36
+            }
+          },
+          "latency_seconds": {
+            "mean": 11.550787777777778,
+            "median": 11.256464,
+            "p95": 17.1645425,
+            "total": 415.82836
+          },
+          "stop_reasons": {
+            "completed": 36
+          },
+          "task_clusters": 12,
+          "tokens": {
+            "completion_tokens": {
+              "reported_trials": 36,
+              "total": 17277
+            },
+            "prompt_tokens": {
+              "reported_trials": 36,
+              "total": 421159
+            }
+          },
+          "trials": 36
+        }
+      },
+      "family": {
+        "cancel": {
+          "consistency": {
+            "exact_trace": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 0.0
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 0.0
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 0.0
+              }
+            },
+            "final_state": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 0.0
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 0.0
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 0.0
+              }
+            },
+            "goal": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 0.0
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 0.0
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 0.0
+              }
+            },
+            "hardened": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 0.0
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 0.0
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 0.0
+              }
+            },
+            "no_frame": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 0.0
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 0.0
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 0.0
+              }
+            },
+            "no_history": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 0.0
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 0.0
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 0.0
+              }
+            },
+            "no_replay": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 0.0
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 0.0
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 0.0
+              }
+            },
+            "transcript": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 1.0
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 1.0
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 1.0
+              }
+            }
+          },
+          "disagreements_vs_hardened": {
+            "exact_trace": {
+              "both_fail": 12,
+              "both_pass": 0,
+              "ci": null,
+              "grader_only_pass": 0,
+              "hardened_only_pass": 0,
+              "rate": 0.0,
+              "trials": 12
+            },
+            "final_state": {
+              "both_fail": 12,
+              "both_pass": 0,
+              "ci": null,
+              "grader_only_pass": 0,
+              "hardened_only_pass": 0,
+              "rate": 0.0,
+              "trials": 12
+            },
+            "goal": {
+              "both_fail": 12,
+              "both_pass": 0,
+              "ci": null,
+              "grader_only_pass": 0,
+              "hardened_only_pass": 0,
+              "rate": 0.0,
+              "trials": 12
+            },
+            "hardened": {
+              "both_fail": 12,
+              "both_pass": 0,
+              "ci": null,
+              "grader_only_pass": 0,
+              "hardened_only_pass": 0,
+              "rate": 0.0,
+              "trials": 12
+            },
+            "no_frame": {
+              "both_fail": 12,
+              "both_pass": 0,
+              "ci": null,
+              "grader_only_pass": 0,
+              "hardened_only_pass": 0,
+              "rate": 0.0,
+              "trials": 12
+            },
+            "no_history": {
+              "both_fail": 12,
+              "both_pass": 0,
+              "ci": null,
+              "grader_only_pass": 0,
+              "hardened_only_pass": 0,
+              "rate": 0.0,
+              "trials": 12
+            },
+            "no_replay": {
+              "both_fail": 12,
+              "both_pass": 0,
+              "ci": null,
+              "grader_only_pass": 0,
+              "hardened_only_pass": 0,
+              "rate": 0.0,
+              "trials": 12
+            },
+            "transcript": {
+              "both_fail": 0,
+              "both_pass": 0,
+              "ci": null,
+              "grader_only_pass": 12,
+              "hardened_only_pass": 0,
+              "rate": 1.0,
+              "trials": 12
+            }
+          },
+          "graders": {
+            "exact_trace": {
+              "ci": null,
+              "passed": 0,
+              "rate": 0.0,
+              "trials": 12
+            },
+            "final_state": {
+              "ci": null,
+              "passed": 0,
+              "rate": 0.0,
+              "trials": 12
+            },
+            "goal": {
+              "ci": null,
+              "passed": 0,
+              "rate": 0.0,
+              "trials": 12
+            },
+            "hardened": {
+              "ci": null,
+              "passed": 0,
+              "rate": 0.0,
+              "trials": 12
+            },
+            "no_frame": {
+              "ci": null,
+              "passed": 0,
+              "rate": 0.0,
+              "trials": 12
+            },
+            "no_history": {
+              "ci": null,
+              "passed": 0,
+              "rate": 0.0,
+              "trials": 12
+            },
+            "no_replay": {
+              "ci": null,
+              "passed": 0,
+              "rate": 0.0,
+              "trials": 12
+            },
+            "transcript": {
+              "ci": null,
+              "passed": 12,
+              "rate": 1.0,
+              "trials": 12
+            }
+          },
+          "latency_seconds": {
+            "mean": 12.868660583333334,
+            "median": 12.2598015,
+            "p95": 17.94793905,
+            "total": 154.423927
+          },
+          "stop_reasons": {
+            "completed": 12
+          },
+          "task_clusters": 4,
+          "tokens": {
+            "completion_tokens": {
+              "reported_trials": 12,
+              "total": 6144
+            },
+            "prompt_tokens": {
+              "reported_trials": 12,
+              "total": 146416
+            }
+          },
+          "trials": 12
+        },
+        "exchange": {
+          "consistency": {
+            "exact_trace": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 0.0
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 0.0
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 0.0
+              }
+            },
+            "final_state": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 1.0
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 1.0
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 1.0
+              }
+            },
+            "goal": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 1.0
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 1.0
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 1.0
+              }
+            },
+            "hardened": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 0.8333333333333333
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 0.6666666666666666
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 0.5
+              }
+            },
+            "no_frame": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 0.8333333333333333
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 0.6666666666666666
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 0.5
+              }
+            },
+            "no_history": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 1.0
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 1.0
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 1.0
+              }
+            },
+            "no_replay": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 0.8333333333333333
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 0.6666666666666666
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 0.5
+              }
+            },
+            "transcript": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 1.0
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 1.0
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 1.0
+              }
+            }
+          },
+          "disagreements_vs_hardened": {
+            "exact_trace": {
+              "both_fail": 2,
+              "both_pass": 0,
+              "ci": null,
+              "grader_only_pass": 0,
+              "hardened_only_pass": 10,
+              "rate": 0.0,
+              "trials": 12
+            },
+            "final_state": {
+              "both_fail": 0,
+              "both_pass": 10,
+              "ci": null,
+              "grader_only_pass": 2,
+              "hardened_only_pass": 0,
+              "rate": 0.16666666666666666,
+              "trials": 12
+            },
+            "goal": {
+              "both_fail": 0,
+              "both_pass": 10,
+              "ci": null,
+              "grader_only_pass": 2,
+              "hardened_only_pass": 0,
+              "rate": 0.16666666666666666,
+              "trials": 12
+            },
+            "hardened": {
+              "both_fail": 2,
+              "both_pass": 10,
+              "ci": null,
+              "grader_only_pass": 0,
+              "hardened_only_pass": 0,
+              "rate": 0.0,
+              "trials": 12
+            },
+            "no_frame": {
+              "both_fail": 2,
+              "both_pass": 10,
+              "ci": null,
+              "grader_only_pass": 0,
+              "hardened_only_pass": 0,
+              "rate": 0.0,
+              "trials": 12
+            },
+            "no_history": {
+              "both_fail": 0,
+              "both_pass": 10,
+              "ci": null,
+              "grader_only_pass": 2,
+              "hardened_only_pass": 0,
+              "rate": 0.16666666666666666,
+              "trials": 12
+            },
+            "no_replay": {
+              "both_fail": 2,
+              "both_pass": 10,
+              "ci": null,
+              "grader_only_pass": 0,
+              "hardened_only_pass": 0,
+              "rate": 0.0,
+              "trials": 12
+            },
+            "transcript": {
+              "both_fail": 0,
+              "both_pass": 10,
+              "ci": null,
+              "grader_only_pass": 2,
+              "hardened_only_pass": 0,
+              "rate": 0.16666666666666666,
+              "trials": 12
+            }
+          },
+          "graders": {
+            "exact_trace": {
+              "ci": null,
+              "passed": 0,
+              "rate": 0.0,
+              "trials": 12
+            },
+            "final_state": {
+              "ci": null,
+              "passed": 12,
+              "rate": 1.0,
+              "trials": 12
+            },
+            "goal": {
+              "ci": null,
+              "passed": 12,
+              "rate": 1.0,
+              "trials": 12
+            },
+            "hardened": {
+              "ci": null,
+              "passed": 10,
+              "rate": 0.8333333333333334,
+              "trials": 12
+            },
+            "no_frame": {
+              "ci": null,
+              "passed": 10,
+              "rate": 0.8333333333333334,
+              "trials": 12
+            },
+            "no_history": {
+              "ci": null,
+              "passed": 12,
+              "rate": 1.0,
+              "trials": 12
+            },
+            "no_replay": {
+              "ci": null,
+              "passed": 10,
+              "rate": 0.8333333333333334,
+              "trials": 12
+            },
+            "transcript": {
+              "ci": null,
+              "passed": 12,
+              "rate": 1.0,
+              "trials": 12
+            }
+          },
+          "latency_seconds": {
+            "mean": 14.133014416666667,
+            "median": 14.337316000000001,
+            "p95": 17.2131981,
+            "total": 169.596173
+          },
+          "stop_reasons": {
+            "completed": 12
+          },
+          "task_clusters": 4,
+          "tokens": {
+            "completion_tokens": {
+              "reported_trials": 12,
+              "total": 6472
+            },
+            "prompt_tokens": {
+              "reported_trials": 12,
+              "total": 155697
+            }
+          },
+          "trials": 12
+        },
+        "refund": {
+          "consistency": {
+            "exact_trace": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 0.0
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 0.0
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 0.0
+              }
+            },
+            "final_state": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 1.0
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 1.0
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 1.0
+              }
+            },
+            "goal": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 1.0
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 1.0
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 1.0
+              }
+            },
+            "hardened": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 1.0
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 1.0
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 1.0
+              }
+            },
+            "no_frame": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 1.0
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 1.0
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 1.0
+              }
+            },
+            "no_history": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 1.0
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 1.0
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 1.0
+              }
+            },
+            "no_replay": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 1.0
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 1.0
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 1.0
+              }
+            },
+            "transcript": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 1.0
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 1.0
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 1.0
+              }
+            }
+          },
+          "disagreements_vs_hardened": {
+            "exact_trace": {
+              "both_fail": 0,
+              "both_pass": 0,
+              "ci": null,
+              "grader_only_pass": 0,
+              "hardened_only_pass": 12,
+              "rate": 0.0,
+              "trials": 12
+            },
+            "final_state": {
+              "both_fail": 0,
+              "both_pass": 12,
+              "ci": null,
+              "grader_only_pass": 0,
+              "hardened_only_pass": 0,
+              "rate": 0.0,
+              "trials": 12
+            },
+            "goal": {
+              "both_fail": 0,
+              "both_pass": 12,
+              "ci": null,
+              "grader_only_pass": 0,
+              "hardened_only_pass": 0,
+              "rate": 0.0,
+              "trials": 12
+            },
+            "hardened": {
+              "both_fail": 0,
+              "both_pass": 12,
+              "ci": null,
+              "grader_only_pass": 0,
+              "hardened_only_pass": 0,
+              "rate": 0.0,
+              "trials": 12
+            },
+            "no_frame": {
+              "both_fail": 0,
+              "both_pass": 12,
+              "ci": null,
+              "grader_only_pass": 0,
+              "hardened_only_pass": 0,
+              "rate": 0.0,
+              "trials": 12
+            },
+            "no_history": {
+              "both_fail": 0,
+              "both_pass": 12,
+              "ci": null,
+              "grader_only_pass": 0,
+              "hardened_only_pass": 0,
+              "rate": 0.0,
+              "trials": 12
+            },
+            "no_replay": {
+              "both_fail": 0,
+              "both_pass": 12,
+              "ci": null,
+              "grader_only_pass": 0,
+              "hardened_only_pass": 0,
+              "rate": 0.0,
+              "trials": 12
+            },
+            "transcript": {
+              "both_fail": 0,
+              "both_pass": 12,
+              "ci": null,
+              "grader_only_pass": 0,
+              "hardened_only_pass": 0,
+              "rate": 0.0,
+              "trials": 12
+            }
+          },
+          "graders": {
+            "exact_trace": {
+              "ci": null,
+              "passed": 0,
+              "rate": 0.0,
+              "trials": 12
+            },
+            "final_state": {
+              "ci": null,
+              "passed": 12,
+              "rate": 1.0,
+              "trials": 12
+            },
+            "goal": {
+              "ci": null,
+              "passed": 12,
+              "rate": 1.0,
+              "trials": 12
+            },
+            "hardened": {
+              "ci": null,
+              "passed": 12,
+              "rate": 1.0,
+              "trials": 12
+            },
+            "no_frame": {
+              "ci": null,
+              "passed": 12,
+              "rate": 1.0,
+              "trials": 12
+            },
+            "no_history": {
+              "ci": null,
+              "passed": 12,
+              "rate": 1.0,
+              "trials": 12
+            },
+            "no_replay": {
+              "ci": null,
+              "passed": 12,
+              "rate": 1.0,
+              "trials": 12
+            },
+            "transcript": {
+              "ci": null,
+              "passed": 12,
+              "rate": 1.0,
+              "trials": 12
+            }
+          },
+          "latency_seconds": {
+            "mean": 7.650688333333333,
+            "median": 7.327956,
+            "p95": 8.8375557,
+            "total": 91.80826
+          },
+          "stop_reasons": {
+            "completed": 12
+          },
+          "task_clusters": 4,
+          "tokens": {
+            "completion_tokens": {
+              "reported_trials": 12,
+              "total": 4661
+            },
+            "prompt_tokens": {
+              "reported_trials": 12,
+              "total": 119046
+            }
+          },
+          "trials": 12
+        }
+      },
+      "graders": {
+        "exact_trace": {
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "passed": 0,
+          "rate": 0.0,
+          "trials": 36
+        },
+        "final_state": {
+          "ci": [
+            0.4166666666666667,
+            0.9166666666666666
+          ],
+          "passed": 24,
+          "rate": 0.6666666666666666,
+          "trials": 36
+        },
+        "goal": {
+          "ci": [
+            0.4166666666666667,
+            0.9166666666666666
+          ],
+          "passed": 24,
+          "rate": 0.6666666666666666,
+          "trials": 36
+        },
+        "hardened": {
+          "ci": [
+            0.3611111111111111,
+            0.8333333333333334
+          ],
+          "passed": 22,
+          "rate": 0.6111111111111112,
+          "trials": 36
+        },
+        "no_frame": {
+          "ci": [
+            0.3611111111111111,
+            0.8333333333333334
+          ],
+          "passed": 22,
+          "rate": 0.6111111111111112,
+          "trials": 36
+        },
+        "no_history": {
+          "ci": [
+            0.4166666666666667,
+            0.9166666666666666
+          ],
+          "passed": 24,
+          "rate": 0.6666666666666666,
+          "trials": 36
+        },
+        "no_replay": {
+          "ci": [
+            0.3611111111111111,
+            0.8333333333333334
+          ],
+          "passed": 22,
+          "rate": 0.6111111111111112,
+          "trials": 36
+        },
+        "transcript": {
+          "ci": [
+            1.0,
+            1.0
+          ],
+          "passed": 36,
+          "rate": 1.0,
+          "trials": 36
+        }
+      },
+      "latency_seconds": {
+        "mean": 11.550787777777778,
+        "median": 11.256464,
+        "p95": 17.1645425,
+        "total": 415.82836
+      },
+      "stop_reasons": {
+        "completed": 36
+      },
+      "task_clusters": 12,
+      "tokens": {
+        "completion_tokens": {
+          "reported_trials": 36,
+          "total": 17277
+        },
+        "prompt_tokens": {
+          "reported_trials": 36,
+          "total": 421159
+        }
+      },
+      "trials": 36
+    },
+    "qwen3.5:4b-q4_K_M": {
+      "consistency": {
+        "exact_trace": {
+          "pass^1": {
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "estimate": 0.0
+          },
+          "pass^2": {
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "estimate": 0.0
+          },
+          "pass^3": {
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "estimate": 0.0
+          }
+        },
+        "final_state": {
+          "pass^1": {
+            "ci": [
+              0.861111111111111,
+              1.0
+            ],
+            "estimate": 0.9444444444444444
+          },
+          "pass^2": {
+            "ci": [
+              0.7222222222222222,
+              1.0
+            ],
+            "estimate": 0.8888888888888888
+          },
+          "pass^3": {
+            "ci": [
+              0.5833333333333334,
+              1.0
+            ],
+            "estimate": 0.8333333333333334
+          }
+        },
+        "goal": {
+          "pass^1": {
+            "ci": [
+              0.861111111111111,
+              1.0
+            ],
+            "estimate": 0.9444444444444444
+          },
+          "pass^2": {
+            "ci": [
+              0.7222222222222222,
+              1.0
+            ],
+            "estimate": 0.8888888888888888
+          },
+          "pass^3": {
+            "ci": [
+              0.5833333333333334,
+              1.0
+            ],
+            "estimate": 0.8333333333333334
+          }
+        },
+        "hardened": {
+          "pass^1": {
+            "ci": [
+              0.861111111111111,
+              1.0
+            ],
+            "estimate": 0.9444444444444444
+          },
+          "pass^2": {
+            "ci": [
+              0.7222222222222222,
+              1.0
+            ],
+            "estimate": 0.8888888888888888
+          },
+          "pass^3": {
+            "ci": [
+              0.5833333333333334,
+              1.0
+            ],
+            "estimate": 0.8333333333333334
+          }
+        },
+        "no_frame": {
+          "pass^1": {
+            "ci": [
+              0.861111111111111,
+              1.0
+            ],
+            "estimate": 0.9444444444444444
+          },
+          "pass^2": {
+            "ci": [
+              0.7222222222222222,
+              1.0
+            ],
+            "estimate": 0.8888888888888888
+          },
+          "pass^3": {
+            "ci": [
+              0.5833333333333334,
+              1.0
+            ],
+            "estimate": 0.8333333333333334
+          }
+        },
+        "no_history": {
+          "pass^1": {
+            "ci": [
+              0.861111111111111,
+              1.0
+            ],
+            "estimate": 0.9444444444444444
+          },
+          "pass^2": {
+            "ci": [
+              0.7222222222222222,
+              1.0
+            ],
+            "estimate": 0.8888888888888888
+          },
+          "pass^3": {
+            "ci": [
+              0.5833333333333334,
+              1.0
+            ],
+            "estimate": 0.8333333333333334
+          }
+        },
+        "no_replay": {
+          "pass^1": {
+            "ci": [
+              0.861111111111111,
+              1.0
+            ],
+            "estimate": 0.9444444444444444
+          },
+          "pass^2": {
+            "ci": [
+              0.7222222222222222,
+              1.0
+            ],
+            "estimate": 0.8888888888888888
+          },
+          "pass^3": {
+            "ci": [
+              0.5833333333333334,
+              1.0
+            ],
+            "estimate": 0.8333333333333334
+          }
+        },
+        "transcript": {
+          "pass^1": {
+            "ci": [
+              0.6666666666666666,
+              0.8888888888888888
+            ],
+            "estimate": 0.7777777777777778
+          },
+          "pass^2": {
+            "ci": [
+              0.3888888888888889,
+              0.7777777777777778
+            ],
+            "estimate": 0.5833333333333334
+          },
+          "pass^3": {
+            "ci": [
+              0.16666666666666666,
+              0.6666666666666666
+            ],
+            "estimate": 0.4166666666666667
+          }
+        }
+      },
+      "disagreements_vs_hardened": {
+        "exact_trace": {
+          "both_fail": 2,
+          "both_pass": 0,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "grader_only_pass": 0,
+          "hardened_only_pass": 34,
+          "rate": 0.0,
+          "trials": 36
+        },
+        "final_state": {
+          "both_fail": 2,
+          "both_pass": 34,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "grader_only_pass": 0,
+          "hardened_only_pass": 0,
+          "rate": 0.0,
+          "trials": 36
+        },
+        "goal": {
+          "both_fail": 2,
+          "both_pass": 34,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "grader_only_pass": 0,
+          "hardened_only_pass": 0,
+          "rate": 0.0,
+          "trials": 36
+        },
+        "hardened": {
+          "both_fail": 2,
+          "both_pass": 34,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "grader_only_pass": 0,
+          "hardened_only_pass": 0,
+          "rate": 0.0,
+          "trials": 36
+        },
+        "no_frame": {
+          "both_fail": 2,
+          "both_pass": 34,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "grader_only_pass": 0,
+          "hardened_only_pass": 0,
+          "rate": 0.0,
+          "trials": 36
+        },
+        "no_history": {
+          "both_fail": 2,
+          "both_pass": 34,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "grader_only_pass": 0,
+          "hardened_only_pass": 0,
+          "rate": 0.0,
+          "trials": 36
+        },
+        "no_replay": {
+          "both_fail": 2,
+          "both_pass": 34,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "grader_only_pass": 0,
+          "hardened_only_pass": 0,
+          "rate": 0.0,
+          "trials": 36
+        },
+        "transcript": {
+          "both_fail": 1,
+          "both_pass": 27,
+          "ci": [
+            0.0,
+            0.08333333333333333
+          ],
+          "grader_only_pass": 1,
+          "hardened_only_pass": 7,
+          "rate": 0.027777777777777776,
+          "trials": 36
+        }
+      },
+      "domain": {
+        "gatebench": {
+          "consistency": {
+            "exact_trace": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 0.0
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 0.0
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 0.0
+              }
+            },
+            "final_state": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 0.9444444444444444
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 0.8888888888888888
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 0.8333333333333334
+              }
+            },
+            "goal": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 0.9444444444444444
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 0.8888888888888888
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 0.8333333333333334
+              }
+            },
+            "hardened": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 0.9444444444444444
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 0.8888888888888888
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 0.8333333333333334
+              }
+            },
+            "no_frame": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 0.9444444444444444
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 0.8888888888888888
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 0.8333333333333334
+              }
+            },
+            "no_history": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 0.9444444444444444
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 0.8888888888888888
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 0.8333333333333334
+              }
+            },
+            "no_replay": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 0.9444444444444444
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 0.8888888888888888
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 0.8333333333333334
+              }
+            },
+            "transcript": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 0.7777777777777778
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 0.5833333333333334
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 0.4166666666666667
+              }
+            }
+          },
+          "disagreements_vs_hardened": {
+            "exact_trace": {
+              "both_fail": 2,
+              "both_pass": 0,
+              "ci": null,
+              "grader_only_pass": 0,
+              "hardened_only_pass": 34,
+              "rate": 0.0,
+              "trials": 36
+            },
+            "final_state": {
+              "both_fail": 2,
+              "both_pass": 34,
+              "ci": null,
+              "grader_only_pass": 0,
+              "hardened_only_pass": 0,
+              "rate": 0.0,
+              "trials": 36
+            },
+            "goal": {
+              "both_fail": 2,
+              "both_pass": 34,
+              "ci": null,
+              "grader_only_pass": 0,
+              "hardened_only_pass": 0,
+              "rate": 0.0,
+              "trials": 36
+            },
+            "hardened": {
+              "both_fail": 2,
+              "both_pass": 34,
+              "ci": null,
+              "grader_only_pass": 0,
+              "hardened_only_pass": 0,
+              "rate": 0.0,
+              "trials": 36
+            },
+            "no_frame": {
+              "both_fail": 2,
+              "both_pass": 34,
+              "ci": null,
+              "grader_only_pass": 0,
+              "hardened_only_pass": 0,
+              "rate": 0.0,
+              "trials": 36
+            },
+            "no_history": {
+              "both_fail": 2,
+              "both_pass": 34,
+              "ci": null,
+              "grader_only_pass": 0,
+              "hardened_only_pass": 0,
+              "rate": 0.0,
+              "trials": 36
+            },
+            "no_replay": {
+              "both_fail": 2,
+              "both_pass": 34,
+              "ci": null,
+              "grader_only_pass": 0,
+              "hardened_only_pass": 0,
+              "rate": 0.0,
+              "trials": 36
+            },
+            "transcript": {
+              "both_fail": 1,
+              "both_pass": 27,
+              "ci": null,
+              "grader_only_pass": 1,
+              "hardened_only_pass": 7,
+              "rate": 0.027777777777777776,
+              "trials": 36
+            }
+          },
+          "graders": {
+            "exact_trace": {
+              "ci": null,
+              "passed": 0,
+              "rate": 0.0,
+              "trials": 36
+            },
+            "final_state": {
+              "ci": null,
+              "passed": 34,
+              "rate": 0.9444444444444444,
+              "trials": 36
+            },
+            "goal": {
+              "ci": null,
+              "passed": 34,
+              "rate": 0.9444444444444444,
+              "trials": 36
+            },
+            "hardened": {
+              "ci": null,
+              "passed": 34,
+              "rate": 0.9444444444444444,
+              "trials": 36
+            },
+            "no_frame": {
+              "ci": null,
+              "passed": 34,
+              "rate": 0.9444444444444444,
+              "trials": 36
+            },
+            "no_history": {
+              "ci": null,
+              "passed": 34,
+              "rate": 0.9444444444444444,
+              "trials": 36
+            },
+            "no_replay": {
+              "ci": null,
+              "passed": 34,
+              "rate": 0.9444444444444444,
+              "trials": 36
+            },
+            "transcript": {
+              "ci": null,
+              "passed": 28,
+              "rate": 0.7777777777777778,
+              "trials": 36
+            }
+          },
+          "latency_seconds": {
+            "mean": 41.73874383333333,
+            "median": 40.3618075,
+            "p95": 52.65260475,
+            "total": 1502.594778
+          },
+          "stop_reasons": {
+            "completed": 36
+          },
+          "task_clusters": 12,
+          "tokens": {
+            "completion_tokens": {
+              "reported_trials": 36,
+              "total": 24914
+            },
+            "prompt_tokens": {
+              "reported_trials": 36,
+              "total": 433849
+            }
+          },
+          "trials": 36
+        }
+      },
+      "family": {
+        "cancel": {
+          "consistency": {
+            "exact_trace": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 0.0
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 0.0
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 0.0
+              }
+            },
+            "final_state": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 0.8333333333333333
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 0.6666666666666666
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 0.5
+              }
+            },
+            "goal": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 0.8333333333333333
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 0.6666666666666666
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 0.5
+              }
+            },
+            "hardened": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 0.8333333333333333
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 0.6666666666666666
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 0.5
+              }
+            },
+            "no_frame": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 0.8333333333333333
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 0.6666666666666666
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 0.5
+              }
+            },
+            "no_history": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 0.8333333333333333
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 0.6666666666666666
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 0.5
+              }
+            },
+            "no_replay": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 0.8333333333333333
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 0.6666666666666666
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 0.5
+              }
+            },
+            "transcript": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 0.6666666666666666
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 0.41666666666666663
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 0.25
+              }
+            }
+          },
+          "disagreements_vs_hardened": {
+            "exact_trace": {
+              "both_fail": 2,
+              "both_pass": 0,
+              "ci": null,
+              "grader_only_pass": 0,
+              "hardened_only_pass": 10,
+              "rate": 0.0,
+              "trials": 12
+            },
+            "final_state": {
+              "both_fail": 2,
+              "both_pass": 10,
+              "ci": null,
+              "grader_only_pass": 0,
+              "hardened_only_pass": 0,
+              "rate": 0.0,
+              "trials": 12
+            },
+            "goal": {
+              "both_fail": 2,
+              "both_pass": 10,
+              "ci": null,
+              "grader_only_pass": 0,
+              "hardened_only_pass": 0,
+              "rate": 0.0,
+              "trials": 12
+            },
+            "hardened": {
+              "both_fail": 2,
+              "both_pass": 10,
+              "ci": null,
+              "grader_only_pass": 0,
+              "hardened_only_pass": 0,
+              "rate": 0.0,
+              "trials": 12
+            },
+            "no_frame": {
+              "both_fail": 2,
+              "both_pass": 10,
+              "ci": null,
+              "grader_only_pass": 0,
+              "hardened_only_pass": 0,
+              "rate": 0.0,
+              "trials": 12
+            },
+            "no_history": {
+              "both_fail": 2,
+              "both_pass": 10,
+              "ci": null,
+              "grader_only_pass": 0,
+              "hardened_only_pass": 0,
+              "rate": 0.0,
+              "trials": 12
+            },
+            "no_replay": {
+              "both_fail": 2,
+              "both_pass": 10,
+              "ci": null,
+              "grader_only_pass": 0,
+              "hardened_only_pass": 0,
+              "rate": 0.0,
+              "trials": 12
+            },
+            "transcript": {
+              "both_fail": 1,
+              "both_pass": 7,
+              "ci": null,
+              "grader_only_pass": 1,
+              "hardened_only_pass": 3,
+              "rate": 0.08333333333333333,
+              "trials": 12
+            }
+          },
+          "graders": {
+            "exact_trace": {
+              "ci": null,
+              "passed": 0,
+              "rate": 0.0,
+              "trials": 12
+            },
+            "final_state": {
+              "ci": null,
+              "passed": 10,
+              "rate": 0.8333333333333334,
+              "trials": 12
+            },
+            "goal": {
+              "ci": null,
+              "passed": 10,
+              "rate": 0.8333333333333334,
+              "trials": 12
+            },
+            "hardened": {
+              "ci": null,
+              "passed": 10,
+              "rate": 0.8333333333333334,
+              "trials": 12
+            },
+            "no_frame": {
+              "ci": null,
+              "passed": 10,
+              "rate": 0.8333333333333334,
+              "trials": 12
+            },
+            "no_history": {
+              "ci": null,
+              "passed": 10,
+              "rate": 0.8333333333333334,
+              "trials": 12
+            },
+            "no_replay": {
+              "ci": null,
+              "passed": 10,
+              "rate": 0.8333333333333334,
+              "trials": 12
+            },
+            "transcript": {
+              "ci": null,
+              "passed": 8,
+              "rate": 0.6666666666666666,
+              "trials": 12
+            }
+          },
+          "latency_seconds": {
+            "mean": 40.93402991666667,
+            "median": 39.2406115,
+            "p95": 48.884689699999996,
+            "total": 491.208359
+          },
+          "stop_reasons": {
+            "completed": 12
+          },
+          "task_clusters": 4,
+          "tokens": {
+            "completion_tokens": {
+              "reported_trials": 12,
+              "total": 8201
+            },
+            "prompt_tokens": {
+              "reported_trials": 12,
+              "total": 132781
+            }
+          },
+          "trials": 12
+        },
+        "exchange": {
+          "consistency": {
+            "exact_trace": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 0.0
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 0.0
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 0.0
+              }
+            },
+            "final_state": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 1.0
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 1.0
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 1.0
+              }
+            },
+            "goal": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 1.0
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 1.0
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 1.0
+              }
+            },
+            "hardened": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 1.0
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 1.0
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 1.0
+              }
+            },
+            "no_frame": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 1.0
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 1.0
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 1.0
+              }
+            },
+            "no_history": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 1.0
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 1.0
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 1.0
+              }
+            },
+            "no_replay": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 1.0
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 1.0
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 1.0
+              }
+            },
+            "transcript": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 1.0
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 1.0
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 1.0
+              }
+            }
+          },
+          "disagreements_vs_hardened": {
+            "exact_trace": {
+              "both_fail": 0,
+              "both_pass": 0,
+              "ci": null,
+              "grader_only_pass": 0,
+              "hardened_only_pass": 12,
+              "rate": 0.0,
+              "trials": 12
+            },
+            "final_state": {
+              "both_fail": 0,
+              "both_pass": 12,
+              "ci": null,
+              "grader_only_pass": 0,
+              "hardened_only_pass": 0,
+              "rate": 0.0,
+              "trials": 12
+            },
+            "goal": {
+              "both_fail": 0,
+              "both_pass": 12,
+              "ci": null,
+              "grader_only_pass": 0,
+              "hardened_only_pass": 0,
+              "rate": 0.0,
+              "trials": 12
+            },
+            "hardened": {
+              "both_fail": 0,
+              "both_pass": 12,
+              "ci": null,
+              "grader_only_pass": 0,
+              "hardened_only_pass": 0,
+              "rate": 0.0,
+              "trials": 12
+            },
+            "no_frame": {
+              "both_fail": 0,
+              "both_pass": 12,
+              "ci": null,
+              "grader_only_pass": 0,
+              "hardened_only_pass": 0,
+              "rate": 0.0,
+              "trials": 12
+            },
+            "no_history": {
+              "both_fail": 0,
+              "both_pass": 12,
+              "ci": null,
+              "grader_only_pass": 0,
+              "hardened_only_pass": 0,
+              "rate": 0.0,
+              "trials": 12
+            },
+            "no_replay": {
+              "both_fail": 0,
+              "both_pass": 12,
+              "ci": null,
+              "grader_only_pass": 0,
+              "hardened_only_pass": 0,
+              "rate": 0.0,
+              "trials": 12
+            },
+            "transcript": {
+              "both_fail": 0,
+              "both_pass": 12,
+              "ci": null,
+              "grader_only_pass": 0,
+              "hardened_only_pass": 0,
+              "rate": 0.0,
+              "trials": 12
+            }
+          },
+          "graders": {
+            "exact_trace": {
+              "ci": null,
+              "passed": 0,
+              "rate": 0.0,
+              "trials": 12
+            },
+            "final_state": {
+              "ci": null,
+              "passed": 12,
+              "rate": 1.0,
+              "trials": 12
+            },
+            "goal": {
+              "ci": null,
+              "passed": 12,
+              "rate": 1.0,
+              "trials": 12
+            },
+            "hardened": {
+              "ci": null,
+              "passed": 12,
+              "rate": 1.0,
+              "trials": 12
+            },
+            "no_frame": {
+              "ci": null,
+              "passed": 12,
+              "rate": 1.0,
+              "trials": 12
+            },
+            "no_history": {
+              "ci": null,
+              "passed": 12,
+              "rate": 1.0,
+              "trials": 12
+            },
+            "no_replay": {
+              "ci": null,
+              "passed": 12,
+              "rate": 1.0,
+              "trials": 12
+            },
+            "transcript": {
+              "ci": null,
+              "passed": 12,
+              "rate": 1.0,
+              "trials": 12
+            }
+          },
+          "latency_seconds": {
+            "mean": 36.78137125,
+            "median": 35.6262865,
+            "p95": 42.0161169,
+            "total": 441.376455
+          },
+          "stop_reasons": {
+            "completed": 12
+          },
+          "task_clusters": 4,
+          "tokens": {
+            "completion_tokens": {
+              "reported_trials": 12,
+              "total": 7718
+            },
+            "prompt_tokens": {
+              "reported_trials": 12,
+              "total": 150771
+            }
+          },
+          "trials": 12
+        },
+        "refund": {
+          "consistency": {
+            "exact_trace": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 0.0
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 0.0
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 0.0
+              }
+            },
+            "final_state": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 1.0
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 1.0
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 1.0
+              }
+            },
+            "goal": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 1.0
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 1.0
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 1.0
+              }
+            },
+            "hardened": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 1.0
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 1.0
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 1.0
+              }
+            },
+            "no_frame": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 1.0
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 1.0
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 1.0
+              }
+            },
+            "no_history": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 1.0
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 1.0
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 1.0
+              }
+            },
+            "no_replay": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 1.0
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 1.0
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 1.0
+              }
+            },
+            "transcript": {
+              "pass^1": {
+                "ci": null,
+                "estimate": 0.6666666666666666
+              },
+              "pass^2": {
+                "ci": null,
+                "estimate": 0.3333333333333333
+              },
+              "pass^3": {
+                "ci": null,
+                "estimate": 0.0
+              }
+            }
+          },
+          "disagreements_vs_hardened": {
+            "exact_trace": {
+              "both_fail": 0,
+              "both_pass": 0,
+              "ci": null,
+              "grader_only_pass": 0,
+              "hardened_only_pass": 12,
+              "rate": 0.0,
+              "trials": 12
+            },
+            "final_state": {
+              "both_fail": 0,
+              "both_pass": 12,
+              "ci": null,
+              "grader_only_pass": 0,
+              "hardened_only_pass": 0,
+              "rate": 0.0,
+              "trials": 12
+            },
+            "goal": {
+              "both_fail": 0,
+              "both_pass": 12,
+              "ci": null,
+              "grader_only_pass": 0,
+              "hardened_only_pass": 0,
+              "rate": 0.0,
+              "trials": 12
+            },
+            "hardened": {
+              "both_fail": 0,
+              "both_pass": 12,
+              "ci": null,
+              "grader_only_pass": 0,
+              "hardened_only_pass": 0,
+              "rate": 0.0,
+              "trials": 12
+            },
+            "no_frame": {
+              "both_fail": 0,
+              "both_pass": 12,
+              "ci": null,
+              "grader_only_pass": 0,
+              "hardened_only_pass": 0,
+              "rate": 0.0,
+              "trials": 12
+            },
+            "no_history": {
+              "both_fail": 0,
+              "both_pass": 12,
+              "ci": null,
+              "grader_only_pass": 0,
+              "hardened_only_pass": 0,
+              "rate": 0.0,
+              "trials": 12
+            },
+            "no_replay": {
+              "both_fail": 0,
+              "both_pass": 12,
+              "ci": null,
+              "grader_only_pass": 0,
+              "hardened_only_pass": 0,
+              "rate": 0.0,
+              "trials": 12
+            },
+            "transcript": {
+              "both_fail": 0,
+              "both_pass": 8,
+              "ci": null,
+              "grader_only_pass": 0,
+              "hardened_only_pass": 4,
+              "rate": 0.0,
+              "trials": 12
+            }
+          },
+          "graders": {
+            "exact_trace": {
+              "ci": null,
+              "passed": 0,
+              "rate": 0.0,
+              "trials": 12
+            },
+            "final_state": {
+              "ci": null,
+              "passed": 12,
+              "rate": 1.0,
+              "trials": 12
+            },
+            "goal": {
+              "ci": null,
+              "passed": 12,
+              "rate": 1.0,
+              "trials": 12
+            },
+            "hardened": {
+              "ci": null,
+              "passed": 12,
+              "rate": 1.0,
+              "trials": 12
+            },
+            "no_frame": {
+              "ci": null,
+              "passed": 12,
+              "rate": 1.0,
+              "trials": 12
+            },
+            "no_history": {
+              "ci": null,
+              "passed": 12,
+              "rate": 1.0,
+              "trials": 12
+            },
+            "no_replay": {
+              "ci": null,
+              "passed": 12,
+              "rate": 1.0,
+              "trials": 12
+            },
+            "transcript": {
+              "ci": null,
+              "passed": 8,
+              "rate": 0.6666666666666666,
+              "trials": 12
+            }
+          },
+          "latency_seconds": {
+            "mean": 47.50083033333333,
+            "median": 47.155446,
+            "p95": 55.77898635,
+            "total": 570.009964
+          },
+          "stop_reasons": {
+            "completed": 12
+          },
+          "task_clusters": 4,
+          "tokens": {
+            "completion_tokens": {
+              "reported_trials": 12,
+              "total": 8995
+            },
+            "prompt_tokens": {
+              "reported_trials": 12,
+              "total": 150297
+            }
+          },
+          "trials": 12
+        }
+      },
+      "graders": {
+        "exact_trace": {
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "passed": 0,
+          "rate": 0.0,
+          "trials": 36
+        },
+        "final_state": {
+          "ci": [
+            0.861111111111111,
+            1.0
+          ],
+          "passed": 34,
+          "rate": 0.9444444444444444,
+          "trials": 36
+        },
+        "goal": {
+          "ci": [
+            0.861111111111111,
+            1.0
+          ],
+          "passed": 34,
+          "rate": 0.9444444444444444,
+          "trials": 36
+        },
+        "hardened": {
+          "ci": [
+            0.861111111111111,
+            1.0
+          ],
+          "passed": 34,
+          "rate": 0.9444444444444444,
+          "trials": 36
+        },
+        "no_frame": {
+          "ci": [
+            0.861111111111111,
+            1.0
+          ],
+          "passed": 34,
+          "rate": 0.9444444444444444,
+          "trials": 36
+        },
+        "no_history": {
+          "ci": [
+            0.861111111111111,
+            1.0
+          ],
+          "passed": 34,
+          "rate": 0.9444444444444444,
+          "trials": 36
+        },
+        "no_replay": {
+          "ci": [
+            0.861111111111111,
+            1.0
+          ],
+          "passed": 34,
+          "rate": 0.9444444444444444,
+          "trials": 36
+        },
+        "transcript": {
+          "ci": [
+            0.6666666666666666,
+            0.8888888888888888
+          ],
+          "passed": 28,
+          "rate": 0.7777777777777778,
+          "trials": 36
+        }
+      },
+      "latency_seconds": {
+        "mean": 41.73874383333333,
+        "median": 40.3618075,
+        "p95": 52.65260475,
+        "total": 1502.594778
+      },
+      "stop_reasons": {
+        "completed": 36
+      },
+      "task_clusters": 12,
+      "tokens": {
+        "completion_tokens": {
+          "reported_trials": 36,
+          "total": 24914
+        },
+        "prompt_tokens": {
+          "reported_trials": 36,
+          "total": 433849
+        }
+      },
+      "trials": 36
+    }
+  },
+  "paired_model_differences": [
+    {
+      "direction": "model_b minus model_a",
+      "graders": {
+        "exact_trace": {
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "difference": 0.0
+        },
+        "final_state": {
+          "ci": [
+            0.05555555555555558,
+            0.49999999999999994
+          ],
+          "difference": 0.2777777777777778
+        },
+        "goal": {
+          "ci": [
+            0.05555555555555558,
+            0.49999999999999994
+          ],
+          "difference": 0.2777777777777778
+        },
+        "hardened": {
+          "ci": [
+            0.13888888888888884,
+            0.5555555555555556
+          ],
+          "difference": 0.33333333333333326
+        },
+        "no_frame": {
+          "ci": [
+            0.13888888888888884,
+            0.5555555555555556
+          ],
+          "difference": 0.33333333333333326
+        },
+        "no_history": {
+          "ci": [
+            0.05555555555555558,
+            0.49999999999999994
+          ],
+          "difference": 0.2777777777777778
+        },
+        "no_replay": {
+          "ci": [
+            0.13888888888888884,
+            0.5555555555555556
+          ],
+          "difference": 0.33333333333333326
+        },
+        "transcript": {
+          "ci": [
+            -0.33333333333333337,
+            -0.11111111111111116
+          ],
+          "difference": -0.2222222222222222
+        }
+      },
+      "model_a": "qwen3.5:2b-q4_K_M",
+      "model_b": "qwen3.5:4b-q4_K_M",
+      "task_clusters": 12
+    }
+  ],
+  "schema_version": 1
+}
