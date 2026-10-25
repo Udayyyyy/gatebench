@@ -1,5 +1,7 @@
 # GateBench
 
+[![checks](https://github.com/Udayyyyy/gatebench/actions/workflows/ci.yml/badge.svg)](https://github.com/Udayyyyy/gatebench/actions/workflows/ci.yml)
+
 **Would your agent verifier accept a refund issued before customer verification?**
 
 GateBench is a small research toolkit for auditing verifiers on stateful tool-use
@@ -26,7 +28,8 @@ byte-identical artifacts.
 
 ![Measured verifier errors with case-cluster intervals](docs/results/error-rates.svg)
 
-[Read the full results](docs/results/report.md), including intervals, workflow
+[Explore the live report](https://udayyyyy.github.io/gatebench/) or
+[read the results](docs/results/report.md), including intervals, workflow
 slices, paired comparisons, and limitations. A separate evidence-integrity suite
 rejects **21/21 corrupted records**; removing replay admits six of those records.
 These counts describe this curated corpus, not real-model failure rates or proof

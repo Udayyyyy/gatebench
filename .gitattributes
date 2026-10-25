@@ -1,0 +1,4 @@
+docs/results/** linguist-generated=true
+uv.lock linguist-generated=true
+*.py text eol=lf
+*.md text eol=lf
